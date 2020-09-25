@@ -1,0 +1,175 @@
+/*==========  Mobile First Method  ==========*/
+
+.navbar-nav li a {
+    line-height: initial;
+}
+   
+.brand-icon {
+    max-height: 101px;
+    min-width: 355px;
+    padding: 8px;
+   /* width: 25%;
+    vertical-align: center;*/
+    cursor: pointer;
+}
+
+.navbar {
+    /* esto es para corregir un error de stacking que se produce cuando el boton de buscar de la searchbar
+    esta deshabilitado y la opacidad es menor a 1
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
+    https://stackoverflow.com/questions/30185273/stacking-order-of-elements-affected-by-opacity
+     */
+    z-index: 1;
+}
+.center-item {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.wrap-row{
+    min-height: calc(45vh - 50px)
+}
+.wrap{
+    min-height: calc(22vh - 50px);
+    width: 100%;
+}
+.img{
+    width: 50px;
+    height: 50px;
+}
+.icon-center :hover{
+    width: 60px;
+    height: 60px;
+    transition:all  0.3s ease-in-out;
+}
+
+.icon-center{
+    display: flex;justify-content: center;
+}
+.text-center{
+    display: flex;justify-content: center;
+}
+.button-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #1b3953;
+    background-color: #1b3953;
+    color: white;
+    border-radius: 8px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 0px;
+    max-height: 200px;
+    margin-right: 25px;
+}
+
+.navbar-right {
+    margin-right: 20px;
+}
+
+.navbar{
+    margin-bottom: 0px;
+}
+.table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    border: 1px solid #8d8d8d4d !important;
+}
+.react-bs-table-bordered {
+    border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    background-color: #dcdcdc66;
+    font-weight: normal;
+}
+.navbar-nav > li > a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .navbar-default {
+        min-height: 50px;
+    }
+    .navbar-header {
+        max-width: 22%;
+    }
+  /*  .brand-icon {
+        max-width: initial;
+    }*/
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    /*.navbar-header {
+        max-width: initial;
+    }*/
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    color: var(--primary-color);
+    background-color: var(--primary-color);  
+}
+
+
+/* Notifications */
+#popover-notifications {
+    top: 40px !important;
+    left: -200px !important;
+    width: 300px;
+}
+
+#popover-notifications>.arrow {
+    left: 80.7% !important;
+}
+
+#popover-notifications>.popover-content {
+    padding: 0px;
+}
+
+
+.popover-title {
+    color:#5e666d;
+}
+
+.list-group>button{
+    margin-top: 3px;
+}
+
+button.notification-unread{
+    font-weight: bold;
+}
+
+button.notification-important {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    background-image: none;
+    color: var(--accent-text-color);
+}
+
+button.notification-item:focus,
+button.notification-item:hover {
+    background-color: var(--accent-color-shadow);
+    border-color: var(--accent-color-shadow);
+    background-image: none;
+    color: var(--accent-text-color);
+}

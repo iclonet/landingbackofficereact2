@@ -1,0 +1,210 @@
+{
+   "status":200,
+   "result":{
+      "code":200,
+      "info":"OK"
+   },
+   "data":{
+      "datosParticulares":{
+         "id":{
+
+         },
+         "nombre":"GABRIEL EDUARDO",
+         "apellido":"MARINO",
+         "apellidoNombre":"MARINO, GABRIEL EDUARDO",
+         "cuil":20369100506,
+         "dni":36910050,
+         "tipo":"DNI-EB",
+         "nacionalidad":"Argentina",
+         "anio":1992,
+         "fechaNacimiento":"1992-05-07T04:00:00Z",
+         "edad":25,
+         "sexo":"M",
+         "observaciones":{
+
+         },
+         "mails":{
+            "datos":[
+               {
+                  "dni":null,
+                  "cuil":null,
+                  "email":null,
+                  "origen":null
+               }
+            ],
+            "cantTotal":1
+         },
+         "domicilio":"J.A. CABRERA 1327",
+         "localidad":"PARANA",
+         "provincia":"ENTRE RIOS",
+         "cp":"3100",
+         "domAlternativos":{
+            "datos":{
+
+            },
+            "cantTotal":0
+         }
+      },
+      "datosLaborales":{
+         "datoLaboral":{
+            "datos":[
+               {
+                  "relacionDependencia":{
+                     "estado":" ",
+                     "razonSocial":"TRAILBACK S.A.",
+                     "cuit":30708114843,
+                     "alta":"2017-02-01T03:00:00Z",
+                     "baja":"2017-03-07T03:00:00Z",
+                     "sueldo":"10K - 20K",
+                     "cuil":20369100506
+                  },
+                  "historialSueldo":{
+                     "infoAdicionalEmpleador":{
+                        "actividadempleador":"Servicios De Seguridad E Investigacion N.c.p.",
+                        "cantidadempleados":58,
+                        "domicilio":{
+                           "direccion":"ARTURO ILLIA 141",
+                           "localidad":"PARANA",
+                           "provincia":"ENTRE RIOS",
+                           "partido":"PARANA",
+                           "cp":3100
+                        }
+                     },
+                     "tel":""
+                  }
+               },
+               {
+                  "relacionDependencia":{
+                     "estado":" ",
+                     "razonSocial":"KAITZEN S.A.",
+                     "cuit":30710673612,
+                     "alta":"2017-08-01T03:00:00Z",
+                     "baja":"2017-08-31T03:00:00Z",
+                     "sueldo":"20K - 30K",
+                     "cuil":20369100506
+                  },
+                  "historialSueldo":{
+                     "infoAdicionalEmpleador":{
+                        "actividadempleador":"Servicios De Consultores En Informatica Y Suministros De Programas De Informatica",
+                        "cantidadempleados":49,
+                        "domicilio":{
+                           "direccion":"CORNELIO SAAVEDRA 52 2",
+                           "localidad":"RAFAELA",
+                           "provincia":"SANTA FE",
+                           "partido":"CASTELLANOS",
+                           "cp":2300
+                        }
+                     },
+                     "tel":""
+                  }
+               }
+            ],
+            "cantTotal":2
+         },
+         "monotributista":{
+            "datos":{
+
+            },
+            "cantTotal":0
+         },
+         "actividad":{
+            "datos":{
+
+            },
+            "cantTotal":0
+         },
+         "obraSocial":{
+            "datos":[
+               {
+                  "descripcion":"O.S. ACCION SOCIAL DE EMPRESARIOS",
+                  "codigo":"400909"
+               }
+            ],
+            "cantTotal":1
+         },
+         "seguridadSocial":{
+            "datos":{
+
+            },
+            "cantTotal":0
+         }
+      },
+      "vinculos":{
+         "vinculos":{
+            "datos":{
+
+            },
+            "cantTotal":0
+         },
+         "otrosVinculos":{
+            "datos":{
+
+            },
+            "cantTotal":0
+         }
+      },
+      "boletinOficial":{
+         "datos":{
+
+         },
+         "cantTotal":0
+      },
+      "telefonos":{
+         "datos":[
+            {
+               "id":5541031,
+               "dni":36910050,
+               "tipo":"Fijo",
+               "cuil":20369100506,
+               "tel":"03434340778",
+               "localidad":"Parana",
+               "provincia":"Entre Rios",
+               "origen":"Paginas Blancas"
+            }
+         ],
+         "cantTotal":1
+      },
+      "telefonosAdicionales":{
+         "datos":{
+
+         },
+         "cantTotal":0
+      },
+      "morosidad":{
+         "juiciosDemandado":null
+      },
+      "bienesPersonales":{
+
+      },
+      "pagosImpuestos":{
+         "datos":{
+
+         },
+         "cantTotal":0
+      },
+      "participacionSocietaria":{
+         "datos":{
+
+         },
+         "cantTotal":0
+      },
+      "variables":{
+         "variableRechazo":[
+            "Cantidad de Consulta"
+         ],
+         "variableAprobada":[
+            "Edad",
+            "Dni",
+            "Laboral",
+            "Fallecidos",
+            "Ultimo periodo BCRA",
+            "Histórico BCRA",
+            "Cheque rechazados",
+            "Historico morosidad"
+         ]
+      },
+      "codigo":"R",
+      "idLog":2513
+   },
+   "total_page":null
+}

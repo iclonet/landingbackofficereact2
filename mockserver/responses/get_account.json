@@ -1,0 +1,15 @@
+{
+	"result": {
+		"code": 200,
+		"info": "OK"
+	},
+	"data": {
+		"idCliente": 8,
+		"cliente": "MARKETING BUILDERS SRL",
+		"nombre": "SERGUI DAVID",
+		"apellido": "DEPAOLINI",
+		"email": "DEPAOLINI@DEPAOLINI.com",
+		"cuil": 20262845266
+	},
+	"total_page": null
+}

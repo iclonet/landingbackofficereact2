@@ -1,0 +1,25 @@
+{
+	"result": {
+		"code": 200,
+		"info": "OK"
+	},
+	"data": {
+		"notificacion": [
+			{
+				"leida": false,
+				"titulo": "Alerta de vencimiento de abono",
+				"asunto": "Alerta de vencimiento de abono",
+				"creacion": "2017-08-11",
+				"general": false,
+				"fechaValidacion": "2017-09-10",
+				"automatica": true,
+				"clientes": {
+					"nombre": "SERGUI DAVID2",
+					"apellido": "DEPAOLINI2",
+					"cuil": 20262845266
+				}
+			}
+		]
+	},
+	"total_page": null
+}

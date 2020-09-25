@@ -1,0 +1,20 @@
+{
+    "result":{
+       "code":200,
+       "info":"OK"
+    },
+    "data":{
+       "filtros":{
+          "rodados":{
+             "type":"number"
+          },
+          "cp":{
+             "type":"number"
+          },
+          "sexo":{
+             "type":"string"
+          }
+       }
+    },
+    "total_page":null
+ }

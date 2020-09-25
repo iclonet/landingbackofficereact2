@@ -1,0 +1,110 @@
+{
+    "prueba": {
+        "datos": [],
+        "cantTotal":200
+    },
+	"result": {
+		"code": 200,
+		"info": "OK"
+	},
+	"data": {
+		"datosParticulares": {
+			"id": {},
+			"nombre": "SERGIO DAVID",
+			"apellido": "DEPAOLINI",
+			"apellidoNombre": "DEPAOLINI, SERGIO DAVID",
+			"cuil": 20262845266,
+			"dni": 26284526,
+			"tipo": "DNI-EA",
+			"nacionalidad": "Argentina",
+			"anio": 1978,
+			"fechaNacimiento": "1978-04-28T05:00:00Z",
+			"edad": 39,
+			"sexo": "M",
+			"observaciones": {},
+            "mails": null,
+			"domicilio": "CORVALAN 1371",
+			"localidad": "MONTE CHINGOLO",
+			"provincia": "BUENOS AIRES",
+			"cp": "1825",
+			"domAlternativos": null
+		},
+		"datosLaborales": {
+			"datoLaboral": null,
+			"monotributista": null,
+			"actividad": null,
+			"obraSocial": null,
+			"empAportes": null,
+			"sueldos": null,
+			"empDomesticos": null,
+			"domAportes": null,
+			"seguridadSocial": null 
+		},
+		"vinculos": {
+			"vinculos": null,
+			"otrosVinculos": null
+		},
+		"boletinOficial": null,
+		"telefonos": null,
+		"telefonosAdicionales": null,
+		"morosidad": {
+			"informacionBcra": null,
+			"infoBcraSituacion1": {
+                "datos": [],
+                "cantTotal":0
+            },
+			"chequesRechazados": null,
+			"deudoresBancoCentral": null,
+			"embargos": null,
+			"juiciosDemandado": null,
+			"juiciosActor": null,
+			"variables": {
+				"variableRechazo": [
+					"Cantidad de Consulta"
+				],
+				"variableAprobada": [
+					"Edad",
+					"Dni",
+					"Laboral",
+					"Fallecidos",
+					"Ultimo periodo BCRA",
+					"Histórico BCRA",
+					"Cheque rechazados",
+					"Historico morosidad"
+				]
+			},
+			"codigo": "R"
+		},
+		"bienesPersonales": {
+			"propiedades": null,
+			"automotores": null,
+			"autosembargos": null
+		},
+		"pagosImpuestos": null,
+		"participacionSocietaria": null,
+		"situacionFinanciera": {
+			"situacion": null,
+			"facturacion": null,
+			"bancoOpera": null,
+			"tarjetas": null
+		},
+		"variables": {
+			"variableRechazo": [
+				"Cantidad de Consulta"
+			],
+			"variableAprobada": [
+				"Edad",
+				"Dni",
+				"Laboral",
+				"Fallecidos",
+				"Ultimo periodo BCRA",
+				"Histórico BCRA",
+				"Cheque rechazados",
+				"Historico morosidad"
+			]
+		},
+		"codigo": "R",
+		"idLog": 1432
+	},
+	"total_page": null
+}

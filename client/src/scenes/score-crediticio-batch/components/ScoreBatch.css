@@ -1,0 +1,73 @@
+.input-file {
+  padding: 5px;
+}
+
+.center-file{
+  display: flex;
+  -webkit-box-align: center;
+  flex-direction: inherit;
+  margin-bottom: 15px;
+}
+.row{
+  padding: 0px;
+  margin-bottom: 0px;
+}
+.archivo-col{
+  padding-left: 0px;
+  padding-right: 0px;
+  overflow: hidden;
+  background-color: rgb(244, 244, 244);
+}
+.archivo-col-import{
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.archivo-h4{
+  color: rgb(1, 224, 169);
+  margin-bottom: 2px;
+}
+.archivo-col-intput-file{
+  display: flex;
+  margin-bottom: 21px;
+}
+.archivo-intput-file{
+  background: white;
+  border: 1px solid gainsboro;
+}
+
+.btn-file {
+  font-weight: normal;
+  background-color: #B1B1B1;
+  border: none;
+  color: white;
+  padding: 5px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+.btn-file:hover {
+  background-color: #8F8F8F;
+}
+
+.btn-archivo{
+  margin-top: 6px;
+  border-radius: 20px !important;
+  font-size: 11px;
+  border-color: #00223e !important;
+  background-image: linear-gradient(to bottom,#00223e 0,#00223e 100%) !important;
+}
+.btn-archivo:hover{
+  background-image: linear-gradient(to bottom,#003663 0,#003663 100%) !important;
+  background-position: 0;
+}
+.btn-archivo:focus{
+  background-color:#00223e !important;
+}

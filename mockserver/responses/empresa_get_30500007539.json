@@ -1,0 +1,3158 @@
+{
+	"status": 200,
+	"result": {
+		"code": 200,
+		"info": "OK"
+	},
+	"data": {
+		"datosGenerales": {
+			"empresa": {
+				"datos": {
+					"id": 364066,
+					"actividad": "Servicios De Seguros Patrimoniales Excepto Los De Las Aseguradoras De Riesgo De Trabajo (art)",
+					"cuit": 30500007539,
+					"msalarial": "21651264.1",
+					"ciiu": "651220",
+					"empleados": 525,
+					"subCategoria": "Servicios De Seguros Patrimoniales Excepto Los De Las Aseguradoras De Riesgo De Trabajo (art)",
+					"razon": "MAPFRE ARGENTINA SEGUROS SOCIEDAD ANONIMA",
+					"categoria": "Servicios De Seguros Patrimoniales Excepto Los De Las Aseguradoras De Riesgo De Trabajo (art)",
+					"localidad": "CAPITAL FEDERAL",
+					"cp": 1107,
+					"constitucion": "2000-04-28T03:00:00Z",
+					"provincia": "CAPITAL FEDERAL",
+					"letra": "J",
+					"partido": "CAPITAL FEDERAL",
+					"direccion": "MANSO JUANA 205"
+				},
+				"cantTotal": 1
+			},
+			"mails": {
+				"datos": [
+					{
+						"id": 8530373,
+						"dni": 30500007539,
+						"cuil": 30500007539,
+						"email": "abernardi@mapfre.com.ar",
+						"origen": " "
+					},
+					{
+						"id": 8530374,
+						"dni": 30500007539,
+						"cuil": 30500007539,
+						"email": "acampos@mapfre.com.ar",
+						"origen": " "
+					},
+					{
+						"id": 8530375,
+						"dni": 30500007539,
+						"cuil": 30500007539,
+						"email": "adall@mapfre.com.ar",
+						"origen": " "
+					},
+					{
+						"id": 8530376,
+						"dni": 30500007539,
+						"cuil": 30500007539,
+						"email": "adell@mapfre.com.ar",
+						"origen": " "
+					},
+					{
+						"id": 8530377,
+						"dni": 30500007539,
+						"cuil": 30500007539,
+						"email": "afurmston@hotmail.com",
+						"origen": " "
+					},
+					{
+						"id": 8530378,
+						"dni": 30500007539,
+						"cuil": 30500007539,
+						"email": "agomez@mapfre.com.ar",
+						"origen": " "
+					},
+					{
+						"id": 8530379,
+						"dni": 30500007539,
+						"cuil": 30500007539,
+						"email": "agus312@hotmail.com",
+						"origen": " "
+					},
+					{
+						"id": 8530380,
+						"dni": 30500007539,
+						"cuil": 30500007539,
+						"email": "aheredia@mapfre.com.ar",
+						"origen": " "
+					},
+					{
+						"id": 8530381,
+						"dni": 30500007539,
+						"cuil": 30500007539,
+						"email": "ale-cbr@hotmail.com",
+						"origen": " "
+					},
+					{
+						"id": 8530382,
+						"dni": 30500007539,
+						"cuil": 30500007539,
+						"email": "aloustaunau@mapfre.com.ar",
+						"origen": " "
+					}
+				],
+				"cantTotal": 104
+			},
+			"domAlternativos": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"situacionFiscal": {
+				"datos": {
+					"id": 4143637,
+					"iva": "AC",
+					"fecha": "2017-06-24",
+					"cuil": 30500007539,
+					"categoria": "NI",
+					"empleador": "SI",
+					"codigo": "00",
+					"integranteSoc": "NO",
+					"tipodato": "2",
+					"ganancias": "AC"
+				},
+				"cantTotal": 1
+			},
+			"empAportes": {
+				"datos": [
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "VASQUEZ LUIS ANIBAL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20110688130
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 45603,
+									"cuil": 20110688130,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BIANCO ROBERTO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20124620911
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 97812,
+									"cuil": 20124620911,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GONZALEZ JULIO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20145738904
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 42187,
+									"cuil": 20145738904,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "ALVAREZ HUGO MARCELO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20172326057
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 61155,
+									"cuil": 20172326057,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "DUSSERRE WALTER FERNANDO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20214411297
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 39000,
+									"cuil": 20214411297,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "SANTOLINI GUSTAVO DANIEL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20225228125
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 53075,
+									"cuil": 20225228125,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "MORTOLA MARCELO OSVALDO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20228549623
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 38227,
+									"cuil": 20228549623,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "MERELES ISAAC ANDRES",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20290363633
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 26180,
+									"cuil": 20290363633,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "PESCIO LEANDRO RAUL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20305372332
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 27099,
+									"cuil": 20305372332,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RAIMONDI FERNANDO NATALIO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20310603490
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 26180,
+									"cuil": 20310603490,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "VELTRI LAURA SOLEDAD",
+									"cuit": 30500007539,
+									"cuilEmpleado": 23319322264
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 31903,
+									"cuil": 23319322264,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "SANGA RODRIGO NICOLAS",
+									"cuit": 30500007539,
+									"cuilEmpleado": 23350683429
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 27997,
+									"cuil": 23350683429,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "SILVA NICOLAS GABRIEL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 24266075371
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 30564,
+									"cuil": 24266075371,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GARCIA GRACIELA LILIANA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27115294585
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 53760,
+									"cuil": 27115294585,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GOMEZ LILIANA INES",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27178259151
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 88938,
+									"cuil": 27178259151,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RODRIGUEZ SILVIA BEATRIZ",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27180622395
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 32570,
+									"cuil": 27180622395,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "ESPECHE ROXANA BEATRIZ",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27205004519
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 31000,
+									"cuil": 27205004519,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RENZI MARIA LUJAN",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27275364334
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 35800,
+									"cuil": 27275364334,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "SCHERMA ROMINA FERNANDA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27279260371
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 27412,
+									"cuil": 27279260371,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "FERRANDO MUNYO GABRIELA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27920809990
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 29915,
+									"cuil": 27920809990,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "ZIARZOLO MARIANO ALBERTO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20252010069
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 106020,
+									"cuil": 20252010069,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "DE AURTENECHE PABLO ALBERTO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20264777527
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 43605,
+									"cuil": 20264777527,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "TORRES DAMIAN ALEJANDRO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20268359355
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 32739,
+									"cuil": 20268359355,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GUAGLIANONE GUSTAVO CESAR",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20290172900
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 31344,
+									"cuil": 20290172900,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "CAVIGLIA GABRIEL LEONARDO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20229709837
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 30176,
+									"cuil": 20229709837,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BORDIÑUK SILVINA MARIEL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27281686459
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 35000,
+									"cuil": 27281686459,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "COVELLO VANESA PAOLA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27299629118
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 49463,
+									"cuil": 27299629118,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "MARTIN MARIA FLORENCIA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27305571992
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 29318,
+									"cuil": 27305571992,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "PUCHE LUDMILA FABIELA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27328505210
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 30796,
+									"cuil": 27328505210,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "OSTERTAG MARIA LAURA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27333591109
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 29144,
+									"cuil": 27333591109,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "FINN FRANCISCO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20247546333
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 153023,
+									"cuil": 20247546333,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "DAGUZAN PABLO JAVIER",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20235854148
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 89842,
+									"cuil": 20235854148,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "TOSSI HORACIO HERNAN",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20243944407
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 57343,
+									"cuil": 20243944407,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "CASTILLO EDGARDO MARINO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20290572348
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 27997,
+									"cuil": 20290572348,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "CANILLAN JUAN BAUTISTA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20344928240
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 26180,
+									"cuil": 20344928240,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BIANCO FABIOLA LEONOR",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27344736923
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 27997,
+									"cuil": 27344736923,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BEVER VERONICA LUCIANA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27381770813
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 28134,
+									"cuil": 27381770813,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GARTEGUIZ JORGE RUBEN",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20173218096
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 26714,
+									"cuil": 20173218096,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "FERRARA FERNANDO SEBASTIAN",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20183882660
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 60273,
+									"cuil": 20183882660,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "FIGUEROA DIEGO ROQUE",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20246155802
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 37217,
+									"cuil": 20246155802,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "DELL ALBANI NICOLAS",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20250298480
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 39464,
+									"cuil": 20250298480,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RODRIGUEZ BONET GONZALO MARTIN",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20257556272
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 30642,
+									"cuil": 20257556272,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BODE OSCAR RICARDO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20182250059
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 49200,
+									"cuil": 20182250059,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "FERRO HERNAN GUSTAVO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20246245437
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 32298,
+									"cuil": 20246245437,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GIORDANO HUBER ARIEL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20260084594
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 29000,
+									"cuil": 20260084594,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "QUEIREL MARIANO SEBASTIAN",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20260507843
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 49200,
+									"cuil": 20260507843,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "ASCHENDORF HERNAN DARIO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20262580580
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 100000,
+									"cuil": 20262580580,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BARRIOS LOPEZ NESTOR IVAN",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20315796793
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 28264,
+									"cuil": 20315796793,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "CUESTA JUAN MATIAS",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20316957219
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 33919,
+									"cuil": 20316957219,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "CARLASSARA JUAN MANUEL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20324316583
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 30526,
+									"cuil": 20324316583,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "NADER DAMIAN JAVIER",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20325537222
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 48831,
+									"cuil": 20325537222,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "VIGNERA PABLO ARIEL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20335070616
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 25427,
+									"cuil": 20335070616,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "DARDON CASTRO JUAN MARIA LLANCA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20340285930
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 33134,
+									"cuil": 20340285930,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "JIMENEZ TORRES JORGE JONATHAN",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20939058045
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 30700,
+									"cuil": 20939058045,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "SANABRIA PORTILLO DERLIS ARIEL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20939483749
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 31387,
+									"cuil": 20939483749,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "SARAVIA ALEGRE JORGE LUIS",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20939696661
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 30826,
+									"cuil": 20939696661,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RUEDA RUIZ SALVADOR",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20951427013
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 525635,
+									"cuil": 20951427013,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GONZALEZ FARACE SILVIA VILMA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 23202001084
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 30264,
+									"cuil": 23202001084,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GIUMELLI DIEGO JORGE",
+									"cuit": 30500007539,
+									"cuilEmpleado": 23260343319
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 33368,
+									"cuil": 23260343319,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "FARIAS MARIANA DEBORA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 23294225544
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 30000,
+									"cuil": 23294225544,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "ALVAREZ FABIANA NOEMI",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27178991057
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 32224,
+									"cuil": 27178991057,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ SERGIO ELIAS",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20273231839
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 33689,
+									"cuil": 20273231839,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GALVAN JULIO MARTIN",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20278358454
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 33555,
+									"cuil": 20278358454,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "ORTIZ GARCIA JOSE MARIA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20278796001
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 31000,
+									"cuil": 20278796001,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "LUCERO SEPULVEDA ENRIQUE MARTIN",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20280913155
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 28120,
+									"cuil": 20280913155,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "DOMINGUEZ EMILIANO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20281204727
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 35642,
+									"cuil": 20281204727,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GARIBALDI DIEGO MARTIN",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20282313635
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 46445,
+									"cuil": 20282313635,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "MARI SEBASTIAN",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20292225556
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 33978,
+									"cuil": 20292225556,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "D UVA MARTIN MIGUEL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20300775420
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 49000,
+									"cuil": 20300775420,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "MAIGNON MARTIN GASTON",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20301354232
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 50000,
+									"cuil": 20301354232,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "DEL CAMPO ESTANISLAO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20303331620
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 76533,
+									"cuil": 20303331620,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "CATULLO ALEJANDRO EZEQUIEL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20304680246
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 35100,
+									"cuil": 20304680246,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "PRINCIPI ANALIA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27185747986
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 27997,
+									"cuil": 27185747986,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "DE LAS HERAS CARINA ANDREA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27224262723
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 36120,
+									"cuil": 27224262723,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "COMISSO ANABELA VALERIA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27236828803
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 32688,
+									"cuil": 27236828803,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "MERA MARINA ELIZABETH",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27237716693
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 28766,
+									"cuil": 27237716693,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RODRIGUEZ COUTO MARIA CECILIA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27241299703
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 44280,
+									"cuil": 27241299703,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BURANI CAROLINA YAMILA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27250399931
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 30653,
+									"cuil": 27250399931,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GARCIA HERNANDEZ AGUSTINA SOLEDAD",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27259575317
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 49750,
+									"cuil": 27259575317,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GOMEZ MARIA VANESA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27263887889
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 29028,
+									"cuil": 27263887889,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "MALDOTTI VALERIA PAOLA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27269590934
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 36096,
+									"cuil": 27269590934,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "IGLESIAS SILVIA PAOLA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27269927734
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 37686,
+									"cuil": 27269927734,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "QUINTEROS GABRIELA VERONICA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27277360794
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 28942,
+									"cuil": 27277360794,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "PELICS MARIELA DEBORA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27292581713
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 31000,
+									"cuil": 27292581713,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "DURAND MARIA AGUSTINA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27293988302
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 25133,
+									"cuil": 27293988302,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BAIGORRIA ERIKA NATALIA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27305311605
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 29000,
+									"cuil": 27305311605,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "SOLARO MARIA CATALINA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27311849854
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 30403,
+									"cuil": 27311849854,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "CORVATTA ANTONELLA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27321436094
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 53600,
+									"cuil": 27321436094,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "NIEVAS MARIA LUJAN",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27329077557
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 26180,
+									"cuil": 27329077557,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BURALLI CAROLINA NAHIR",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27351078869
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 31983,
+									"cuil": 27351078869,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "D ADAMO FLORENCIA NAHIR",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27380659706
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 26553,
+									"cuil": 27380659706,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "CACERES BENITEZ INES ADRIANA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27380666796
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 26180,
+									"cuil": 27380666796,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "STARKE RIVADENEYRA DAIANA ANDREA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27386236742
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 13296,
+									"cuil": 27386236742,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "CAMPOS LAURA CAMILA",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27394692935
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 13296,
+									"cuil": 27394692935,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RESTRINGIDO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 27945570747
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 26494,
+									"cuil": 27945570747,
+									"cuit": 30500007539
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BOSSI FERNANDO CARLOS",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20176587734
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 47310,
+									"cuil": 20176587734,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-02-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "VASQUEZ LUIS ANIBAL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20110688130
+								},
+								"sueldo": {
+									"periodo": "2017-01-01T05:00:00Z",
+									"remuneracion": 26829,
+									"cuil": 20110688130,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-01-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "VASQUEZ LUIS ANIBAL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20110688130
+								},
+								"sueldo": {
+									"periodo": "2017-07-01T04:00:00Z",
+									"remuneracion": 26252,
+									"cuil": 20110688130,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-07-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "VASQUEZ LUIS ANIBAL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20110688130
+								},
+								"sueldo": {
+									"periodo": "2017-07-01T04:00:00Z",
+									"remuneracion": 26252,
+									"cuil": 20110688130,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-07-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "VASQUEZ LUIS ANIBAL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20110688130
+								},
+								"sueldo": {
+									"periodo": "2017-04-01T04:00:00Z",
+									"remuneracion": 24623,
+									"cuil": 20110688130,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-04-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "VASQUEZ LUIS ANIBAL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20110688130
+								},
+								"sueldo": {
+									"periodo": "2016-12-01T05:00:00Z",
+									"remuneracion": 35207,
+									"cuil": 20110688130,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2016-12-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "VASQUEZ LUIS ANIBAL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20110688130
+								},
+								"sueldo": {
+									"periodo": "2017-03-01T05:00:00Z",
+									"remuneracion": 26152,
+									"cuil": 20110688130,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-03-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "VASQUEZ LUIS ANIBAL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20110688130
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 27629,
+									"cuil": 20110688130,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-05-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "VASQUEZ LUIS ANIBAL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20110688130
+								},
+								"sueldo": {
+									"periodo": "2017-06-01T04:00:00Z",
+									"remuneracion": 47722,
+									"cuil": 20110688130,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-06-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "VASQUEZ LUIS ANIBAL",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20110688130
+								},
+								"sueldo": {
+									"periodo": "2017-06-01T04:00:00Z",
+									"remuneracion": 47722,
+									"cuil": 20110688130,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-06-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "BIANCO ROBERTO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20124620911
+								},
+								"sueldo": {
+									"periodo": "2016-12-01T05:00:00Z",
+									"remuneracion": 149427,
+									"cuil": 20124620911,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2016-12-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "BIANCO ROBERTO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20124620911
+								},
+								"sueldo": {
+									"periodo": "2017-01-01T05:00:00Z",
+									"remuneracion": 169553,
+									"cuil": 20124620911,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-01-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "BIANCO ROBERTO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20124620911
+								},
+								"sueldo": {
+									"periodo": "2017-07-01T04:00:00Z",
+									"remuneracion": 113899,
+									"cuil": 20124620911,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-07-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "BIANCO ROBERTO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20124620911
+								},
+								"sueldo": {
+									"periodo": "2017-06-01T04:00:00Z",
+									"remuneracion": 163833,
+									"cuil": 20124620911,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-06-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "BIANCO ROBERTO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20124620911
+								},
+								"sueldo": {
+									"periodo": "2017-07-01T04:00:00Z",
+									"remuneracion": 113899,
+									"cuil": 20124620911,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-07-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "BIANCO ROBERTO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20124620911
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 96525,
+									"cuil": 20124620911,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-05-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "BIANCO ROBERTO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20124620911
+								},
+								"sueldo": {
+									"periodo": "2017-04-01T04:00:00Z",
+									"remuneracion": 96525,
+									"cuil": 20124620911,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-04-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "BIANCO ROBERTO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20124620911
+								},
+								"sueldo": {
+									"periodo": "2017-03-01T05:00:00Z",
+									"remuneracion": 197920,
+									"cuil": 20124620911,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-03-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "BIANCO ROBERTO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20124620911
+								},
+								"sueldo": {
+									"periodo": "2017-06-01T04:00:00Z",
+									"remuneracion": 163833,
+									"cuil": 20124620911,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2017-06-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "GONZALEZ JULIO",
+									"cuit": 30500007539,
+									"cuilEmpleado": 20145738904
+								},
+								"sueldo": {
+									"periodo": "2016-12-01T05:00:00Z",
+									"remuneracion": 65990,
+									"cuil": 20145738904,
+									"cuit": 30500007539
+								}
+							}
+						],
+						"periodo": "2016-12-01T05:00:00Z"
+					}
+				],
+				"cantTotal": 884
+			},
+			"domAportes": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"actividad": {
+				"datos": [
+					{
+						"id": 286184,
+						"cuil": 30500007539,
+						"descripcion": "Servicios de seguros",
+						"ciiu": 661220
+					}
+				],
+				"cantTotal": 1
+			},
+			"sueldos": {
+				"datos": [
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 35924,
+						"cuil": 20284186347,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 38034,
+						"cuil": 27240759492,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 28376,
+						"cuil": 20274113708,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 28274,
+						"cuil": 20279208944,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 52633,
+						"cuil": 20135243524,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 33449,
+						"cuil": 20141201191,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 30264,
+						"cuil": 23202001084,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 27997,
+						"cuil": 23312068109,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 99000,
+						"cuil": 20218881085,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 30564,
+						"cuil": 24266075371,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 59500,
+						"cuil": 27247884446,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 27997,
+						"cuil": 27261682163,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 42431,
+						"cuil": 27265429640,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 27914,
+						"cuil": 27272935888,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 35800,
+						"cuil": 27275364334,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 27180,
+						"cuil": 27278617357,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 32525,
+						"cuil": 27279759511,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 16105,
+						"cuil": 27280304447,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 42564,
+						"cuil": 27281660441,
+						"cuit": 30500007539
+					},
+					{
+						"periodo": "2017-02-01T05:00:00Z",
+						"remuneracion": 30560,
+						"cuil": 27282056866,
+						"cuit": 30500007539
+					}
+				],
+				"cantTotal": 100
+			},
+			"seguridadSocial": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"art": {
+				"datos": [
+					{
+						"artVigente": "GALENO",
+						"variable": "1.249",
+						"sumaFija": "0.6",
+						"valorContratoAprox": 0,
+						"capitasDeclaradas": 567,
+						"masaSalarialDeclarada": 0,
+						"nroContrato": 200333,
+						"fechaInicio": "01/03/2014 - Absorcion de una ART por parte de otra.",
+						"vigencia": "Afiliacion vigente"
+					}
+				],
+				"cantTotal": 1
+			}
+		},
+		"boletinOficial": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"vinculos": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"telefonos": {},
+		"telefonosAdicionales": {},
+		"impuestos": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"bienes": {
+			"propiedades": {
+				"datos": [
+					{
+						"sup_terreno": 0,
+						"cuil": 30500007539,
+						"sup_cubierta": 0,
+						"ubicacion": "CHILE 00245"
+					},
+					{
+						"sup_terreno": 0,
+						"cuil": 30500007539,
+						"sup_cubierta": 0,
+						"ubicacion": "LAVALLE 00348 3 4"
+					},
+					{
+						"sup_terreno": 0,
+						"cuil": 30500007539,
+						"sup_cubierta": 0,
+						"ubicacion": "LAVALLE 00348 2 3"
+					},
+					{
+						"sup_terreno": 0,
+						"cuil": 30500007539,
+						"sup_cubierta": 0,
+						"ubicacion": "TUCUMAN 03402 1 6"
+					}
+				],
+				"cantTotal": 4
+			},
+			"automotores": {
+				"datos": [
+					{
+						"dni": 30500007539,
+						"dominio": "CWQ069",
+						"compra": "1999-09-10T04:00:00Z",
+						"modelo": "306XR16V4P",
+						"porcentaje": 0,
+						"marca": "PEUGEOT",
+						"origen": "NACIONAL",
+						"tramite": "2017-02-08T05:00:00Z",
+						"tipo": "SEDAN 4 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 1999
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "KHC709",
+						"compra": "2011-08-08T04:00:00Z",
+						"modelo": "BORA 1.8T",
+						"porcentaje": 0,
+						"marca": "VOLKSWAGEN",
+						"origen": "IMPORTADO",
+						"tramite": "2017-02-13T05:00:00Z",
+						"tipo": "SEDAN 4 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 2011
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "DZI291",
+						"compra": "2002-04-10T04:00:00Z",
+						"modelo": "405 STYLEDAA",
+						"porcentaje": 0,
+						"marca": "PEUGEOT",
+						"origen": "NACIONAL",
+						"tramite": "2017-01-06T05:00:00Z",
+						"tipo": "SEDAN 4 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 2002
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "GLB584",
+						"compra": "2007-07-05T04:00:00Z",
+						"modelo": "PALIO ADVENTURE 1.7TD",
+						"porcentaje": 0,
+						"marca": "FIAT",
+						"origen": "NACIONAL",
+						"tramite": "2017-01-10T05:00:00Z",
+						"tipo": "RURAL 5 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 2007
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "MAD512",
+						"compra": "2013-01-07T05:00:00Z",
+						"modelo": "308 SPORT",
+						"porcentaje": 100,
+						"marca": "PEUGEOT",
+						"origen": "NACIONAL",
+						"tramite": "2014-07-17T04:00:00Z",
+						"tipo": "SEDAN 5 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 2013
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "CMN078",
+						"compra": "1998-12-18T05:00:00Z",
+						"modelo": null,
+						"porcentaje": 100,
+						"marca": null,
+						"origen": "NACIONAL",
+						"tramite": "1998-12-18T05:00:00Z",
+						"tipo": "DESCAPOTABLE",
+						"cuil": 30500007539,
+						"anioModelo": 1998
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "VQN894",
+						"compra": "1993-09-14T04:00:00Z",
+						"modelo": "RENAULT 12 TL M 1.6",
+						"porcentaje": 100,
+						"marca": "RENAULT",
+						"origen": "NACIONAL",
+						"tramite": "2000-08-14T04:00:00Z",
+						"tipo": "SEDAN 4 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 1993
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "VYW148",
+						"compra": "1986-04-29T04:00:00Z",
+						"modelo": "RENAULT 18 GTL",
+						"porcentaje": 100,
+						"marca": "RENAULT",
+						"origen": "NACIONAL",
+						"tramite": "2005-03-15T05:00:00Z",
+						"tipo": "SEDAN 4 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 1986
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "BNP716",
+						"compra": "1997-08-11T04:00:00Z",
+						"modelo": "TRANSIT 190 L",
+						"porcentaje": 100,
+						"marca": "FORD",
+						"origen": "IMPORTADO",
+						"tramite": "2002-03-21T05:00:00Z",
+						"tipo": "CHASIS C/CABINA",
+						"cuil": 30500007539,
+						"anioModelo": 1997
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "VOV892",
+						"compra": "1991-09-11T04:00:00Z",
+						"modelo": "UNO SCV-3P",
+						"porcentaje": 100,
+						"marca": "FIAT",
+						"origen": "NACIONAL",
+						"tramite": "2001-09-26T04:00:00Z",
+						"tipo": "SEDAN 5 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 1991
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "RHJ633",
+						"compra": "1992-04-03T05:00:00Z",
+						"modelo": "RENAULT 21 TXE /92",
+						"porcentaje": 100,
+						"marca": "RENAULT",
+						"origen": "NACIONAL",
+						"tramite": "1998-07-15T04:00:00Z",
+						"tipo": "RURAL 5 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 1992
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "SGN944",
+						"compra": "1994-09-21T04:00:00Z",
+						"modelo": "DUNA SDR 1.7 /94",
+						"porcentaje": 100,
+						"marca": "FIAT",
+						"origen": "NACIONAL",
+						"tramite": "1998-07-15T04:00:00Z",
+						"tipo": "SEDAN 4 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 1994
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "UTC205",
+						"compra": "1992-09-16T04:00:00Z",
+						"modelo": "RENAULT 9 GTL",
+						"porcentaje": 100,
+						"marca": "RENAULT",
+						"origen": "NACIONAL",
+						"tramite": "2009-06-17T04:00:00Z",
+						"tipo": "SEDAN 4 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 1992
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "UNA673",
+						"compra": "1992-09-09T04:00:00Z",
+						"modelo": "SPAZIO TR",
+						"porcentaje": 100,
+						"marca": "FIAT",
+						"origen": "NACIONAL",
+						"tramite": "2003-03-20T05:00:00Z",
+						"tipo": "SEDAN 2 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 1992
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "TEJ942",
+						"compra": "1993-09-21T04:00:00Z",
+						"modelo": "UNO SCR-5P",
+						"porcentaje": 100,
+						"marca": "FIAT",
+						"origen": "NACIONAL",
+						"tramite": "2003-02-17T05:00:00Z",
+						"tipo": "SEDAN 5 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 1993
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "BZH834",
+						"compra": "1998-03-12T05:00:00Z",
+						"modelo": "RENAULT 19 RL DIESEL",
+						"porcentaje": 100,
+						"marca": "RENAULR",
+						"origen": "NACIONAL",
+						"tramite": "2001-08-02T04:00:00Z",
+						"tipo": "SEDAN 5 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 1998
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "TBL632",
+						"compra": "1992-06-19T04:00:00Z",
+						"modelo": "RENAULT 12 TL",
+						"porcentaje": 100,
+						"marca": "RENAULT",
+						"origen": "NACIONAL",
+						"tramite": "2004-01-12T05:00:00Z",
+						"tipo": "SEDAN 4 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 1992
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "DTJ514",
+						"compra": "2001-04-05T04:00:00Z",
+						"modelo": "CADDY 1.9 SD",
+						"porcentaje": 100,
+						"marca": "VOLKSWAGEN",
+						"origen": "NACIONAL",
+						"tramite": "2001-10-04T04:00:00Z",
+						"tipo": "FURGON O UTILITARIO",
+						"cuil": 30500007539,
+						"anioModelo": 2001
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "RYE586",
+						"compra": "1984-06-27T04:00:00Z",
+						"modelo": "505 SRII SC",
+						"porcentaje": 100,
+						"marca": "PEUGEOT",
+						"origen": "NACIONAL",
+						"tramite": "1984-06-27T04:00:00Z",
+						"tipo": "RURAL 5 PUERTAS",
+						"cuil": 30500007539,
+						"anioModelo": 1984
+					},
+					{
+						"dni": 30500007539,
+						"dominio": "UIR136",
+						"compra": "1991-07-11T04:00:00Z",
+						"modelo": "504 SRDTC",
+						"porcentaje": 100,
+						"marca": "PEUGEOT",
+						"origen": "NACIONAL",
+						"tramite": "2000-06-01T04:00:00Z",
+						"tipo": "PICK-UP",
+						"cuil": 30500007539,
+						"anioModelo": 1991
+					}
+				],
+				"cantTotal": 100
+			},
+			"autosembargos": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"sitFinanciera": {
+			"situacion": {
+				"datos": [],
+				"cantTotal": 0
+			},
+			"facturacion": {
+				"datos": [
+					{
+						"id": 527455,
+						"saldoLibrePeriodo": "1095094.49",
+						"montoUtilizado": "0.00",
+						"cuit": 30500007539,
+						"totalcompras": "565686917",
+						"totalDebFiscal": "94990237.5",
+						"saldoLibrePerAnt": "0.00",
+						"transaccionAfip": "1974070696",
+						"fechaPresentacion": "2016-08-24T03:00:00Z",
+						"saldoTecFavorContrib": "3186830.68",
+						"saldoTecFavorAfip": "0.00",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2016-07-01T03:00:00Z",
+						"facturacionestimada": "547324701.78",
+						"ob": null,
+						"subconcepto": "19",
+						"saldoImpAfip": "0.00",
+						"fecha": "2016-08-24T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "1095094.49",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "98177068.2"
+					},
+					{
+						"id": 1412880,
+						"saldoLibrePeriodo": "0.00",
+						"montoUtilizado": "0.00",
+						"cuit": 30500007539,
+						"totalcompras": "190517200",
+						"totalDebFiscal": "75328667.3",
+						"saldoLibrePerAnt": "1095094.49",
+						"transaccionAfip": "1988938736",
+						"fechaPresentacion": "2016-09-23T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "39076862.1",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2016-08-01T03:00:00Z",
+						"facturacionestimada": "434036606.76",
+						"ob": null,
+						"subconcepto": "19",
+						"saldoImpAfip": "34630562.2",
+						"fecha": "2016-09-23T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "3186830.68",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "3351205.42",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "33064974.5"
+					},
+					{
+						"id": 2314474,
+						"saldoLibrePeriodo": "0.00",
+						"montoUtilizado": "0.00",
+						"cuit": 30500007539,
+						"totalcompras": "190742273",
+						"totalDebFiscal": "69612834.6",
+						"saldoLibrePerAnt": "0.00",
+						"transaccionAfip": "2003608005",
+						"fechaPresentacion": "2016-10-24T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "36508803.7",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2016-09-01T03:00:00Z",
+						"facturacionestimada": "401102523.28",
+						"ob": null,
+						"subconcepto": "19",
+						"saldoImpAfip": "35159053.3",
+						"fecha": "2016-10-24T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "1349750.47",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "33104030.9"
+					},
+					{
+						"id": 3213289,
+						"saldoLibrePeriodo": "0.00",
+						"montoUtilizado": "0.00",
+						"cuit": 30500007539,
+						"totalcompras": "270673741",
+						"totalDebFiscal": "70402525.4",
+						"saldoLibrePerAnt": "0.00",
+						"transaccionAfip": "2019205143",
+						"fechaPresentacion": "2016-11-24T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "23426091.0",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2016-10-01T03:00:00Z",
+						"facturacionestimada": "405652646.41",
+						"ob": null,
+						"subconcepto": "19",
+						"saldoImpAfip": "22490524.3",
+						"fecha": "2016-11-24T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "935566.64",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "46976434.5"
+					},
+					{
+						"id": 4101118,
+						"saldoLibrePeriodo": "1555675.33",
+						"montoUtilizado": "0.00",
+						"cuit": 30500007539,
+						"totalcompras": "433453596",
+						"totalDebFiscal": "73900684.6",
+						"saldoLibrePerAnt": "0.00",
+						"transaccionAfip": "2032711730",
+						"fechaPresentacion": "2016-12-22T03:00:00Z",
+						"saldoTecFavorContrib": "1326798.93",
+						"saldoTecFavorAfip": "0.00",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2016-11-01T03:00:00Z",
+						"facturacionestimada": "425808706.62",
+						"ob": null,
+						"subconcepto": "19",
+						"saldoImpAfip": "0.00",
+						"fecha": "2016-12-22T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "1555675.33",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "75227483.6"
+					},
+					{
+						"id": 4945966,
+						"saldoLibrePeriodo": "0.00",
+						"montoUtilizado": "0.00",
+						"cuit": 30500007539,
+						"totalcompras": "166780617",
+						"totalDebFiscal": "49680172.3",
+						"saldoLibrePerAnt": "1555675.33",
+						"transaccionAfip": "2047645407",
+						"fechaPresentacion": "2017-01-24T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "19407977.0",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2016-12-01T03:00:00Z",
+						"facturacionestimada": "286252421.05",
+						"ob": null,
+						"subconcepto": "19",
+						"saldoImpAfip": "13184451.9",
+						"fecha": "2017-01-24T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "1326798.93",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "4667849.71",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "28945396.4"
+					},
+					{
+						"id": 5785266,
+						"saldoLibrePeriodo": "0.00",
+						"montoUtilizado": "0.00",
+						"cuit": 30500007539,
+						"totalcompras": "156781054",
+						"totalDebFiscal": "117484809",
+						"saldoLibrePerAnt": "0.00",
+						"transaccionAfip": "2063128362",
+						"fechaPresentacion": "2017-02-22T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "90274873.6",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2017-01-01T03:00:00Z",
+						"facturacionestimada": "676936278.58",
+						"ob": null,
+						"subconcepto": "19.0",
+						"saldoImpAfip": "88414817.1",
+						"fecha": "2017-02-22T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "1860056.56",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "27209935.0"
+					},
+					{
+						"id": 6614145,
+						"saldoLibrePeriodo": "0.00",
+						"montoUtilizado": "0.00",
+						"cuit": 30500007539,
+						"totalcompras": "186588658",
+						"totalDebFiscal": "83256611.8",
+						"saldoLibrePerAnt": "0.00",
+						"transaccionAfip": "2078686250",
+						"fechaPresentacion": "2017-03-27T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "50873456.3",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2017-02-01T03:00:00Z",
+						"facturacionestimada": "479716667.81",
+						"ob": null,
+						"subconcepto": "19.0",
+						"saldoImpAfip": "49644514.8",
+						"fecha": "2017-03-27T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "1228941.54",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "32383155.5"
+					},
+					{
+						"id": 7441589,
+						"saldoLibrePeriodo": "0.00",
+						"montoUtilizado": "0.00",
+						"cuit": 30500007539,
+						"totalcompras": "149369421",
+						"totalDebFiscal": "84230210.0",
+						"saldoLibrePerAnt": "0.00",
+						"transaccionAfip": "2093312822",
+						"fechaPresentacion": "2017-04-24T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "58306591.5",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2017-03-01T03:00:00Z",
+						"facturacionestimada": "485326448.09",
+						"ob": null,
+						"subconcepto": "19.0",
+						"saldoImpAfip": "55207854.4",
+						"fecha": "2017-04-24T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "3098737.14",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "25923618.5"
+					},
+					{
+						"id": 8260803,
+						"saldoLibrePeriodo": "0.00",
+						"montoUtilizado": "0.00",
+						"cuit": 30500007539,
+						"totalcompras": "354776639",
+						"totalDebFiscal": "88756565.3",
+						"saldoLibrePerAnt": "0.00",
+						"transaccionAfip": "2109095077",
+						"fechaPresentacion": "2017-05-24T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "27183760.1",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2017-04-01T03:00:00Z",
+						"facturacionestimada": "511406876.02",
+						"ob": null,
+						"subconcepto": "19.0",
+						"saldoImpAfip": "26150855.3",
+						"fecha": "2017-05-24T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "1032904.79",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "61572805.1"
+					},
+					{
+						"id": 9073376,
+						"saldoLibrePeriodo": "0.00",
+						"montoUtilizado": "0.00",
+						"cuit": 30500007539,
+						"totalcompras": "211982913",
+						"totalDebFiscal": "90194693.4",
+						"saldoLibrePerAnt": "0.00",
+						"transaccionAfip": "2126019065",
+						"fechaPresentacion": "2017-06-26T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "53404270.5",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2017-05-01T03:00:00Z",
+						"facturacionestimada": "519693233.11",
+						"ob": null,
+						"subconcepto": "19.0",
+						"saldoImpAfip": "51658195.2",
+						"fecha": "2017-06-26T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "1746075.29",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "36790422.9"
+					},
+					{
+						"id": 9897996,
+						"saldoLibrePeriodo": "0.00",
+						"montoUtilizado": "0.00",
+						"cuit": 30500007539,
+						"totalcompras": "214744461",
+						"totalDebFiscal": "94731960.2",
+						"saldoLibrePerAnt": "0.00",
+						"transaccionAfip": "2142181001",
+						"fechaPresentacion": "2017-07-24T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "57462260.3",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2017-06-01T03:00:00Z",
+						"facturacionestimada": "545836532.58",
+						"ob": null,
+						"subconcepto": "19.0",
+						"saldoImpAfip": "55727721.1",
+						"fecha": "2017-07-24T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "1734539.24",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "37269699.9"
+					}
+				],
+				"cantTotal": 12
+			},
+			"bancoOpera": {
+				"datos": [],
+				"cantTotal": 0
+			},
+			"tarjetas": {
+				"datos": [],
+				"cantTotal": 0
+			}
+		},
+		"morosidad": {
+			"informacionBcra": {
+				"datos": [
+					{
+						"periodo": "2016-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 1,
+							"entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+							"codigoEnt": "00007"
+						},
+						"prestamo": 661400.0
+					},
+					{
+						"periodo": "2016-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 4,
+							"entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA",
+							"codigoEnt": "00015"
+						},
+						"prestamo": 1377800.0
+					},
+					{
+						"periodo": "2016-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 5,
+							"entidad": "CITIBANK N.A.",
+							"codigoEnt": "00016"
+						},
+						"prestamo": 4200.0
+					},
+					{
+						"periodo": "2016-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 260,
+							"entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+							"codigoEnt": "70101"
+						},
+						"prestamo": 268600.0
+					},
+					{
+						"periodo": "2016-04-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 1,
+							"entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+							"codigoEnt": "00007"
+						},
+						"prestamo": 551000.0
+					},
+					{
+						"periodo": "2016-04-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 4,
+							"entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA",
+							"codigoEnt": "00015"
+						},
+						"prestamo": 1449900.0
+					},
+					{
+						"periodo": "2016-04-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 5,
+							"entidad": "CITIBANK N.A.",
+							"codigoEnt": "00016"
+						},
+						"prestamo": 5800.0
+					},
+					{
+						"periodo": "2016-04-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 260,
+							"entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+							"codigoEnt": "70101"
+						},
+						"prestamo": 378100.0
+					},
+					{
+						"periodo": "2016-05-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 1,
+							"entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+							"codigoEnt": "00007"
+						},
+						"prestamo": 881000.0
+					},
+					{
+						"periodo": "2016-05-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 4,
+							"entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA",
+							"codigoEnt": "00015"
+						},
+						"prestamo": 1197100.0
+					},
+					{
+						"periodo": "2016-05-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 5,
+							"entidad": "CITIBANK N.A.",
+							"codigoEnt": "00016"
+						},
+						"prestamo": 5600.0
+					},
+					{
+						"periodo": "2016-05-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 260,
+							"entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+							"codigoEnt": "70101"
+						},
+						"prestamo": 501800.0
+					},
+					{
+						"periodo": "2016-06-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 1,
+							"entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+							"codigoEnt": "00007"
+						},
+						"prestamo": 523700.00000000006
+					},
+					{
+						"periodo": "2016-06-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 4,
+							"entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA",
+							"codigoEnt": "00015"
+						},
+						"prestamo": 1173800.0
+					},
+					{
+						"periodo": "2016-06-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 5,
+							"entidad": "CITIBANK N.A.",
+							"codigoEnt": "00016"
+						},
+						"prestamo": 5800.0
+					},
+					{
+						"periodo": "2016-06-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 260,
+							"entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+							"codigoEnt": "70101"
+						},
+						"prestamo": 207600.0
+					},
+					{
+						"periodo": "2016-07-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 1,
+							"entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+							"codigoEnt": "00007"
+						},
+						"prestamo": 7846300.0
+					},
+					{
+						"periodo": "2016-07-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 4,
+							"entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA",
+							"codigoEnt": "00015"
+						},
+						"prestamo": 1466900.0
+					},
+					{
+						"periodo": "2016-07-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 5,
+							"entidad": "CITIBANK N.A.",
+							"codigoEnt": "00016"
+						},
+						"prestamo": 5800.0
+					},
+					{
+						"periodo": "2016-07-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 260,
+							"entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+							"codigoEnt": "70101"
+						},
+						"prestamo": 252000.0
+					}
+				],
+				"cantTotal": 70
+			},
+			"chequesRechazados": {
+				"datos": [
+					{
+						"nroCheque": "21430460",
+						"fechaRechazo": "2012-11-15T05:00:00Z",
+						"monto": "3369389",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "15/11/2012",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "21593439",
+						"fechaRechazo": "2013-05-23T04:00:00Z",
+						"monto": "1139816",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "23/05/2013",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "97225238",
+						"fechaRechazo": "2012-01-30T05:00:00Z",
+						"monto": "1901250",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "30/01/2012",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "21437430",
+						"fechaRechazo": "2012-12-20T05:00:00Z",
+						"monto": "23700000",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "20/12/2012",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "97220404",
+						"fechaRechazo": "2012-12-19T05:00:00Z",
+						"monto": "123305693",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "19/12/2012",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "97231746",
+						"fechaRechazo": "2013-01-14T05:00:00Z",
+						"monto": "3707795",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": null,
+						"multa": "15/01/2013",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "97220404",
+						"fechaRechazo": "2012-12-19T05:00:00Z",
+						"monto": "123305693",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": null,
+						"multa": "19/12/2012",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "20914097",
+						"fechaRechazo": "2012-08-09T04:00:00Z",
+						"monto": "1229635",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "09/08/2012",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "97219835",
+						"fechaRechazo": "2012-06-22T04:00:00Z",
+						"monto": "40015200",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "22/06/2012",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "21598600",
+						"fechaRechazo": "2013-06-24T04:00:00Z",
+						"monto": "26097486",
+						"causal": "2",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "24/06/2013",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "20910009",
+						"fechaRechazo": "2012-01-12T05:00:00Z",
+						"monto": "1691451",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "12/01/2012",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "21594369",
+						"fechaRechazo": "2013-05-20T04:00:00Z",
+						"monto": "4160514",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "20/05/2013",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "97231746",
+						"fechaRechazo": "2013-01-14T05:00:00Z",
+						"monto": "3707795",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "15/01/2013",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "21602621",
+						"fechaRechazo": "2013-12-20T05:00:00Z",
+						"monto": "2044000",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "20/12/2013",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "20735468",
+						"fechaRechazo": "2012-02-28T05:00:00Z",
+						"monto": "1000500",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "28/02/2012",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "97229219",
+						"fechaRechazo": "2012-01-25T05:00:00Z",
+						"monto": "1100000",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "25/01/2012",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "20909989",
+						"fechaRechazo": "2012-01-16T05:00:00Z",
+						"monto": "25943000",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "16/01/2012",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "21430460",
+						"fechaRechazo": "2012-11-15T05:00:00Z",
+						"monto": "3369389",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": null,
+						"multa": "15/11/2012",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "21594369",
+						"fechaRechazo": "2013-05-20T04:00:00Z",
+						"monto": "4160514",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": null,
+						"multa": "20/05/2013",
+						"cuit": 0
+					},
+					{
+						"nroCheque": "97227922",
+						"fechaRechazo": "2011-09-02T04:00:00Z",
+						"monto": "32890000",
+						"causal": "1",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "05/09/2011",
+						"cuit": 0
+					}
+				],
+				"cantTotal": 25
+			},
+			"deudoresBancoCentral": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"embargos": {
+				"datos": [
+					{
+						"fecha": "2012-02-08T03:00:00Z",
+						"nrooficio": 1054832622,
+						"expediente": "1822679001/",
+						"fechaLevantamiento": null,
+						"oficioLevantamiento": " ",
+						"caratula": "1",
+						"juzgado": "0",
+						"domicilio": " ",
+						"telefono": " "
+					}
+				],
+				"cantTotal": 1
+			},
+			"juiciosDemandado": {
+				"datos": [
+					{
+						"id": 16854,
+						"demandado": "ALRA SA",
+						"rol": "DEMANDADO",
+						"expediente": "18999",
+						"texto": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 11 SEC 022  ACTOR: ROJAS VERONICA INES DEMANDADO: ALRA S.A CARATULA: ORDINARIO EXPEDIENTE: 18999",
+						"fecha": "2014-06-26T03:00:00Z",
+						"cuil": 30500007539,
+						"actor": "ROJAS VERONICA INES",
+						"provincia": "CAPITAL FEDERAL",
+						"personas": "MAPFRE ARGENTINA DE SEGUROS S.A.",
+						"objeto": "ORDINARIO",
+						"juzgado": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 11 SEC 022"
+					},
+					{
+						"id": 16857,
+						"demandado": "VOLSKWAGEN SA DE AHORRO P/ FINES DETERMINADOS",
+						"rol": "DEMANDADO",
+						"expediente": "19000",
+						"texto": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 11 SEC 022  ACTOR: ROJAS VERONICA INES DEMANDADO: VOLSKWAGEN S.A. DE AHORRO P/ FINES DETERMINADOS CARATULA: BENEFICIO DE LITIGAR SIN GASTOS EXPEDIENTE: 19000",
+						"fecha": "2014-06-26T03:00:00Z",
+						"cuil": 30500007539,
+						"actor": "ROJAS VERONICA INES",
+						"provincia": "CAPITAL FEDERAL",
+						"personas": "MAPFRE ARGENTINA DE SEGUROS S.A.",
+						"objeto": "BENEFICIO DE LITIGAR SIN GASTOS",
+						"juzgado": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 11 SEC 022"
+					},
+					{
+						"id": 16860,
+						"demandado": "MAPFRE ARGENTINA DE SEGUROS SA",
+						"rol": "DEMANDADO",
+						"expediente": "19000",
+						"texto": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 11 SEC 022  ACTOR: ROJAS VERONICA INES DEMANDADO: MAPFRE ARGENTINA DE SEGUROS S.A. CARATULA: BENEFICIO DE LITIGAR SIN GASTOS EXPEDIENTE: 19000",
+						"fecha": "2014-06-26T03:00:00Z",
+						"cuil": 30500007539,
+						"actor": "ROJAS VERONICA INES",
+						"provincia": "CAPITAL FEDERAL",
+						"personas": "MAPFRE ARGENTINA DE SEGUROS S.A.",
+						"objeto": "BENEFICIO DE LITIGAR SIN GASTOS",
+						"juzgado": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 11 SEC 022"
+					},
+					{
+						"id": 16863,
+						"demandado": "ALRA SA",
+						"rol": "DEMANDADO",
+						"expediente": "19000",
+						"texto": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 11 SEC 022  ACTOR: ROJAS VERONICA INES DEMANDADO: ALRA S.A CARATULA: BENEFICIO DE LITIGAR SIN GASTOS EXPEDIENTE: 19000",
+						"fecha": "2014-06-26T03:00:00Z",
+						"cuil": 30500007539,
+						"actor": "ROJAS VERONICA INES",
+						"provincia": "CAPITAL FEDERAL",
+						"personas": "MAPFRE ARGENTINA DE SEGUROS S.A.",
+						"objeto": "BENEFICIO DE LITIGAR SIN GASTOS",
+						"juzgado": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 11 SEC 022"
+					},
+					{
+						"id": 16866,
+						"demandado": "VOLSKWAGEN SA DE AHORRO P/ FINES DETERMINADOS",
+						"rol": "DEMANDADO",
+						"expediente": "18999",
+						"texto": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 11 SEC 022  ACTOR: ROJAS VERONICA INES DEMANDADO: VOLSKWAGEN S.A. DE AHORRO P/ FINES DETERMINADOS CARATULA: ORDINARIO EXPEDIENTE: 18999",
+						"fecha": "2014-06-26T03:00:00Z",
+						"cuil": 30500007539,
+						"actor": "ROJAS VERONICA INES",
+						"provincia": "CAPITAL FEDERAL",
+						"personas": "MAPFRE ARGENTINA DE SEGUROS S.A.",
+						"objeto": "ORDINARIO",
+						"juzgado": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 11 SEC 022"
+					},
+					{
+						"id": 16869,
+						"demandado": "MAPFRE ARGENTINA DE SEGUROS SA",
+						"rol": "DEMANDADO",
+						"expediente": "18999",
+						"texto": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 11 SEC 022  ACTOR: ROJAS VERONICA INES DEMANDADO: MAPFRE ARGENTINA DE SEGUROS S.A. CARATULA: ORDINARIO EXPEDIENTE: 18999",
+						"fecha": "2014-06-26T03:00:00Z",
+						"cuil": 30500007539,
+						"actor": "ROJAS VERONICA INES",
+						"provincia": "CAPITAL FEDERAL",
+						"personas": "MAPFRE ARGENTINA DE SEGUROS S.A.",
+						"objeto": "ORDINARIO",
+						"juzgado": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 11 SEC 022"
+					},
+					{
+						"id": 19977,
+						"demandado": "MAPFRE ARGENTINA SEGUROS SA",
+						"rol": "DEMANDADO",
+						"expediente": "19766",
+						"texto": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 24 SEC 048  ACTOR: PEDRO CLAYTON RODRIGO DEMANDADO: MAPFRE ARGENTINA SEGUROS S.A. CARATULA: ORDINARIO EXPEDIENTE: 19766",
+						"fecha": "2014-07-02T03:00:00Z",
+						"cuil": 30500007539,
+						"actor": "PEDRO CLAYTON RODRIGO",
+						"provincia": "CAPITAL FEDERAL",
+						"personas": "MAPFRE ARGENTINA SEGUROS S.A.",
+						"objeto": "ORDINARIO",
+						"juzgado": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 24 SEC 048"
+					},
+					{
+						"id": 19979,
+						"demandado": "MAPFRE ARGENTINA SEGUROS SA",
+						"rol": "DEMANDADO",
+						"expediente": "19767",
+						"texto": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 24 SEC 048  ACTOR: PEDRO CLAYTON RODRIGO DEMANDADO: MAPFRE ARGENTINA SEGUROS S.A. CARATULA: BENEFICIO DE LITIGAR SIN GASTOS EXPEDIENTE: 19767",
+						"fecha": "2014-07-02T03:00:00Z",
+						"cuil": 30500007539,
+						"actor": "PEDRO CLAYTON RODRIGO",
+						"provincia": "CAPITAL FEDERAL",
+						"personas": "MAPFRE ARGENTINA SEGUROS S.A.",
+						"objeto": "BENEFICIO DE LITIGAR SIN GASTOS",
+						"juzgado": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 24 SEC 048"
+					},
+					{
+						"id": 20601,
+						"demandado": "MAPFRE ARGENTINA SEGUROS SA",
+						"rol": "DEMANDADO",
+						"expediente": "20163",
+						"texto": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 26 SEC 052  ACTOR: RODRIGUEZ GUSTAVO HORACIO DEMANDADO: MAPFRE ARGENTINA SEGUROS S.A. CARATULA: ORDINARIO EXPEDIENTE: 20163",
+						"fecha": "2014-07-04T03:00:00Z",
+						"cuil": 30500007539,
+						"actor": "RODRIGUEZ GUSTAVO HORACIO",
+						"provincia": "CAPITAL FEDERAL",
+						"personas": "MAPFRE ARGENTINA SEGUROS S.A.",
+						"objeto": "ORDINARIO",
+						"juzgado": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 26 SEC 052"
+					}
+				],
+				"cantTotal": 9
+			},
+			"juiciosActor": {
+				"datos": [
+					{
+						"id": 18046,
+						"demandado": "PATELLI MARIA CLARA",
+						"rol": "ACTOR",
+						"expediente": "19456",
+						"texto": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 23 SEC 230  ACTOR: MAPFRE ARGENTINA SEGUROS S.A. DEMANDADO: PATELLI MARIA CLARA CARATULA: EJECUTIVO EXPEDIENTE: 19456",
+						"fecha": "2014-06-30T03:00:00Z",
+						"cuil": 30500007539,
+						"actor": "MAPFRE ARGENTINA SEGUROS S.A.",
+						"provincia": "CAPITAL FEDERAL",
+						"personas": "MAPFRE ARGENTINA SEGUROS S.A.",
+						"objeto": "EJECUTIVO",
+						"juzgado": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 23 SEC 230"
+					}
+				],
+				"cantTotal": 1
+			}
+		},
+		"variables": {
+			"variableRechazo": [],
+			"variableAprobada": [
+				"Ultimo periodo BCRA",
+				"Histórico BCRA",
+				"Cheque rechazados",
+				"Historico morosidad",
+				"Cantidad de Consulta"
+			]
+		},
+		"codigo": "A",
+		"idLog": 2578
+	},
+	"total_page": null
+}

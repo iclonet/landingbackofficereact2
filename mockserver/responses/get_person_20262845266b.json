@@ -1,0 +1,464 @@
+{
+    "result": {
+        "code": 200,
+        "info": "OK"
+    },
+    "data": {
+        "datosParticulares": {
+            "id": 2304269,
+            "nombre": "SERGIO DAVID",
+            "apellido": "DEPAOLINI",
+            "apellidoNombre": "DEPAOLINI, SERGIO DAVID",
+            "cuil": 20262845266,
+            "dni": 26284526,
+            "tipo": "DNI-EA",
+            "nacionalidad": {},
+            "anio": 1978,
+            "fechaNacimiento": "1978-04-28T00:00:00Z",
+            "edad": 39,
+            "sexo": "M",
+            "observaciones": {},
+            "mails": [
+                {
+                    "id": 1,
+                    "dni": 26284256,
+                    "cuil": 20262845266,
+                    "email": "cobertorestango@gmail.com",
+                    "origen": "Fibertel"
+                },
+                {
+                    "id": 2,
+                    "dni": 26284256,
+                    "cuil": 20262845266,
+                    "email": "tangoantigranizo@gmail.com",
+                    "origen": "Clarin"
+                }
+            ],
+            "domicilio": "CORVALAN 1371",
+            "localidad": "MONTE CHINGOLO",
+            "provincia": "BUENOS AIRES",
+            "domAlternativos": [
+                {
+                    "id": 731598,
+                    "provinciaAlt": "BUENOS AIRES",
+                    "cpAlt": "1825",
+                    "cuil": 20262845266,
+                    "localidadAlt": "LANUS",
+                    "domicilioAlt": "RONDEAU 1460"
+                }
+            ]
+        },
+        "datosLaborales": {
+            "datoLaboral": [
+                {
+                    "relacionDependencia": {
+                        "estado": "ACTIVO",
+                        "razonSocial": "MARKETING BUILDERS SRL",
+                        "cuit": 20002793130,
+                        "alta": "2010-01-01T00:00:00Z",
+                        "baja": null,
+                        "sueldo": "$50.000 - $60.000"
+                    },
+                    "historialSueldo": {
+                        "infoAdicionalEmpleador": {
+                            "actividadempleador": "Instalaciones para edificios y obras de ingenieria civil",
+                            "cantidadempleados": 1,
+                            "domicilio": {
+                                "direccion": "MARTIN ZAPATA 419",
+                                "localidad": "MENDOZA2",
+                                "provincia": "MENDOZA",
+                                "partido": "CAPITAL",
+                                "cp": 5500
+                            }
+                        },
+                        "tel": ""
+                    }
+                },
+                {
+                    "relacionDependencia": {
+                        "estado": "BAJA",
+                        "razonSocial": "TARGET URBANO SA",
+                        "cuit": 30707619224,
+                        "alta": "1999-01-01T00:00:00Z",
+                        "baja": "2011-12-01T00:00:00Z",
+                        "sueldo": "$10.000 - $20.000"
+                    },
+                    "historialSueldo": {
+                        "infoAdicionalEmpleador": {},
+                        "tel": ""
+                    }
+                }
+            ],
+            "monotributista": [
+                {
+                    "tipo": "1",
+                    "catagoria": "NI",
+                    "ganancias": "AC",
+                    "iva": "AC",
+                    "integrasociedades": "NO"
+                }
+            ],
+            "actividad": [
+                {
+                    "id": 100000000,
+                    "cuil": 20262845266,
+                    "descripcion": "VENTA AL POR MAYOR DE MERCANCIAS N.C.P.",
+                    "ciiu": 469090
+                },
+                {
+                    "id": 100000001,
+                    "cuil": 20262845266,
+                    "descripcion": "SERVICIOS DE INFORMACION N.C.P.\nSERVICIOS DE AGENCIAS DE NOTICIAS Y SERVICIOS DE INFORMACIÓN N.C.P. INFORMACION Y COMUNICACIONES",
+                    "ciiu": 639900
+                },
+                {
+                    "id": 100000002,
+                    "cuil": 20262845266,
+                    "descripcion": "SERVICIOS DE ASESORAMIENTO, DIRECCIÓN Y GESTIÓN EMPRESARIAL REALIZADOS POR INTEGRANTES DE CUERPOS DE DIRECCIÓN EN SOCIEDADES EXCEPTO LAS ANÓNIMAS",
+                    "ciiu": 702092
+                }
+            ],
+            "obraSocial": {},
+            "empAportes": {},
+            "sueldos": {},
+            "empDomesticos": [
+                {
+                    "id": 1,
+                    "alta": "2011-01-01T00:00:00Z",
+                    "cuil": 20262845266,
+                    "cuilEmple": 27311754012,
+                    "estado": "ACTIVO",
+                    "modoLiquida": "Quincenal",
+                    "sueldo": 8000,
+                    "nombre": "PARRA VANESA",
+                    "baja": null
+                }
+            ],
+            "domAportes": {},
+            "seguridadSocial": [
+                {
+                    "id": 1,
+                    "aporsocial": 30,
+                    "contribucion": 50,
+                    "aportesocial": 1000,
+                    "cuil": 20262845266,
+                    "retenciones": 45,
+                    "obRetenciones": 55
+                }
+            ]
+        },
+        "vinculos": {
+            "vinculos": {},
+            "otrosVinculos": [
+                {
+                    "id": 1,
+                    "fechaNacimiento": "1984-06-09",
+                    "dniVinculo": 31175401,
+                    "anioNacimiento": 1984,
+                    "cuil": 20262845266,
+                    "localidad": "MONTE CHINGOLO",
+                    "cp": 1825,
+                    "cuilVinculo": 27311754012,
+                    "provincia": "BUENOS AIRES",
+                    "nombre": "PARRA VANESA",
+                    "direccion": "CORVALAN 1371 "
+                },
+                {
+                    "id": 2,
+                    "fechaNacimiento": "1971-08-27",
+                    "dniVinculo": 22084178,
+                    "anioNacimiento": 1971,
+                    "cuil": 20262845266,
+                    "localidad": "MONTE CHINGOLO",
+                    "cp": 1825,
+                    "cuilVinculo": 20220841783,
+                    "provincia": "BUENOS AIRES",
+                    "nombre": "DEPAOLINI GUSTAVO",
+                    "direccion": "RONDEAU 1460"
+                }
+            ]
+        },
+        "boletinOficial": {
+            "parteSociedad": {
+                "fechaPublicacion": "2005-10-06T00:00:00Z",
+                "fechaPresentacion": "20050812",
+                "razonSocial": "GRUPO Q SA",
+                "nombre": "ARIOSTO MIRTA PAULINA",
+                "cargo": "PRESIDENTE"
+            },
+            "participantesSociedad": [
+                {
+                    "fechaPublicacion": "2005-10-06T00:00:00Z",
+                    "fechaPresentacion": "20050812",
+                    "razonSocial": "GRUPO Q SA",
+                    "nombre": "QUERCETTI MARCELO FABIAN",
+                    "cargo": "DIRECTOR SUPLENTE"
+                },
+                {
+                    "fechaPublicacion": "2005-10-06T00:00:00Z",
+                    "fechaPresentacion": "20050812",
+                    "razonSocial": "GRUPO Q SA",
+                    "nombre": "ARIOSTO MIRTA PAULINA",
+                    "cargo": "PRESIDENTE"
+                },
+                {
+                    "fechaPublicacion": "2005-10-06T00:00:00Z",
+                    "fechaPresentacion": "20050812",
+                    "razonSocial": "GRUPO Q SA",
+                    "nombre": "QUERCETTI DIEGO JAVIER",
+                    "cargo": "SOCIO"
+                },
+                {
+                    "fechaPublicacion": "2005-10-06T00:00:00Z",
+                    "fechaPresentacion": "20050812",
+                    "razonSocial": "GRUPO Q SA",
+                    "nombre": "QUERCETTI GUSTAVO ENRIQUE",
+                    "cargo": "SOCIO"
+                }
+            ]
+        },
+        "telefonos": [
+            {
+                "id": 1,
+                "dni": 26284526,
+                "tipo": "Fijo",
+                "cuil": 20262845266,
+                "tel": "01142303348",
+                "localidad": "Lanus",
+                "provincia": "BUENOS AIRES",
+                "origen": "Paginas Blancas"
+            }
+        ],
+        "telefonosAdicionales": [
+            {
+                "id": 1,
+                "tipo": "PARTICULAR",
+                "cuil": 20262845266,
+                "tel": "011-4246-7672",
+                "localidad": "Lanus",
+                "domicilio": "TUCUMAN 4125 - LANUS - BUENOS AIRES",
+                "cp": 1824,
+                "provincia": "Buenos Aires",
+                "nombre": "ORTIZ ROSA"
+            }
+        ],
+        "morosidad": {
+            "informacionBcra": [
+                {
+                    "periodo": "201510",
+                    "situacion": "01",
+                    "entidad": {
+                        "id": 2,
+                        "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+                        "codigoEnt": "00007"
+                    },
+                    "prestamo": 74700.0
+                },
+                {
+                    "periodo": "201510",
+                    "situacion": "01",
+                    "entidad": {
+                        "id": 7,
+                        "entidad": "BBVA BANCO FRANCES S.A.",
+                        "codigoEnt": "00017"
+                    },
+                    "prestamo": 11600.0
+                },
+                {
+                    "periodo": "201511",
+                    "situacion": "03",
+                    "entidad": {
+                        "id": 36,
+                        "entidad": "BANCO SAENZ S.A.",
+                        "codigoEnt": "00277"
+                    },
+                    "prestamo": 900.0
+                },
+                {
+                    "periodo": "201511",
+                    "situacion": "01",
+                    "entidad": {
+                        "id": 242,
+                        "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+                        "codigoEnt": "70101"
+                    },
+                    "prestamo": 5000.0
+                },
+                {
+                    "periodo": "201601",
+                    "situacion": "01",
+                    "entidad": {
+                        "id": 2,
+                        "entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+                        "codigoEnt": "00007"
+                    },
+                    "prestamo": 84200.0
+                },
+                {
+                    "periodo": "201601",
+                    "situacion": "01",
+                    "entidad": {
+                        "id": 7,
+                        "entidad": "BBVA BANCO FRANCES S.A.",
+                        "codigoEnt": "00017"
+                    },
+                    "prestamo": 33400.0
+                },
+                {
+                    "periodo": "201601",
+                    "situacion": "04",
+                    "entidad": {
+                        "id": 221,
+                        "entidad": "F.F. PRIVADO BANCO SAENZ X",
+                        "codigoEnt": "10780"
+                    },
+                    "prestamo": 900.0
+                },
+                {
+                    "periodo": "201601",
+                    "situacion": "01",
+                    "entidad": {
+                        "id": 242,
+                        "entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+                        "codigoEnt": "70101"
+                    },
+                    "prestamo": 34000.0
+                }
+            ],
+            "infoBcraSituacion1": {},
+            "chequesRechazados": {},
+            "deudoresBancoCentral": {},
+            "antecedenteMorosos": {},
+            "historicoAntecedentesMorosos": [
+                {
+                    "periodo": "201511",
+                    "situacion": "03",
+                    "entidad": {
+                        "id": 36,
+                        "entidad": "BANCO SAENZ S.A.",
+                        "codigoEnt": "00277"
+                    },
+                    "prestamo": 900.0
+                },
+                {
+                    "periodo": "201601",
+                    "situacion": "04",
+                    "entidad": {
+                        "id": 221,
+                        "entidad": "F.F. PRIVADO BANCO SAENZ X",
+                        "codigoEnt": "10780"
+                    },
+                    "prestamo": 900.0
+                }
+            ],
+            "embargos": [
+                {
+                    "fecha": "2012-03-02T00:00:00Z",
+                    "nrooficio": 1,
+                    "expediente": "1",
+                    "fechaLevantamiento": null,
+                    "oficioLevantamiento": null,
+                    "caratula": "1",
+                    "juzgado": "1",
+                    "domicilio": "Carbo 333",
+                    "telefono": "222222"
+                },
+                {
+                    "fecha": "2012-03-03T00:00:00Z",
+                    "nrooficio": 2,
+                    "expediente": "2",
+                    "fechaLevantamiento": null,
+                    "oficioLevantamiento": null,
+                    "caratula": "2",
+                    "juzgado": "2",
+                    "domicilio": "Alvear 222",
+                    "telefono": "4444444"
+                }
+            ],
+            "juiciosDemandado": [
+                {
+                    "id": 3,
+                    "demandado": "MIZRAHI SAUL",
+                    "rol": "DEMANDADO",
+                    "expediente": "7031",
+                    "texto": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 01 SEC 002  ACTOR: SISRO JOSE DEMANDADO: MIZRAHI SAUL CARATULA: EJECUTIVO EXPEDIENTE: 7031",
+                    "fecha": "2014-04-01",
+                    "cuil": 20262845266,
+                    "actor": "SISRO JOSE",
+                    "provincia": "CAPITAL FEDERAL",
+                    "personas": "MIZRAHI SAUL",
+                    "objeto": "EJECUTIVO",
+                    "juzgado": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 01 SEC 002"
+                }
+            ],
+            "juiciosActor": [
+                {
+                    "id": 2,
+                    "demandado": "SOCIEDAD ESPAÑOLA DE BENEFICENCIA HOSPITAL ESPAÑOL",
+                    "rol": "ACTOR",
+                    "expediente": "5760",
+                    "texto": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 01 SEC 001  ACTOR: EMPRENDIMIENTOS DE SALUD S.A. DEMANDADO: SOCIEDAD ESPAÑOLA DE BENEFICENCIA HOSPITAL ESPAÑOL CARATULA: EJECUTIVO EXPEDIENTE: 5760",
+                    "fecha": "2014-04-01",
+                    "cuil": 20262845266,
+                    "actor": "EMPRENDIMIENTOS DE SALUD S.A.",
+                    "provincia": "CAPITAL FEDERAL",
+                    "personas": "EMPRENDIMIENTOS DE SALUD S.A.",
+                    "objeto": "EJECUTIVO",
+                    "juzgado": "JUZGADO NACIONAL DE PRIMERA INSTANCIA EN LO COMERCIAL NRO 01 SEC 001"
+                }
+            ],
+            "quiebrasConcursos": {}
+        },
+        "bienesPersonales": {
+            "propiedades": {},
+            "automotores": [
+                {
+                    "id": 551244,
+                    "dni": 26284526,
+                    "dominio": "MXY203",
+                    "compra": "2013-08-01T00:00:00Z",
+                    "modelo": "AIRCROSS C3",
+                    "porcentaje": 100,
+                    "marca": "CITROEN ",
+                    "origen": "NACIONAL",
+                    "tramite": "2013-08-01T00:00:00Z",
+                    "tipo": "RURAL ",
+                    "cuil": 20262845266,
+                    "anioModelo": 2013
+                }
+            ]
+        },
+        "pagosImpuestos": {},
+        "participacionSocietaria": [
+            {
+                "id": 5,
+                "archivo": "A728183.txt",
+                "razonSocial": "GRUPO Q SA",
+                "cuil": 20262845266,
+                "cuit": 0,
+                "fuente": null,
+                "idboletin": 728183,
+                "fechaPublicacion": "2005-10-06T00:00:00Z",
+                "nombre": "ARIOSTO MIRTA PAULINA",
+                "fechaConstitucion": "20050812",
+                "cargo": "PRESIDENTE"
+            }
+        ],
+        "situacionFinanciera": {},
+        "variables": {
+            "variableRechazo": [
+                "Histórico BCRA"
+            ],
+            "variableAprobada": [
+                "Edad",
+                "Dni",
+                "Laboral",
+                "Fallecidos",
+                "Ultimo periodo BCRA",
+                "Cheque rechazados",
+                "Historico morosidad"
+            ]
+        }
+    },
+    "total_page": null
+}

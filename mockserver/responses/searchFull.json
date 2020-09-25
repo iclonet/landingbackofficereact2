@@ -1,0 +1,1009 @@
+{
+	"result": {
+		"code": 200,
+		"info": "OK"
+	},
+	"data": [
+		{
+			"cuil": 20103636214,
+			"tipoTitular": "Empresa",
+			"nombre": "QUADRINI MARIO"
+		},
+		{
+			"cuil": 20118351291,
+			"tipoTitular": "Empresa",
+			"nombre": "NASCARELLA MARIO"
+		},
+		{
+			"cuil": 20121582881,
+			"tipoTitular": "Empresa",
+			"nombre": "MARTIN MARIO"
+		},
+		{
+			"cuil": 20080904852,
+			"tipoTitular": "Empresa",
+			"nombre": "DOMFROCHT MARIO"
+		},
+		{
+			"cuil": 20083056259,
+			"tipoTitular": "Empresa",
+			"nombre": "MATIJASEVICH MARIO"
+		},
+		{
+			"cuil": 20109797236,
+			"tipoTitular": "Empresa",
+			"nombre": "YAKOLOBSKI MARIO"
+		},
+		{
+			"cuil": 20117097081,
+			"tipoTitular": "Empresa",
+			"nombre": "SCHMIEDEL MARIO"
+		},
+		{
+			"cuil": 20082375164,
+			"tipoTitular": "Empresa",
+			"nombre": "BACCI MARIO"
+		},
+		{
+			"cuil": 20127370347,
+			"tipoTitular": "Empresa",
+			"nombre": "BELFIORI MARIO"
+		},
+		{
+			"cuil": 20078500442,
+			"tipoTitular": "Empresa",
+			"nombre": "FERNANDEZ MARIO"
+		},
+		{
+			"cuil": 20057013193,
+			"tipoTitular": "Empresa",
+			"nombre": "VERDE MARIO"
+		},
+		{
+			"cuil": 20058142973,
+			"tipoTitular": "Empresa",
+			"nombre": "SINCOFSKY MARIO"
+		},
+		{
+			"cuil": 20131586060,
+			"tipoTitular": "Empresa",
+			"nombre": "ABATE MARIO"
+		},
+		{
+			"cuil": 20139245505,
+			"tipoTitular": "Empresa",
+			"nombre": "ZASZCZYNSKI MARIO"
+		},
+		{
+			"cuil": 20146412956,
+			"tipoTitular": "Empresa",
+			"nombre": "CICCARELLI MARIO"
+		},
+		{
+			"cuil": 20144649959,
+			"tipoTitular": "Empresa",
+			"nombre": "SCHWINDT MARIO"
+		},
+		{
+			"cuil": 20163513510,
+			"tipoTitular": "Empresa",
+			"nombre": "PETER MARIO"
+		},
+		{
+			"cuil": 20128409301,
+			"tipoTitular": "Empresa",
+			"nombre": "VELTRI MARIO"
+		},
+		{
+			"cuil": 20222937036,
+			"tipoTitular": "Empresa",
+			"nombre": "BALLVE MARIO"
+		},
+		{
+			"cuil": 20226358065,
+			"tipoTitular": "Empresa",
+			"nombre": "MANCO MARIO"
+		},
+		{
+			"cuil": 20232117339,
+			"tipoTitular": "Empresa",
+			"nombre": "CHISTIK MARIO"
+		},
+		{
+			"cuil": 20239063234,
+			"tipoTitular": "Empresa",
+			"nombre": "SAMPAOLESI MARIO"
+		},
+		{
+			"cuil": 20239095020,
+			"tipoTitular": "Empresa",
+			"nombre": "CONTI MARIO"
+		},
+		{
+			"cuil": 20240807972,
+			"tipoTitular": "Empresa",
+			"nombre": "ZABALETA MARIO"
+		},
+		{
+			"cuil": 20187693471,
+			"tipoTitular": "Empresa",
+			"nombre": "MARECO MARIO"
+		},
+		{
+			"cuil": 20200477201,
+			"tipoTitular": "Empresa",
+			"nombre": "BAZAN MARIO"
+		},
+		{
+			"cuil": 20920104593,
+			"tipoTitular": "Empresa",
+			"nombre": "MORALES MARIO"
+		},
+		{
+			"cuil": 20329793622,
+			"tipoTitular": "Empresa",
+			"nombre": "SOSA MARIO"
+		},
+		{
+			"cuil": 23105347189,
+			"tipoTitular": "Empresa",
+			"nombre": "FAUSTO MARIO"
+		},
+		{
+			"cuil": 23119128919,
+			"tipoTitular": "Empresa",
+			"nombre": "FIERRO MARIO"
+		},
+		{
+			"cuil": 23066991199,
+			"tipoTitular": "Empresa",
+			"nombre": "PEREZ MARIO"
+		},
+		{
+			"cuil": 23076884889,
+			"tipoTitular": "Empresa",
+			"nombre": "BOBADILLA MARIO"
+		},
+		{
+			"cuil": 20940667845,
+			"tipoTitular": "Empresa",
+			"nombre": "MANCINI MARIO"
+		},
+		{
+			"cuil": 20927694426,
+			"tipoTitular": "Empresa",
+			"nombre": "TORRES MARIO"
+		},
+		{
+			"cuil": 20935438609,
+			"tipoTitular": "Empresa",
+			"nombre": "FOLINO MARIO"
+		},
+		{
+			"cuil": 20936117032,
+			"tipoTitular": "Empresa",
+			"nombre": "PACCAZOCCO MARIO"
+		},
+		{
+			"cuil": 20936455043,
+			"tipoTitular": "Empresa",
+			"nombre": "VITO MARIO"
+		},
+		{
+			"cuil": 20936748725,
+			"tipoTitular": "Empresa",
+			"nombre": "SCAVONE MARIO"
+		},
+		{
+			"cuil": 23056403299,
+			"tipoTitular": "Empresa",
+			"nombre": "MIQUERI MARIO"
+		},
+		{
+			"cuil": 20932020727,
+			"tipoTitular": "Empresa",
+			"nombre": "PALMIERI MARIO"
+		},
+		{
+			"cuil": 20175841939,
+			"tipoTitular": "Empresa",
+			"nombre": "JAIME MARIO"
+		},
+		{
+			"cuil": 20256400910,
+			"tipoTitular": "Empresa",
+			"nombre": "BASSANESE MARIO"
+		},
+		{
+			"cuil": 20292291206,
+			"tipoTitular": "Empresa",
+			"nombre": "PANSA MARIO"
+		},
+		{
+			"cuil": 20043910265,
+			"tipoTitular": "Empresa",
+			"nombre": "GERTZENSTEIN MARIO"
+		},
+		{
+			"cuil": 20044052297,
+			"tipoTitular": "Empresa",
+			"nombre": "MIYASHIKI MARIO"
+		},
+		{
+			"cuil": 30712444688,
+			"tipoTitular": "Empresa",
+			"nombre": "FORCLAZ MARIO"
+		},
+		{
+			"cuil": 20164456162,
+			"tipoTitular": "Empresa",
+			"nombre": "MORENO MARIO"
+		},
+		{
+			"cuil": 20172999124,
+			"tipoTitular": "Empresa",
+			"nombre": "HENKES MARIO"
+		},
+		{
+			"cuil": 20222967458,
+			"tipoTitular": "Empresa",
+			"nombre": "BANQUERO MARIO"
+		},
+		{
+			"cuil": 20061543962,
+			"tipoTitular": "Empresa",
+			"nombre": "BLAMPIED MARIO"
+		},
+		{
+			"cuil": 20045259626,
+			"tipoTitular": "Empresa",
+			"nombre": "DAIKSEL MARIO"
+		},
+		{
+			"cuil": 20045588905,
+			"tipoTitular": "Empresa",
+			"nombre": "BERENSTEIN MARIO"
+		},
+		{
+			"cuil": 20046306334,
+			"tipoTitular": "Empresa",
+			"nombre": "SHINZATO MARIO"
+		},
+		{
+			"cuil": 20046958838,
+			"tipoTitular": "Empresa",
+			"nombre": "SCHUAL MARIO"
+		},
+		{
+			"cuil": 20054998423,
+			"tipoTitular": "Empresa",
+			"nombre": "CASTILLO MARIO"
+		},
+		{
+			"cuil": 20053893237,
+			"tipoTitular": "Empresa",
+			"nombre": "MILESI MARIO"
+		},
+		{
+			"cuil": 20060194964,
+			"tipoTitular": "Empresa",
+			"nombre": "POMBO MARIO"
+		},
+		{
+			"cuil": 20065198402,
+			"tipoTitular": "Empresa",
+			"nombre": "SCHUTY MARIO"
+		},
+		{
+			"cuil": 20056158031,
+			"tipoTitular": "Empresa",
+			"nombre": "ISHIKAWA MARIO"
+		},
+		{
+			"cuil": 20143101488,
+			"tipoTitular": "Empresa",
+			"nombre": "SILBERSTEIN MARIO"
+		},
+		{
+			"cuil": 20148655112,
+			"tipoTitular": "Empresa",
+			"nombre": "ALMAZAN MARIO"
+		},
+		{
+			"cuil": 20107427229,
+			"tipoTitular": "Empresa",
+			"nombre": "PERAZZOLLI MARIO"
+		},
+		{
+			"cuil": 20123819250,
+			"tipoTitular": "Empresa",
+			"nombre": "ZAKHEIN MARIO"
+		},
+		{
+			"cuil": 20107621467,
+			"tipoTitular": "Empresa",
+			"nombre": "GUZIK MARIO"
+		},
+		{
+			"cuil": 20109797929,
+			"tipoTitular": "Empresa",
+			"nombre": "BAIDA MARIO"
+		},
+		{
+			"cuil": 20109962288,
+			"tipoTitular": "Empresa",
+			"nombre": "ADER MARIO"
+		},
+		{
+			"cuil": 20109958744,
+			"tipoTitular": "Empresa",
+			"nombre": "GAMINDEZ MARIO"
+		},
+		{
+			"cuil": 20110329750,
+			"tipoTitular": "Empresa",
+			"nombre": "PAWLUK MARIO"
+		},
+		{
+			"cuil": 20115531949,
+			"tipoTitular": "Empresa",
+			"nombre": "LANZA MARIO"
+		},
+		{
+			"cuil": 20115303261,
+			"tipoTitular": "Empresa",
+			"nombre": "ESPINDOLA MARIO"
+		},
+		{
+			"cuil": 20115761359,
+			"tipoTitular": "Empresa",
+			"nombre": "LONGO MARIO"
+		},
+		{
+			"cuil": 20133592335,
+			"tipoTitular": "Empresa",
+			"nombre": "CUEVA MARIO"
+		},
+		{
+			"cuil": 20119946957,
+			"tipoTitular": "Empresa",
+			"nombre": "BUSTOS MARIO"
+		},
+		{
+			"cuil": 20042839354,
+			"tipoTitular": "Empresa",
+			"nombre": "ERLIJMAN MARIO"
+		},
+		{
+			"cuil": 20040378716,
+			"tipoTitular": "Empresa",
+			"nombre": "JASATZKY MARIO"
+		},
+		{
+			"cuil": 20078274442,
+			"tipoTitular": "Empresa",
+			"nombre": "ARBILLA MARIO"
+		},
+		{
+			"cuil": 20083777320,
+			"tipoTitular": "Empresa",
+			"nombre": "PARRA MARIO"
+		},
+		{
+			"cuil": 20084278921,
+			"tipoTitular": "Empresa",
+			"nombre": "GORI MARIO"
+		},
+		{
+			"cuil": 20085022661,
+			"tipoTitular": "Empresa",
+			"nombre": "QUESSUS MARIO"
+		},
+		{
+			"cuil": 20106642053,
+			"tipoTitular": "Empresa",
+			"nombre": "RODRIGUEZ MARIO"
+		},
+		{
+			"cuil": 20214399548,
+			"tipoTitular": "Empresa",
+			"nombre": "ARMESTO MARIO"
+		},
+		{
+			"cuil": 20311401565,
+			"tipoTitular": "Empresa",
+			"nombre": "RENDON MARIO"
+		},
+		{
+			"cuil": 20312390567,
+			"tipoTitular": "Empresa",
+			"nombre": "BENVENUTO MARIO"
+		},
+		{
+			"cuil": 20257806252,
+			"tipoTitular": "Empresa",
+			"nombre": "GARECA MARIO"
+		},
+		{
+			"cuil": 20932471125,
+			"tipoTitular": "Empresa",
+			"nombre": "ZORZI MARIO"
+		},
+		{
+			"cuil": 20934853920,
+			"tipoTitular": "Empresa",
+			"nombre": "GUERRA MARIO"
+		},
+		{
+			"cuil": 20935070075,
+			"tipoTitular": "Empresa",
+			"nombre": "SAUCHELLI MARIO"
+		},
+		{
+			"cuil": 20935217262,
+			"tipoTitular": "Empresa",
+			"nombre": "MURACA MARIO"
+		},
+		{
+			"cuil": 20936622306,
+			"tipoTitular": "Empresa",
+			"nombre": "CORTAZZO MARIO"
+		},
+		{
+			"cuil": 23079099589,
+			"tipoTitular": "Empresa",
+			"nombre": "GIMENEZ MARIO"
+		},
+		{
+			"cuil": 20935800391,
+			"tipoTitular": "Empresa",
+			"nombre": "PERON MARIO"
+		},
+		{
+			"cuil": 20935656320,
+			"tipoTitular": "Empresa",
+			"nombre": "AGOSTINI MARIO"
+		},
+		{
+			"cuil": 20937135425,
+			"tipoTitular": "Empresa",
+			"nombre": "SAMMARRUCO MARIO"
+		},
+		{
+			"cuil": 20932008174,
+			"tipoTitular": "Empresa",
+			"nombre": "FELICIANI MARIO"
+		},
+		{
+			"cuil": 23924728469,
+			"tipoTitular": "Empresa",
+			"nombre": "MEDINA MARIO"
+		},
+		{
+			"cuil": 23041274999,
+			"tipoTitular": "Empresa",
+			"nombre": "GEMETTO MARIO"
+		},
+		{
+			"cuil": 23109760889,
+			"tipoTitular": "Empresa",
+			"nombre": "NADOR MARIO"
+		},
+		{
+			"cuil": 23116490749,
+			"tipoTitular": "Empresa",
+			"nombre": "TRONO MARIO"
+		},
+		{
+			"cuil": 23128107819,
+			"tipoTitular": "Empresa",
+			"nombre": "VALDRINI MARIO"
+		},
+		{
+			"cuil": 23125115659,
+			"tipoTitular": "Empresa",
+			"nombre": "PUOPOLO MARIO"
+		},
+		{
+			"cuil": 20103417024,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO MARIO, ZELAYA"
+		},
+		{
+			"cuil": 20047473080,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, VILA"
+		},
+		{
+			"cuil": 23131944659,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, MORGILLO"
+		},
+		{
+			"cuil": 20124853967,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, SCIBILIA"
+		},
+		{
+			"cuil": 20308803504,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, RICCHI"
+		},
+		{
+			"cuil": 20135572420,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, ENCINA"
+		},
+		{
+			"cuil": 20087887139,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, YTURRE"
+		},
+		{
+			"cuil": 20139267711,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, LA ROCCA"
+		},
+		{
+			"cuil": 20173876794,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, OVELAR"
+		},
+		{
+			"cuil": 20106695211,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, AMBROSI"
+		},
+		{
+			"cuil": 20124596697,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, RIPOLI"
+		},
+		{
+			"cuil": 20078555042,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, DUARTE"
+		},
+		{
+			"cuil": 20071151094,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, SALTO"
+		},
+		{
+			"cuil": 20229174429,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, ZERDA"
+		},
+		{
+			"cuil": 20179606446,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, CLAUSI"
+		},
+		{
+			"cuil": 20142509920,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, LOPEZ"
+		},
+		{
+			"cuil": 20146171304,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, SENSI"
+		},
+		{
+			"cuil": 20108674351,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, MARTINS"
+		},
+		{
+			"cuil": 20111398292,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, VASINO"
+		},
+		{
+			"cuil": 20242653816,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, MONTENEGRO"
+		},
+		{
+			"cuil": 20078660199,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, RACCIATTI"
+		},
+		{
+			"cuil": 20042077691,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, GOLDSTEIN"
+		},
+		{
+			"cuil": 20053783709,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, OTERO"
+		},
+		{
+			"cuil": 20208936426,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, CORONEL"
+		},
+		{
+			"cuil": 20103572127,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, FARINELLA"
+		},
+		{
+			"cuil": 20104586156,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, DELGADO"
+		},
+		{
+			"cuil": 20143714455,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, GIRAT"
+		},
+		{
+			"cuil": 20186106211,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, PERIN"
+		},
+		{
+			"cuil": 24186237680,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, ORTELLADO"
+		},
+		{
+			"cuil": 20046986521,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, RUPP"
+		},
+		{
+			"cuil": 20047336563,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, FAZZINI"
+		},
+		{
+			"cuil": 20086048907,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, PIRIS"
+		},
+		{
+			"cuil": 20184856442,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, AYALA"
+		},
+		{
+			"cuil": 20214210879,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, GIORDANO"
+		},
+		{
+			"cuil": 20357238960,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, AMARILLA"
+		},
+		{
+			"cuil": 20042668843,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, VILKER"
+		},
+		{
+			"cuil": 20111097640,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, MARTINEZ"
+		},
+		{
+			"cuil": 23055957029,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, BARRIONUEVO"
+		},
+		{
+			"cuil": 20113993635,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, PORTO"
+		},
+		{
+			"cuil": 20041350769,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, MUHAFRA"
+		},
+		{
+			"cuil": 20227351285,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, PANICHI"
+		},
+		{
+			"cuil": 20187590311,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, AMADOR"
+		},
+		{
+			"cuil": 20182051579,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, ANFUSO"
+		},
+		{
+			"cuil": 20111720658,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, MAZITELLI"
+		},
+		{
+			"cuil": 20113815036,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, IACOVANTUONO"
+		},
+		{
+			"cuil": 20104559183,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, BILINSKI"
+		},
+		{
+			"cuil": 20086408784,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, MENDEZ"
+		},
+		{
+			"cuil": 20259995931,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, ROMAN"
+		},
+		{
+			"cuil": 20129296047,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, BORDA"
+		},
+		{
+			"cuil": 20055915254,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, CHIODINI"
+		},
+		{
+			"cuil": 20118158459,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, NAHIMIAS"
+		},
+		{
+			"cuil": 20077624202,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, CELLUCCI"
+		},
+		{
+			"cuil": 20017375459,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, NAPOLI"
+		},
+		{
+			"cuil": 23167477739,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, VILARDO"
+		},
+		{
+			"cuil": 20086279143,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, GRIMBERG"
+		},
+		{
+			"cuil": 20220007376,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, NAKAZATO"
+		},
+		{
+			"cuil": 20041247704,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, ZALTZMAN"
+		},
+		{
+			"cuil": 20042873110,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, CANDIANO"
+		},
+		{
+			"cuil": 20168919434,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, LOPEZ"
+		},
+		{
+			"cuil": 20103113572,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, MAIELLO"
+		},
+		{
+			"cuil": 20174160709,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, PAZ"
+		},
+		{
+			"cuil": 20188240195,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, CHACON"
+		},
+		{
+			"cuil": 20043558936,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, MARGULIS"
+		},
+		{
+			"cuil": 23042809039,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, MANDELBAUM"
+		},
+		{
+			"cuil": 20057075067,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, FONSECA"
+		},
+		{
+			"cuil": 20048750258,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, OCAMPO"
+		},
+		{
+			"cuil": 20040229222,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, ROSIG"
+		},
+		{
+			"cuil": 20048516948,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, KLAR"
+		},
+		{
+			"cuil": 20138514588,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, MONTANER"
+		},
+		{
+			"cuil": 20171927197,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, ESTIGARRIBIA"
+		},
+		{
+			"cuil": 20044936063,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, SCORDAMAGLIA"
+		},
+		{
+			"cuil": 20123329067,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, GELMAN"
+		},
+		{
+			"cuil": 20082713981,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, POSO"
+		},
+		{
+			"cuil": 20140096122,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, SOMOZA"
+		},
+		{
+			"cuil": 23002571749,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, BOLO"
+		},
+		{
+			"cuil": 20076717967,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, CARRO"
+		},
+		{
+			"cuil": 20042842495,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, KOGAN"
+		},
+		{
+			"cuil": 20079615820,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, DE UNDURRAGA"
+		},
+		{
+			"cuil": 20059660633,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, ANTELO"
+		},
+		{
+			"cuil": 20146797815,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, DYMKOWSKI"
+		},
+		{
+			"cuil": 20077511890,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, CIBRAN"
+		},
+		{
+			"cuil": 20041792036,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, MOREL"
+		},
+		{
+			"cuil": 20041710269,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, CALAROTA"
+		},
+		{
+			"cuil": 20104248900,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, NAKAZONE"
+		},
+		{
+			"cuil": 20044770971,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, YAFIL"
+		},
+		{
+			"cuil": 20078237113,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, SZPRYNGIER"
+		},
+		{
+			"cuil": 20004051662,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, GUELMAN"
+		},
+		{
+			"cuil": 20118889941,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, REA"
+		},
+		{
+			"cuil": 20130816739,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, ARGENTA"
+		},
+		{
+			"cuil": 20111314595,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, GUZMAN"
+		},
+		{
+			"cuil": 20085405897,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, DO SANTOS"
+		},
+		{
+			"cuil": 20043284267,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, CIRIGLIANO"
+		},
+		{
+			"cuil": 20043554507,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, INOUE"
+		},
+		{
+			"cuil": 20203427434,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, BRITEZ"
+		},
+		{
+			"cuil": 20043680782,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, CATUOGNO"
+		},
+		{
+			"cuil": 20040880551,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, NOVOA"
+		},
+		{
+			"cuil": 20141023943,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, BEI"
+		},
+		{
+			"cuil": 20044265916,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, LOW TANNE"
+		},
+		{
+			"cuil": 20387083368,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, BALDRICH"
+		},
+		{
+			"cuil": 20200001193,
+			"tipoTitular": "Persona",
+			"nombre": "MARIO, FREGA"
+		}
+	],
+	"total_page": 200
+}

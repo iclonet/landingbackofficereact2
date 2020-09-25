@@ -1,0 +1,516 @@
+{
+	"result": {
+		"code": 200,
+		"info": "OK"
+	},
+	"data": {
+		"tipoabono": "Limitado",
+		"credito": 30,
+		"vigenciaDesde": "2017-07-05",
+		"vigenciaHasta": "2017-09-15",
+		"cantidadConsultasWeb": 101,
+		"cantidadConsultasLote": null,
+		"consultasRestantes": 29,
+		"consutlasExedentes": 0,
+		"valorabono": 100,
+		"listaConsultas": [
+			{
+				"codigo": "A",
+				"clasificacion": "Empresa",
+				"nombre": "CANEVA PIER GIORGIO",
+				"fecha": "2017-08-14",
+				"usuario": "user2",
+				"cuil": 20002793130
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Empresa",
+				"nombre": "CANEVA PIER GIORGIO",
+				"fecha": "2017-08-14",
+				"usuario": "user2",
+				"cuil": 20002793130
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Empresa",
+				"nombre": "CANEVA PIER GIORGIO",
+				"fecha": "2017-08-14",
+				"usuario": "user2",
+				"cuil": 20002793130
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Empresa",
+				"nombre": "CANEVA PIER GIORGIO",
+				"fecha": "2017-08-14",
+				"usuario": "user2",
+				"cuil": 20002793130
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Empresa",
+				"nombre": "CANEVA PIER GIORGIO",
+				"fecha": "2017-08-14",
+				"usuario": "user2",
+				"cuil": 20002793130
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Empresa",
+				"nombre": "CANEVA PIER GIORGIO",
+				"fecha": "2017-08-14",
+				"usuario": "user2",
+				"cuil": 20002793130
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Empresa",
+				"nombre": "CANEVA PIER GIORGIO",
+				"fecha": "2017-08-14",
+				"usuario": "user2",
+				"cuil": 20002793130
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Empresa",
+				"nombre": "CANEVA PIER GIORGIO",
+				"fecha": "2017-08-14",
+				"usuario": "user2",
+				"cuil": 20002793130
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "GABRIEL EDUARDO",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20369100506
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "GABRIEL EDUARDO",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20369100506
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "GABRIEL EDUARDO",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20369100506
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "GABRIEL EDUARDO",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20369100506
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "GABRIEL EDUARDO",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20369100506
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-15",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Empresa",
+				"nombre": "CANEVA PIER GIORGIO",
+				"fecha": "2017-08-17",
+				"usuario": "user2",
+				"cuil": 20002793130
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Empresa",
+				"nombre": "CANEVA PIER GIORGIO",
+				"fecha": "2017-08-17",
+				"usuario": "user2",
+				"cuil": 20002793130
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Empresa",
+				"nombre": "CANEVA PIER GIORGIO",
+				"fecha": "2017-08-17",
+				"usuario": "user2",
+				"cuil": 20002793130
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "GABRIEL EDUARDO",
+				"fecha": "2017-08-17",
+				"usuario": "user2",
+				"cuil": 20369100506
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Empresa",
+				"nombre": "CANEVA PIER GIORGIO",
+				"fecha": "2017-08-17",
+				"usuario": "user2",
+				"cuil": 20002793130
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "GABRIEL EDUARDO",
+				"fecha": "2017-08-17",
+				"usuario": "user2",
+				"cuil": 20369100506
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "SERGIO DAVID",
+				"fecha": "2017-08-18",
+				"usuario": "user2",
+				"cuil": 20262845266
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "GABRIEL EDUARDO",
+				"fecha": "2017-08-18",
+				"usuario": "user2",
+				"cuil": 20369100506
+			},
+			{
+				"codigo": "A",
+				"clasificacion": "Persona",
+				"nombre": "GABRIEL EDUARDO",
+				"fecha": "2017-08-18",
+				"usuario": "user2",
+				"cuil": 20369100506
+			}
+		]
+	},
+	"total_page": null
+}

@@ -1,0 +1,63 @@
+.navegador {
+    position: fixed;
+    right: 15px;
+    border: var(--accent-color-border);
+    border-radius: 3px;
+    color: #fff;
+    padding: 15px;
+    background-color:  #fff;
+}
+
+.navegador>.item {
+    font-size: 26px;
+    text-align: center;
+}
+.navegador>.item a{ 
+    color: var(--accent-color); 
+}
+
+.navegador>.item.active a { 
+    color: var(--navegador-selected-color);
+} 
+
+.navegador>.item+.item {
+    margin-top: 0.5em;
+}
+
+.navegador {
+    display: none;
+}
+
+.pdfNav {
+	cursor: pointer;
+	background-color: var(--accent-color);
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .navegador {
+        display: block;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}

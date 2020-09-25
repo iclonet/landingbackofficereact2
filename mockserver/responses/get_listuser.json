@@ -1,0 +1,26 @@
+{
+	"result": {
+		"code": 200,
+		"info": "OK"
+	},
+	"data": {
+		"users": [
+			{
+				"id": 10,
+				"usuario": "user1",
+				"rol": [
+					"ROLE_ADMIN",
+					"ROLE_SUPERADMIN"
+				],
+				"email": "DEPAOLINI@DEPAOLINI.com"
+			},
+			{
+				"id": 6,
+				"usuario": "emacosti06-kpo",
+				"rol": [],
+				"email": "emanuel@de.los.palotes.com"
+			}
+		]
+	},
+	"total_page": null
+}

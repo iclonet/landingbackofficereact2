@@ -1,0 +1,384 @@
+{
+	"status": 200,
+	"result": {
+		"code": 200,
+		"info": "OK"
+	},
+	"data": {
+		"datosParticulares": {
+			"id": {},
+			"nombre": "HUGO OSCAR",
+			"apellido": "RIOS",
+			"apellidoNombre": "RIOS, HUGO OSCAR",
+			"cuil": 20231769723,
+			"dni": 23176972,
+			"tipo": "DNI-EA",
+			"nacionalidad": "Argentina",
+			"anio": 1973,
+			"fechaNacimiento": "1973-03-07T05:00:00Z",
+			"edad": 45,
+			"sexo": "M",
+			"observaciones": {},
+			"mails": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"domicilio": "B VILLA 21 MZ6 S/N",
+			"localidad": "CAPITAL FEDERAL",
+			"provincia": "CAPITAL FEDERAL",
+			"cp": {},
+			"domAlternativos": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"datosLaborales": {
+			"datoLaboral": {
+				"datos": [
+					{
+						"relacionDependencia": {
+							"estado": " ",
+							"razonSocial": "ASHIRA S.A. - MARTIN Y MARTIN",
+							"cuit": 30714281972,
+							"alta": "2016-12-01T03:00:00Z",
+							"baja": "2017-01-10T03:00:00Z",
+							"sueldo": "+50K",
+							"cuil": 20231769723
+						},
+						"historialSueldo": {
+							"infoAdicionalEmpleador": {
+								"actividadempleador": "Recoleccion; Transporte; Tratamiento Y Disposicion Final De Residuos No Peligrosos",
+								"cantidadempleados": 1172,
+								"domicilio": {
+									"direccion": "DIRECTORIO AV. 1733",
+									"localidad": "CAPITAL FEDERAL",
+									"provincia": "CAPITAL FEDERAL",
+									"partido": "CAPITAL FEDERAL",
+									"cp": 1406
+								}
+							},
+							"tel": ""
+						}
+					},
+					{
+						"relacionDependencia": {
+							"estado": " ",
+							"razonSocial": "ASHIRA S.A. - MARTIN Y MARTIN",
+							"cuit": 30714281972,
+							"alta": "2017-07-01T03:00:00Z",
+							"baja": "2017-08-08T03:00:00Z",
+							"sueldo": "30K - 40K",
+							"cuil": 20231769723
+						},
+						"historialSueldo": {
+							"infoAdicionalEmpleador": {
+								"actividadempleador": "Recoleccion; Transporte; Tratamiento Y Disposicion Final De Residuos No Peligrosos",
+								"cantidadempleados": 1172,
+								"domicilio": {
+									"direccion": "DIRECTORIO AV. 1733",
+									"localidad": "CAPITAL FEDERAL",
+									"provincia": "CAPITAL FEDERAL",
+									"partido": "CAPITAL FEDERAL",
+									"cp": 1406
+								}
+							},
+							"tel": ""
+						}
+					},
+					{
+						"relacionDependencia": {
+							"estado": " ",
+							"razonSocial": "ASHIRA S.A. - MARTIN Y MARTIN",
+							"cuit": 30714281972,
+							"alta": "2017-02-01T03:00:00Z",
+							"baja": "2017-03-08T03:00:00Z",
+							"sueldo": "40K - 50K",
+							"cuil": 20231769723
+						},
+						"historialSueldo": {
+							"infoAdicionalEmpleador": {
+								"actividadempleador": "Recoleccion; Transporte; Tratamiento Y Disposicion Final De Residuos No Peligrosos",
+								"cantidadempleados": 1172,
+								"domicilio": {
+									"direccion": "DIRECTORIO AV. 1733",
+									"localidad": "CAPITAL FEDERAL",
+									"provincia": "CAPITAL FEDERAL",
+									"partido": "CAPITAL FEDERAL",
+									"cp": 1406
+								}
+							},
+							"tel": ""
+						}
+					}
+				],
+				"cantTotal": 3
+			},
+			"monotributista": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"actividad": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"obraSocial": {
+				"datos": [
+					{
+						"descripcion": "O.S. DE CHOFERES DE CAMIONES",
+						"codigo": "105804"
+					}
+				],
+				"cantTotal": 1
+			},
+			"seguridadSocial": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"vinculos": {
+			"vinculos": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"otrosVinculos": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"boletinOficial": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"telefonos": {
+			"datos": [
+				{
+					"id": 51006194,
+					"dni": 23176972,
+					"tipo": "Celular",
+					"cuil": 20231769723,
+					"tel": "03725545215",
+					"localidad": "Sin Informacion",
+					"provincia": "Sin Informacion",
+					"origen": "Claro"
+				},
+				{
+					"id": 51006195,
+					"dni": 23176972,
+					"tipo": "Celular",
+					"cuil": 20231769723,
+					"tel": "03725545216",
+					"localidad": "Sin Informacion",
+					"provincia": "Sin Informacion",
+					"origen": "Claro"
+				},
+				{
+					"id": 51006196,
+					"dni": 23176972,
+					"tipo": "Celular",
+					"cuil": 20231769723,
+					"tel": "03725545217",
+					"localidad": "Sin Informacion",
+					"provincia": "Sin Informacion",
+					"origen": "Claro"
+				},
+				{
+					"id": 51006197,
+					"dni": 23176972,
+					"tipo": "Celular",
+					"cuil": 20231769723,
+					"tel": "03725545218",
+					"localidad": "Sin Informacion",
+					"provincia": "Sin Informacion",
+					"origen": "Claro"
+				},
+				{
+					"id": 51006198,
+					"dni": 23176972,
+					"tipo": "Celular",
+					"cuil": 20231769723,
+					"tel": "03725545219",
+					"localidad": "Sin Informacion",
+					"provincia": "Sin Informacion",
+					"origen": "Claro"
+				}
+			],
+			"cantTotal": 15
+		},
+		"telefonosAdicionales": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"morosidad": {
+			"informacionBcra": {
+				"datos": [
+					{
+						"periodo": "2017-06-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 16,
+							"entidad": "BANCO SANTANDER RIO S.A.",
+							"codigoEnt": "00072"
+						},
+						"prestamo": 44000.0
+					},
+					{
+						"periodo": "2017-06-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 16,
+							"entidad": "BANCO SANTANDER RIO S.A.",
+							"codigoEnt": "00072"
+						},
+						"prestamo": 44000.0
+					},
+					{
+						"periodo": "2017-06-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 16,
+							"entidad": "BANCO SANTANDER RIO S.A.",
+							"codigoEnt": "00072"
+						},
+						"prestamo": 44000.0
+					},
+					{
+						"periodo": "2017-06-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 16,
+							"entidad": "BANCO SANTANDER RIO S.A.",
+							"codigoEnt": "00072"
+						},
+						"prestamo": 44000.0
+					},
+					{
+						"periodo": "2017-08-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 16,
+							"entidad": "BANCO SANTANDER RIO S.A.",
+							"codigoEnt": "00072"
+						},
+						"prestamo": 39000.0
+					},
+					{
+						"periodo": "2017-09-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 16,
+							"entidad": "BANCO SANTANDER RIO S.A.",
+							"codigoEnt": "00072"
+						},
+						"prestamo": 35000.0
+					},
+					{
+						"periodo": "2017-10-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 16,
+							"entidad": "BANCO SANTANDER RIO S.A.",
+							"codigoEnt": "00072"
+						},
+						"prestamo": 58000.0
+					},
+					{
+						"periodo": "2017-10-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 16,
+							"entidad": "BANCO SANTANDER RIO S.A.",
+							"codigoEnt": "00072"
+						},
+						"prestamo": 58000.0
+					},
+					{
+						"periodo": "2017-11-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 16,
+							"entidad": "BANCO SANTANDER RIO S.A.",
+							"codigoEnt": "00072"
+						},
+						"prestamo": 55000.0
+					}
+				],
+				"cantTotal": 9
+			},
+			"chequesRechazados": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"deudoresBancoCentral": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"embargos": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"juiciosDemandado": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"juiciosActor": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"bienesPersonales": {
+			"propiedades": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"automotores": {
+				"datos": [
+					{
+						"dni": 23176972,
+						"dominio": "VXO779",
+						"compra": "1975-01-23T05:00:00Z",
+						"modelo": "FALCON VERSION LUJO",
+						"porcentaje": 100,
+						"marca": "FORD",
+						"origen": "NACIONAL",
+						"tramite": "2006-09-19T04:00:00Z",
+						"tipo": "PICK-UP",
+						"cuil": 20231769723,
+						"anioModelo": 1975
+					}
+				],
+				"cantTotal": 1
+			},
+			"autosembargos": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"pagosImpuestos": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"participacionSocietaria": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"situacionFinanciera": {},
+		"variables": {
+			"variableRechazo": [
+				"Cantidad de Consulta"
+			],
+			"variableAprobada": [
+				"Edad",
+				"Dni",
+				"Laboral",
+				"Fallecidos",
+				"Ultimo periodo BCRA",
+				"Histórico BCRA",
+				"Cheque rechazados",
+				"Historico morosidad"
+			]
+		},
+		"codigo": "R",
+		"idLog": 3812
+	},
+	"total_page": null
+}

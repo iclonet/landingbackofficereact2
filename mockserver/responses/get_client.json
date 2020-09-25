@@ -1,0 +1,25 @@
+{
+	"id": 16,
+	"cliente_id": 0,
+	"logo": 5,
+	"cuit": 33,
+	"empresa": "MARKETING BUILDERS SRL2",
+	"reseller": false,
+	"apellido": "DEPAOLINI",
+	"cargo": "Titular",
+	"tiposervicio": {
+		"id": 86
+	},
+	"razonSocial": "MARKETING BUILDERS SRL2",
+	"activo": true,
+	"cuil": 20262845266,
+	"categoria": {
+		"id": 6
+	},
+	"nombre": "SERGIO",
+	"email": "DEPAOLINI@DEPAOLINI.com",
+	"categoria": {
+		"id": 6,
+		"nombre": "Premium"
+	}
+}

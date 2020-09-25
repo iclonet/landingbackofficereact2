@@ -1,0 +1,112 @@
+{
+	"result": {
+		"code": 200,
+		"info": "OK"
+	},
+	"data": {
+		"datosGenerales": {
+			"empresa": {
+				"datos": {
+					"id": 364066,
+					"actividad": "Servicios De Seguros Patrimoniales Excepto Los De Las Aseguradoras De Riesgo De Trabajo (art)",
+					"cuit": 30500007539,
+					"msalarial": "21651264.1",
+					"ciiu": "651220",
+					"empleados": 525,
+					"subCategoria": "Servicios De Seguros Patrimoniales Excepto Los De Las Aseguradoras De Riesgo De Trabajo (art)",
+					"razon": "MAPFRE ARGENTINA SEGUROS SOCIEDAD ANONIMA",
+					"categoria": "Servicios De Seguros Patrimoniales Excepto Los De Las Aseguradoras De Riesgo De Trabajo (art)",
+					"localidad": "CAPITAL FEDERAL",
+					"cp": 1107,
+					"constitucion": "2000-04-28T03:00:00Z",
+					"provincia": "CAPITAL FEDERAL",
+					"letra": "J",
+					"partido": "CAPITAL FEDERAL",
+					"direccion": "MANSO JUANA 205"
+				},
+				"cantTotal": 1
+			},
+			"mails": null,
+			"domAlternativos": null,
+			"situacionFiscal": null,
+			"empAportes": null,
+			"domAportes": null,
+			"actividad": null,
+			"sueldos": null,
+			"seguridadSocial": null,
+			"art": null
+		},
+		"boletinOficial": null,
+		"vinculos": null,
+		"telefonos": null,
+		"telefonosAdicionales": null,
+		"impuestos": null,
+		"bienes": {
+			"propiedades": null,
+			"automotores": null,
+			"autosembargos": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"sitFinanciera": {
+			"situacion": {
+				"datos": [],
+				"cantTotal": 0
+			},
+			"facturacion": null,
+			"bancoOpera": null,
+			"tarjetas": null
+		},
+		"morosidad": {
+			"informacionBcra": null,
+			"infoBcraSituacion1": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"chequesRechazados": null,
+			"deudoresBancoCentral": null,
+			"embargos": null,
+			"juiciosDemandado": null,
+			"juiciosActor": null,
+			"variables": {
+				"variableRechazo": {
+					"datos": [
+						"Cantidad de Consulta"
+					],
+					"cantTotal": 1
+				},
+				"variableAprobada": {
+					"datos": [
+						"Ultimo periodo BCRA",
+						"Histórico BCRA",
+						"Cheque rechazados",
+						"Historico morosidad"
+					],
+					"cantTotal": 4
+				}
+			},
+			"codigo": "R"
+		},
+		"variables": {
+			"variableRechazo": {
+				"datos": [
+					"Cantidad de Consulta"
+				],
+				"cantTotal": 1
+			},
+			"variableAprobada": {
+				"datos": [
+					"Ultimo periodo BCRA",
+					"Histórico BCRA",
+					"Cheque rechazados",
+					"Historico morosidad"
+				],
+				"cantTotal": 4
+			}
+		},
+		"codigo": "R",
+		"idLog": 1514
+	},
+	"total_page": null
+}

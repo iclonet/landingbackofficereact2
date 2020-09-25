@@ -1,0 +1,45 @@
+.searchbar-form {
+    display: flex;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.searchbar-form .form-group {
+    margin-right: 1em;
+}
+
+.searchbar-form .search-text {
+   flex-grow: 1; 
+}
+
+.searchbar-form .search-text input {
+    width: 100%;
+}
+
+.search-apellido,
+.search-nombre,
+.search-selector-prov,
+.search-selector-nacionalidad,
+.search-selector-etario{
+    width: 20%;
+}
+
+.searchbar-form.-telefonos .search-text {
+    display: flex;
+}
+
+.searchbar-form.-telefonos .control-label {
+    align-self: flex-end;
+    display: flex;
+    margin-right: 10px;
+}
+
+.searchbar-form.-telefonos .search-text input {
+    width: auto;
+}
+.searchbar-form.-telefonos .search-text {
+   flex-grow: unset; 
+}
+.searchbar-form.-telefonos .search-button {
+    margin-left: auto;
+}

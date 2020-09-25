@@ -1,0 +1,8 @@
+.row {
+    margin-bottom: 10px;
+    width: 100%;
+    margin-left: 0px;
+}
+.radio label input {
+	margin-right: 5px;
+}

@@ -1,0 +1,9 @@
+﻿{
+    "status": 405,
+    "result": {
+        "code": 405,
+        "info": "Información restringida no disponible"
+    },
+    "data": null,
+    "total_page": null
+}

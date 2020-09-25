@@ -1,0 +1,79 @@
+{
+    "prueba": {
+        "datos": [],
+        "cantTotal":200
+    },
+	"result": {
+		"code": 200,
+		"info": "OK"
+	},
+	"data": {
+		"datosParticulares": {
+			"id": {},
+			"nombre": "SERGIO DAVID",
+			"apellido": "DEPAOLINI",
+			"apellidoNombre": "DEPAOLINI, SERGIO DAVID",
+			"cuil": 20262845266,
+			"dni": 26284526,
+			"tipo": "DNI-EA",
+			"nacionalidad": "Argentina",
+			"anio": 1978,
+			"fechaNacimiento": "1978-04-28T05:00:00Z",
+			"edad": 39,
+			"sexo": "M",
+			"observaciones": {},
+			"domicilio": "CORVALAN 1371",
+			"localidad": "MONTE CHINGOLO",
+			"provincia": "BUENOS AIRES",
+			"cp": "1825"
+		},
+		"datosLaborales": {
+		},
+		"vinculos": {
+		},
+		"morosidad": {
+			"variables": {
+				"variableRechazo": [
+					"Cantidad de Consulta"
+				],
+				"variableAprobada": [
+					"Edad",
+					"Dni",
+					"Laboral",
+					"Fallecidos",
+					"Ultimo periodo BCRA",
+					"Histórico BCRA",
+					"Cheque rechazados",
+					"Historico morosidad"
+				]
+			},
+			"codigo": "R"
+		},
+		"bienesPersonales": {
+			"autosembargos": {
+                "datos": [],
+                "cantTotal":0
+            }
+		},
+		"situacionFinanciera": {
+		},
+		"variables": {
+			"variableRechazo": [
+				"Cantidad de Consulta"
+			],
+			"variableAprobada": [
+				"Edad",
+				"Dni",
+				"Laboral",
+				"Fallecidos",
+				"Ultimo periodo BCRA",
+				"Histórico BCRA",
+				"Cheque rechazados",
+				"Historico morosidad"
+			]
+		},
+		"codigo": "R",
+		"idLog": 1432
+	},
+	"total_page": null
+}

@@ -1,0 +1,28 @@
+.faq .fa {
+    color: var(--accent-color);
+}
+.faq .panel-title {
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+.faq .list-group-item {
+    padding: 30px;
+}
+.faq .list-group-item-heading {
+    color: var(--accent-color);
+    margin: 15px 0;
+}
+
+.faq .list-group-item-text {
+    margin: 15px 0;
+    line-height: 1.8em;
+}
+
+.faq .form-group + .form-group {
+    margin-left: 30px;
+}
+
+.faq .form-inline .checkbox input[type=checkbox] {
+    margin-right: 30px;
+}

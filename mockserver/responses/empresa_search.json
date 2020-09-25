@@ -1,0 +1,26 @@
+{
+	"result": {
+		"code": 200,
+		"info": "OK"
+	},
+	"data": [
+		{
+			"id": 1,
+			"actividad": "Instalaciones para edificios y obras de ingenieria civil",
+			"cuit": 20002793130,
+			"msalarial": "4834",
+			"ciiu": "453300",
+			"empleados": 1,
+			"razon": "CANEVA PIER GIORGIO",
+			"categoria": "CONSTRUCCION",
+			"subcategoria": "Instalaciones de gas, agua, sanitarios y de climatizacion, con sus artefactos conexos (Incluye la instalacion de compactadores, calderas, sistemas de calefaccion central, etc.)",
+			"localidad": "MENDOZA2",
+			"cp": 5500,
+			"constitucion": null,
+			"provincia": "MENDOZA",
+			"letra": "F",
+			"partido": "CAPITAL",
+			"direccion": "MARTIN ZAPATA 419"
+		}
+	]
+}

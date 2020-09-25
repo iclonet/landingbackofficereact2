@@ -1,0 +1,7 @@
+.cpdf-toolbar {
+    text-align: center;
+}
+
+.cpdf-toolbar .btn + .btn {
+    margin-left: 15px;
+}

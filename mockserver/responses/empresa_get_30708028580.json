@@ -1,0 +1,2031 @@
+{
+	"result": {
+		"code": 200,
+		"info": "OK"
+	},
+	"data": {
+		"datosGenerales": {
+			"empresa": {
+				"datos": {
+					"id": 486600,
+					"actividad": "Servicios De Consultores En Informatica Y Suministros De Programas De Informatica",
+					"cuit": 30708028580,
+					"msalarial": "1222860.64",
+					"ciiu": "620100",
+					"empleados": 45,
+					"subCategoria": "Servicios De Consultores En Informatica Y Suministros De Programas De Informatica",
+					"razon": "KINEXO S A",
+					"categoria": "Servicios De Consultores En Informatica Y Suministros De Programas De Informatica",
+					"localidad": "RAFAELA",
+					"cp": 2300,
+					"constitucion": "2000-04-28T03:00:00Z",
+					"provincia": "SANTA FE",
+					"letra": "K",
+					"partido": "CASTELLANOS",
+					"direccion": "CORNELIO SAAVEDRA 52 2 b"
+				},
+				"cantTotal": 1
+			},
+			"mails": {
+				"datos": [
+					{
+						"id": 8991599,
+						"dni": 30708028580,
+						"cuil": 30708028580,
+						"email": "caro.racchella@gmail.com",
+						"origen": " "
+					},
+					{
+						"id": 8991600,
+						"dni": 30708028580,
+						"cuil": 30708028580,
+						"email": "cintia_caglieris@hotmail.com",
+						"origen": " "
+					},
+					{
+						"id": 8991601,
+						"dni": 30708028580,
+						"cuil": 30708028580,
+						"email": "info@kinexo.com",
+						"origen": " "
+					},
+					{
+						"id": 8991602,
+						"dni": 30708028580,
+						"cuil": 30708028580,
+						"email": "mwalter@kinexo.com",
+						"origen": " "
+					},
+					{
+						"id": 8991603,
+						"dni": 30708028580,
+						"cuil": 30708028580,
+						"email": "palaciossantiago@gmail.com",
+						"origen": " "
+					},
+					{
+						"id": 8991604,
+						"dni": 30708028580,
+						"cuil": 30708028580,
+						"email": "pcassina@kinexo.com",
+						"origen": " "
+					}
+				],
+				"cantTotal": 6
+			},
+			"domAlternativos": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"situacionFiscal": {
+				"datos": {
+					"id": 4307095,
+					"iva": "AC",
+					"fecha": "2017-06-24",
+					"cuil": 30708028580,
+					"categoria": "NI",
+					"empleador": "SI",
+					"codigo": "00",
+					"integranteSoc": "NO",
+					"tipodato": "2",
+					"ganancias": "AC"
+				},
+				"cantTotal": 1
+			},
+			"empAportes": {
+				"datos": [
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 26966,
+									"cuil": 20368142493,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 3577,
+									"cuil": 20368142493,
+									"cuit": 30543740876
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "TUMA LEANDRO JOSE",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20275181731
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 20610,
+									"cuil": 20275181731,
+									"cuit": 30697566127
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "SORISIO NICOLAS",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20290543178
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 26970,
+									"cuil": 20290543178,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "CASSINA PORTA PABLO ALBERTO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20230805599
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 20000,
+									"cuil": 20230805599,
+									"cuit": 30710673612
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "CASSINA PORTA PABLO ALBERTO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20230805599
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 87636,
+									"cuil": 20230805599,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "CASSINA PORTA PABLO ALBERTO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20230805599
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 29784,
+									"cuil": 20230805599,
+									"cuit": 30711880212
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "MICHELINI MAURO ANDRES",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20301674008
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 6069,
+									"cuil": 20301674008,
+									"cuit": 30689902002
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "MICHELINI MAURO ANDRES",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20301674008
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 29705,
+									"cuil": 20301674008,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RESTRINGIDO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20384492178
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 7829,
+									"cuil": 20384492178,
+									"cuit": 30711880212
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "WALTER MARCELA SOLEDAD",
+									"cuit": 30708028580,
+									"cuilEmpleado": 27260589917
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 28690,
+									"cuil": 27260589917,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BRUNO SOFIA",
+									"cuit": 30708028580,
+									"cuilEmpleado": 23333223694
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 18657,
+									"cuil": 23333223694,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "PADUAN MILKA DAIANA",
+									"cuit": 30708028580,
+									"cuilEmpleado": 27302390911
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 25843,
+									"cuil": 27302390911,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "TREJO ADRIAN EDUARDO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20322071648
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 25724,
+									"cuil": 20322071648,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "ERNI FRANCO DELFIN",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20352892379
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 25724,
+									"cuil": 20352892379,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "HENZENN SEBASTIAN ANDRES",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20295246783
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 1432,
+									"cuil": 20295246783,
+									"cuit": 30543740876
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "HENZENN SEBASTIAN ANDRES",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20295246783
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 33770,
+									"cuil": 20295246783,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "HENZENN SEBASTIAN ANDRES",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20295246783
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 1432,
+									"cuil": 20295246783,
+									"cuit": 30543740876
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "EÑIGUEZ EZEQUIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20325033267
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 28198,
+									"cuil": 20325033267,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "ARIETTO ARANCIBIA LEANDRO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20234295420
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 20000,
+									"cuil": 20234295420,
+									"cuit": 30710673612
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "ARIETTO ARANCIBIA LEANDRO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20234295420
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 29301,
+									"cuil": 20234295420,
+									"cuit": 30711880212
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "ARIETTO ARANCIBIA LEANDRO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20234295420
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 71665,
+									"cuil": 20234295420,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "SANTONI DIEGO ALEJANDRO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20253982307
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 24490,
+									"cuil": 20253982307,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RESTRINGIDO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20301674083
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 28337,
+									"cuil": 20301674083,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RESTRINGIDO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20337971394
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 20330,
+									"cuil": 20337971394,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RESTRINGIDO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20378154244
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 24486,
+									"cuil": 20378154244,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "POZZO MARIO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 23265726909
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 26506,
+									"cuil": 23265726909,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GOMEZ STOCKLI MARTIN MIGUEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 23349388189
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 28337,
+									"cuil": 23349388189,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BURGENER GISELA EDIT",
+									"cuit": 30708028580,
+									"cuilEmpleado": 23354632454
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 20450,
+									"cuil": 23354632454,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "ZACHARY GERARDO DANIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20359540842
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 26966,
+									"cuil": 20359540842,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "ALESSANDRIA MARQUEZ GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20234297822
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 24578,
+									"cuil": 20234297822,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GRAND BRENDA VERONICA",
+									"cuit": 30708028580,
+									"cuilEmpleado": 27316908077
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 29685,
+									"cuil": 27316908077,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "ALLAMANDRI MAXIMILIANO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20348641892
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 26963,
+									"cuil": 20348641892,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "SAIONE GABRIEL CESAR",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20289187147
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 26934,
+									"cuil": 20289187147,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "TULISSO SEBASTIAN",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20299000908
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 36910,
+									"cuil": 20299000908,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BROWN CRISTHIAN JONATHAN",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20346804751
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 24239,
+									"cuil": 20346804751,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RESTRINGIDO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20375755220
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 24486,
+									"cuil": 20375755220,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RESTRINGIDO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20381369243
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 7829,
+									"cuil": 20381369243,
+									"cuit": 30711880212
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BERSANO DIEGO MATIAS",
+									"cuit": 30708028580,
+									"cuilEmpleado": 23359528779
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 1550,
+									"cuil": 23359528779,
+									"cuit": 30543740876
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BERSANO DIEGO MATIAS",
+									"cuit": 30708028580,
+									"cuilEmpleado": 23359528779
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 28322,
+									"cuil": 23359528779,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "DURANDO JOSE LUIS",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20293497010
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 33766,
+									"cuil": 20293497010,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "WILLINER RAFAEL ANTONIO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20298043239
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 33773,
+									"cuil": 20298043239,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "SANMARTINO FRANCISCO PABLO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20356373929
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 22001,
+									"cuil": 20356373929,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RESTRINGIDO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20377154615
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 7828,
+									"cuil": 20377154615,
+									"cuit": 30710673612
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "FERRERO MARIANO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 23359530579
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 2583,
+									"cuil": 23359530579,
+									"cuit": 30543740876
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "FERRERO MARIANO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 23359530579
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 15797,
+									"cuil": 23359530579,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "BIANCHIOTTI SOFIA FERNANDA",
+									"cuit": 30708028580,
+									"cuilEmpleado": 27347200072
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 19192,
+									"cuil": 27347200072,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GIECO MATIAS EXEQUIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20246307513
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 25903,
+									"cuil": 20246307513,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "TESSI GUILLERMO CARLOS",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20334272819
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 25916,
+									"cuil": 20334272819,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "HENZENN SILVANA LORENA",
+									"cuit": 30708028580,
+									"cuilEmpleado": 27306168814
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 13134,
+									"cuil": 27306168814,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "HENZENN SILVANA LORENA",
+									"cuit": 30708028580,
+									"cuilEmpleado": 27306168814
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 0,
+									"cuil": 27306168814,
+									"cuit": 30543740876
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "HENZENN SILVANA LORENA",
+									"cuit": 30708028580,
+									"cuilEmpleado": 27306168814
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 0,
+									"cuil": 27306168814,
+									"cuit": 30543740876
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RESTRINGIDO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20304895579
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 33734,
+									"cuil": 20304895579,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "LOVERA MAXIMILIANO MATIAS",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20328989655
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 1216,
+									"cuil": 20328989655,
+									"cuit": 30543740876
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "LOVERA MAXIMILIANO MATIAS",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20328989655
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 25703,
+									"cuil": 20328989655,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "FESSIA RODRIGO ANDRES",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20349350948
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 26280,
+									"cuil": 20349350948,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "LOVERA PABLO MARTIN",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20351754215
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 25916,
+									"cuil": 20351754215,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "IBARRA PABLO NICOLAS",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20359528516
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 26963,
+									"cuil": 20359528516,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GALIANO MATIAS GASTON",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20362676836
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 29451,
+									"cuil": 20362676836,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "GIORGIS MARIA VICTORIA",
+									"cuit": 30708028580,
+									"cuilEmpleado": 27368774826
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 23857,
+									"cuil": 27368774826,
+									"cuit": 30708028580
+								}
+							},
+							{
+								"empleado": {
+									"nomEmpleado": "RESTRINGIDO",
+									"cuit": 30708028580,
+									"cuilEmpleado": 27378154400
+								},
+								"sueldo": {
+									"periodo": "2017-05-01T04:00:00Z",
+									"remuneracion": 24486,
+									"cuil": 27378154400,
+									"cuit": 30708028580
+								}
+							}
+						],
+						"periodo": "2017-05-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 24222,
+									"cuil": 20368142493,
+									"cuit": 30708028580
+								}
+							}
+						],
+						"periodo": "2017-02-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-06-01T04:00:00Z",
+									"remuneracion": 40021,
+									"cuil": 20368142493,
+									"cuit": 30708028580
+								}
+							}
+						],
+						"periodo": "2017-06-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-06-01T04:00:00Z",
+									"remuneracion": 6360,
+									"cuil": 20368142493,
+									"cuit": 30543740876
+								}
+							}
+						],
+						"periodo": "2017-06-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-01-01T05:00:00Z",
+									"remuneracion": 266,
+									"cuil": 20368142493,
+									"cuit": 30543740876
+								}
+							}
+						],
+						"periodo": "2017-01-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-04-01T04:00:00Z",
+									"remuneracion": 3975,
+									"cuil": 20368142493,
+									"cuit": 30543740876
+								}
+							}
+						],
+						"periodo": "2017-04-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-06-01T04:00:00Z",
+									"remuneracion": 40021,
+									"cuil": 20368142493,
+									"cuit": 30708028580
+								}
+							}
+						],
+						"periodo": "2017-06-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-07-01T04:00:00Z",
+									"remuneracion": 29388,
+									"cuil": 20368142493,
+									"cuit": 30708028580
+								}
+							}
+						],
+						"periodo": "2017-07-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2016-12-01T05:00:00Z",
+									"remuneracion": 34843,
+									"cuil": 20368142493,
+									"cuit": 30708028580
+								}
+							}
+						],
+						"periodo": "2016-12-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-03-01T05:00:00Z",
+									"remuneracion": 281,
+									"cuil": 20368142493,
+									"cuit": 30543740876
+								}
+							}
+						],
+						"periodo": "2017-03-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2016-12-01T05:00:00Z",
+									"remuneracion": 0,
+									"cuil": 20368142493,
+									"cuit": 30543740876
+								}
+							}
+						],
+						"periodo": "2016-12-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-03-01T05:00:00Z",
+									"remuneracion": 26848,
+									"cuil": 20368142493,
+									"cuit": 30708028580
+								}
+							}
+						],
+						"periodo": "2017-03-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-06-01T04:00:00Z",
+									"remuneracion": 6360,
+									"cuil": 20368142493,
+									"cuit": 30543740876
+								}
+							}
+						],
+						"periodo": "2017-06-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-08-01T04:00:00Z",
+									"remuneracion": 2653,
+									"cuil": 20368142493,
+									"cuit": 30543740876
+								}
+							}
+						],
+						"periodo": "2017-08-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-08-01T04:00:00Z",
+									"remuneracion": 29388,
+									"cuil": 20368142493,
+									"cuit": 30708028580
+								}
+							}
+						],
+						"periodo": "2017-08-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-03-01T05:00:00Z",
+									"remuneracion": 281,
+									"cuil": 20368142493,
+									"cuit": 30543740876
+								}
+							}
+						],
+						"periodo": "2017-03-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-02-01T05:00:00Z",
+									"remuneracion": 0,
+									"cuil": 20368142493,
+									"cuit": 30543740876
+								}
+							}
+						],
+						"periodo": "2017-02-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-01-01T05:00:00Z",
+									"remuneracion": 24223,
+									"cuil": 20368142493,
+									"cuit": 30708028580
+								}
+							}
+						],
+						"periodo": "2017-01-01T05:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "PEREZ GONZALO GABRIEL",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20368142493
+								},
+								"sueldo": {
+									"periodo": "2017-04-01T04:00:00Z",
+									"remuneracion": 26967,
+									"cuil": 20368142493,
+									"cuit": 30708028580
+								}
+							}
+						],
+						"periodo": "2017-04-01T04:00:00Z"
+					},
+					{
+						"sueldo": [
+							{
+								"empleado": {
+									"nomEmpleado": "TUMA LEANDRO JOSE",
+									"cuit": 30708028580,
+									"cuilEmpleado": 20275181731
+								},
+								"sueldo": {
+									"periodo": "2017-01-01T05:00:00Z",
+									"remuneracion": 20020,
+									"cuil": 20275181731,
+									"cuit": 30697566127
+								}
+							}
+						],
+						"periodo": "2017-01-01T05:00:00Z"
+					}
+				],
+				"cantTotal": 538
+			},
+			"domAportes": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"actividad": {
+				"datos": [
+					{
+						"id": 400841,
+						"cuil": 30708028580,
+						"descripcion": "Actividades de informatica n c p",
+						"ciiu": 729000
+					}
+				],
+				"cantTotal": 1
+			},
+			"sueldos": {
+				"datos": [
+					{
+						"periodo": "2016-12-01T05:00:00Z",
+						"remuneracion": 22688,
+						"cuil": 20375755220,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2016-12-01T05:00:00Z",
+						"remuneracion": 29813,
+						"cuil": 27368774826,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2016-12-01T05:00:00Z",
+						"remuneracion": 34843,
+						"cuil": 20349350948,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2016-12-01T05:00:00Z",
+						"remuneracion": 3072,
+						"cuil": 20234297822,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2016-12-01T05:00:00Z",
+						"remuneracion": 22688,
+						"cuil": 20378154244,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-01-01T05:00:00Z",
+						"remuneracion": 26087,
+						"cuil": 20328989655,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-01-01T05:00:00Z",
+						"remuneracion": 18757,
+						"cuil": 20337971394,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-01-01T05:00:00Z",
+						"remuneracion": 24096,
+						"cuil": 23265726909,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-01-01T05:00:00Z",
+						"remuneracion": 24676,
+						"cuil": 20253982307,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-01-01T05:00:00Z",
+						"remuneracion": 21445,
+						"cuil": 20295607786,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-01-01T05:00:00Z",
+						"remuneracion": 28225,
+						"cuil": 20322071648,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-03-01T05:00:00Z",
+						"remuneracion": 18756,
+						"cuil": 20337971394,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-03-01T05:00:00Z",
+						"remuneracion": 20957,
+						"cuil": 20375755220,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-03-01T05:00:00Z",
+						"remuneracion": 12036,
+						"cuil": 27306168814,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-03-01T05:00:00Z",
+						"remuneracion": 26086,
+						"cuil": 20328989655,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-03-01T05:00:00Z",
+						"remuneracion": 23493,
+						"cuil": 27302390911,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-03-01T05:00:00Z",
+						"remuneracion": 24783,
+						"cuil": 20346804751,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-03-01T05:00:00Z",
+						"remuneracion": 20957,
+						"cuil": 20378154244,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-03-01T05:00:00Z",
+						"remuneracion": 26988,
+						"cuil": 20289187147,
+						"cuit": 30708028580
+					},
+					{
+						"periodo": "2017-03-01T05:00:00Z",
+						"remuneracion": 17793,
+						"cuil": 27347200072,
+						"cuit": 30708028580
+					}
+				],
+				"cantTotal": 100
+			},
+			"seguridadSocial": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"art": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"boletinOficial": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"vinculos": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"telefonos": {},
+		"telefonosAdicionales": {},
+		"impuestos": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"bienes": {
+			"propiedades": null,
+			"automotores": null,
+			"autosembargos": null
+		},
+		"sitFinanciera": {
+			"situacion": {
+				"datos": [
+					{
+						"id": 213850,
+						"entidad": "BANCO DE LA NACION ARGENTINA",
+						"deuda": 1184,
+						"cuil": 30708028580
+					}
+				],
+				"cantTotal": 1
+			},
+			"facturacion": {
+				"datos": [
+					{
+						"id": 616662,
+						"saldoLibrePeriodo": "33618.30",
+						"montoUtilizado": "0.00",
+						"cuit": 30708028580,
+						"totalcompras": "1016024.26",
+						"totalDebFiscal": "506161.06",
+						"saldoLibrePerAnt": "66823.69",
+						"transaccionAfip": "1970510751",
+						"fechaPresentacion": "2016-08-18T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "329826.27",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2016-07-01T03:00:00Z",
+						"facturacionestimada": "2916451.82",
+						"ob": null,
+						"subconcepto": "19",
+						"saldoImpAfip": "0.00",
+						"fecha": "2016-08-18T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "296620.88",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "176334.79"
+					},
+					{
+						"id": 1504639,
+						"saldoLibrePeriodo": "0.00",
+						"montoUtilizado": "0.00",
+						"cuit": 30708028580,
+						"totalcompras": "984807.60",
+						"totalDebFiscal": "416033.31",
+						"saldoLibrePerAnt": "33618.30",
+						"transaccionAfip": "1989927838",
+						"fechaPresentacion": "2016-09-27T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "245116.30",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2016-08-01T03:00:00Z",
+						"facturacionestimada": "2397144.31",
+						"ob": null,
+						"subconcepto": "19",
+						"saldoImpAfip": "54678.69",
+						"fecha": "2016-09-27T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "157769.65",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "170917.01"
+					},
+					{
+						"id": 2405676,
+						"saldoLibrePeriodo": "1799.50",
+						"montoUtilizado": "0.00",
+						"cuit": 30708028580,
+						"totalcompras": "1269240.96",
+						"totalDebFiscal": "442881.27",
+						"saldoLibrePerAnt": "0.00",
+						"transaccionAfip": "1998830776",
+						"fechaPresentacion": "2016-10-17T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "222599.78",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2016-09-01T03:00:00Z",
+						"facturacionestimada": "2551839.69",
+						"ob": null,
+						"subconcepto": "19",
+						"saldoImpAfip": "0.00",
+						"fecha": "2016-10-17T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "224399.28",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "220281.49"
+					},
+					{
+						"id": 3303736,
+						"saldoLibrePeriodo": "0.00",
+						"montoUtilizado": "0.00",
+						"cuit": 30708028580,
+						"totalcompras": "1551659.40",
+						"totalDebFiscal": "501063.66",
+						"saldoLibrePerAnt": "1799.50",
+						"transaccionAfip": "2016412135",
+						"fechaPresentacion": "2016-11-18T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "231767.40",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2016-10-01T03:00:00Z",
+						"facturacionestimada": "2887081.08",
+						"ob": null,
+						"subconcepto": "19",
+						"saldoImpAfip": "136609.16",
+						"fecha": "2016-11-18T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "93358.74",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "269296.26"
+					},
+					{
+						"id": 4190508,
+						"saldoLibrePeriodo": "0.00",
+						"montoUtilizado": "0.00",
+						"cuit": 30708028580,
+						"totalcompras": "1596302.69",
+						"totalDebFiscal": "606548.49",
+						"saldoLibrePerAnt": "0.00",
+						"transaccionAfip": "2028821933",
+						"fechaPresentacion": "2016-12-19T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "329504.22",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2016-11-01T03:00:00Z",
+						"facturacionestimada": "3494874.63",
+						"ob": null,
+						"subconcepto": "19",
+						"saldoImpAfip": "120205.26",
+						"fecha": "2016-12-19T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "209298.96",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "277044.27"
+					},
+					{
+						"id": 5031828,
+						"saldoLibrePeriodo": "136593.70",
+						"montoUtilizado": "0.00",
+						"cuit": 30708028580,
+						"totalcompras": "1846983.87",
+						"totalDebFiscal": "745619.16",
+						"saldoLibrePerAnt": "0.00",
+						"transaccionAfip": "2044879476",
+						"fechaPresentacion": "2017-01-18T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "425068.24",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2016-12-01T03:00:00Z",
+						"facturacionestimada": "4296186.58",
+						"ob": null,
+						"subconcepto": "19",
+						"saldoImpAfip": "0.00",
+						"fecha": "2017-01-18T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "561661.94",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "320550.92"
+					},
+					{
+						"id": 5870816,
+						"saldoLibrePeriodo": "223841.57",
+						"montoUtilizado": "12485.99",
+						"cuit": 30708028580,
+						"totalcompras": "1616597.22",
+						"totalDebFiscal": "554362.30",
+						"saldoLibrePerAnt": "124107.71",
+						"transaccionAfip": "2058346971",
+						"fechaPresentacion": "2017-02-15T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "273795.84",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2017-01-01T03:00:00Z",
+						"facturacionestimada": "3194182.77",
+						"ob": null,
+						"subconcepto": "19.0",
+						"saldoImpAfip": "0.00",
+						"fecha": "2017-02-15T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "373529.70",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "280566.46"
+					},
+					{
+						"id": 6700632,
+						"saldoLibrePeriodo": "64331.53",
+						"montoUtilizado": "12485.00",
+						"cuit": 30708028580,
+						"totalcompras": "2191217.69",
+						"totalDebFiscal": "672430.08",
+						"saldoLibrePerAnt": "211355.58",
+						"transaccionAfip": "2071205476",
+						"fechaPresentacion": "2017-03-14T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "292136.10",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2017-02-01T03:00:00Z",
+						"facturacionestimada": "3874478.08",
+						"ob": null,
+						"subconcepto": "19.0",
+						"saldoImpAfip": "0.00",
+						"fecha": "2017-03-14T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "145112.05",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "380293.98"
+					},
+					{
+						"id": 7527765,
+						"saldoLibrePeriodo": "205513.81",
+						"montoUtilizado": "12485.99",
+						"cuit": 30708028580,
+						"totalcompras": "1375888.69",
+						"totalDebFiscal": "549627.19",
+						"saldoLibrePerAnt": "51845.54",
+						"transaccionAfip": "2087718674",
+						"fechaPresentacion": "2017-04-17T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "310836.59",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2017-03-01T03:00:00Z",
+						"facturacionestimada": "3166899.52",
+						"ob": null,
+						"subconcepto": "19.0",
+						"saldoImpAfip": "0.00",
+						"fecha": "2017-04-17T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "464504.86",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "238790.60"
+					},
+					{
+						"id": 8346192,
+						"saldoLibrePeriodo": "75740.48",
+						"montoUtilizado": "12485.99",
+						"cuit": 30708028580,
+						"totalcompras": "3067645.24",
+						"totalDebFiscal": "718240.56",
+						"saldoLibrePerAnt": "193027.82",
+						"transaccionAfip": "2105914310",
+						"fechaPresentacion": "2017-05-18T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "185839.32",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2017-04-01T03:00:00Z",
+						"facturacionestimada": "4138433.70",
+						"ob": null,
+						"subconcepto": "19.0",
+						"saldoImpAfip": "0.00",
+						"fecha": "2017-05-18T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "68551.98",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "532401.24"
+					},
+					{
+						"id": 9158054,
+						"saldoLibrePeriodo": "270085.51",
+						"montoUtilizado": "12485.99",
+						"cuit": 30708028580,
+						"totalcompras": "3691658.89",
+						"totalDebFiscal": "675251.12",
+						"saldoLibrePerAnt": "63254.49",
+						"transaccionAfip": "2118828474",
+						"fechaPresentacion": "2017-06-14T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "34549.99",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2017-05-01T03:00:00Z",
+						"facturacionestimada": "3890732.64",
+						"ob": null,
+						"subconcepto": "19.0",
+						"saldoImpAfip": "0.00",
+						"fecha": "2017-06-14T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "241381.01",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "640701.13"
+					},
+					{
+						"id": 9983781,
+						"saldoLibrePeriodo": "40803.92",
+						"montoUtilizado": "12485.99",
+						"cuit": 30708028580,
+						"totalcompras": "1702879.38",
+						"totalDebFiscal": "934290.22",
+						"saldoLibrePerAnt": "257599.52",
+						"transaccionAfip": "2137125194",
+						"fechaPresentacion": "2017-07-17T03:00:00Z",
+						"saldoTecFavorContrib": "0.00",
+						"saldoTecFavorAfip": "638749.17",
+						"impFactExpoPeriodo": "0.00",
+						"rangoFacturacion": null,
+						"periodo": "2017-06-01T03:00:00Z",
+						"facturacionestimada": "5383291.26",
+						"ob": null,
+						"subconcepto": "19.0",
+						"saldoImpAfip": "0.00",
+						"fecha": "2017-07-17T03:00:00Z",
+						"impuesto": "30",
+						"saldoFavorPeriodoAnt": "0.00",
+						"concepto": "19",
+						"totalIngresadoRetenPercep": "421953.57",
+						"formulario": "2002",
+						"totalCredFiscalComputable": "295541.05"
+					}
+				],
+				"cantTotal": 12
+			},
+			"bancoOpera": {
+				"datos": [
+					{
+						"id": 26939055,
+						"banco": "BANCO DE LA NACION ARGENTINA",
+						"cuil": 30708028580,
+						"titular": "KINEXO S A",
+						"otros": " "
+					},
+					{
+						"id": 27050030,
+						"banco": "BANCO SANTANDER RIO S.A.",
+						"cuil": 30708028580,
+						"titular": "KINEXO S A",
+						"otros": " "
+					},
+					{
+						"id": 27066428,
+						"banco": "HSBC BANK ARGENTINA S.A.",
+						"cuil": 30708028580,
+						"titular": "KINEXO S A",
+						"otros": " "
+					},
+					{
+						"id": 27143903,
+						"banco": "F.F. FONDO INTEGRAL  PARA EL DESARROLLO REGIONAL (FON.DE.R.)",
+						"cuil": 30708028580,
+						"titular": "KINEXO S A",
+						"otros": " "
+					}
+				],
+				"cantTotal": 4
+			},
+			"tarjetas": {
+				"datos": [],
+				"cantTotal": 0
+			}
+		},
+		"morosidad": {
+			"informacionBcra": {
+				"datos": [
+					{
+						"periodo": "2016-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 2,
+							"entidad": "BANCO DE LA NACION ARGENTINA",
+							"codigoEnt": "00011"
+						},
+						"prestamo": 1353800.0
+					},
+					{
+						"periodo": "2016-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 4,
+							"entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA",
+							"codigoEnt": "00015"
+						},
+						"prestamo": 53100.0
+					},
+					{
+						"periodo": "2016-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 16,
+							"entidad": "BANCO SANTANDER RIO S.A.",
+							"codigoEnt": "00072"
+						},
+						"prestamo": 179900.0
+					},
+					{
+						"periodo": "2016-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 23,
+							"entidad": "HSBC BANK ARGENTINA S.A.",
+							"codigoEnt": "00150"
+						},
+						"prestamo": 260200.0
+					},
+					{
+						"periodo": "2016-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 75,
+							"entidad": "F.F. FONDO INTEGRAL  PARA EL DESARROLLO REGIONAL (FON.DE.R.)",
+							"codigoEnt": "10286"
+						},
+						"prestamo": 122300.0
+					},
+					{
+						"periodo": "2016-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 2,
+							"entidad": "BANCO DE LA NACION ARGENTINA",
+							"codigoEnt": "00011"
+						},
+						"prestamo": 1343400.0
+					},
+					{
+						"periodo": "2016-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 4,
+							"entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA",
+							"codigoEnt": "00015"
+						},
+						"prestamo": 49400.0
+					},
+					{
+						"periodo": "2016-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 16,
+							"entidad": "BANCO SANTANDER RIO S.A.",
+							"codigoEnt": "00072"
+						},
+						"prestamo": 212100.0
+					},
+					{
+						"periodo": "2016-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 23,
+							"entidad": "HSBC BANK ARGENTINA S.A.",
+							"codigoEnt": "00150"
+						},
+						"prestamo": 277400.0
+					},
+					{
+						"periodo": "2016-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 75,
+							"entidad": "F.F. FONDO INTEGRAL  PARA EL DESARROLLO REGIONAL (FON.DE.R.)",
+							"codigoEnt": "10286"
+						},
+						"prestamo": 118400.0
+					},
+					{
+						"periodo": "2016-03-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 2,
+							"entidad": "BANCO DE LA NACION ARGENTINA",
+							"codigoEnt": "00011"
+						},
+						"prestamo": 1311400.0
+					},
+					{
+						"periodo": "2016-03-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 4,
+							"entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA",
+							"codigoEnt": "00015"
+						},
+						"prestamo": 45600.0
+					},
+					{
+						"periodo": "2016-03-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 16,
+							"entidad": "BANCO SANTANDER RIO S.A.",
+							"codigoEnt": "00072"
+						},
+						"prestamo": 192300.0
+					},
+					{
+						"periodo": "2016-03-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 23,
+							"entidad": "HSBC BANK ARGENTINA S.A.",
+							"codigoEnt": "00150"
+						},
+						"prestamo": 378100.0
+					},
+					{
+						"periodo": "2016-03-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 75,
+							"entidad": "F.F. FONDO INTEGRAL  PARA EL DESARROLLO REGIONAL (FON.DE.R.)",
+							"codigoEnt": "10286"
+						},
+						"prestamo": 114600.0
+					},
+					{
+						"periodo": "2016-04-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 2,
+							"entidad": "BANCO DE LA NACION ARGENTINA",
+							"codigoEnt": "00011"
+						},
+						"prestamo": 1327600.0
+					},
+					{
+						"periodo": "2016-04-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 4,
+							"entidad": "INDUSTRIAL AND COMMERCIAL BANK OF CHINA",
+							"codigoEnt": "00015"
+						},
+						"prestamo": 41800.0
+					},
+					{
+						"periodo": "2016-04-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 16,
+							"entidad": "BANCO SANTANDER RIO S.A.",
+							"codigoEnt": "00072"
+						},
+						"prestamo": 91200.0
+					},
+					{
+						"periodo": "2016-04-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 23,
+							"entidad": "HSBC BANK ARGENTINA S.A.",
+							"codigoEnt": "00150"
+						},
+						"prestamo": 283500.0
+					},
+					{
+						"periodo": "2016-04-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 75,
+							"entidad": "F.F. FONDO INTEGRAL  PARA EL DESARROLLO REGIONAL (FON.DE.R.)",
+							"codigoEnt": "10286"
+						},
+						"prestamo": 110600.0
+					}
+				],
+				"cantTotal": 84
+			},
+			"chequesRechazados": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"deudoresBancoCentral": {
+				"datos": [
+					{
+						"id": 2,
+						"entidad": "BANCO DE LA NACION ARGENTINA",
+						"codigoEnt": "00011"
+					}
+				],
+				"cantTotal": 1
+			},
+			"embargos": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"juiciosDemandado": null,
+			"juiciosActor": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"variables": {
+			"variableRechazo": [],
+			"variableAprobada": [
+				"Ultimo periodo BCRA",
+				"Histórico BCRA",
+				"Cheque rechazados",
+				"Historico morosidad",
+				"Cantidad de Consulta"
+			]
+		},
+		"codigo": "A",
+		"idLog": 2254
+	},
+	"total_page": null
+}

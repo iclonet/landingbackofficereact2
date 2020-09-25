@@ -1,0 +1,450 @@
+{
+	"result": {
+		"code": 200,
+		"info": "OK"
+	},
+	"data": {
+		"datosParticulares": {
+			"id": {},
+			"nombre": "GABRIEL CESAR",
+			"apellido": "SAIONE",
+			"apellidoNombre": "SAIONE, GABRIEL CESAR",
+			"cuil": 20289187147,
+			"dni": 28918714,
+			"tipo": "DNI-EA",
+			"nacionalidad": "Argentina",
+			"anio": 1981,
+			"fechaNacimiento": "1981-08-01T04:00:00Z",
+			"edad": 36,
+			"sexo": "M",
+			"observaciones": {},
+			"mails": {
+				"datos": [
+					{
+						"id": 6428057,
+						"dni": 28918714,
+						"cuil": 20289187147,
+						"email": "gabisaione@hotmail.com",
+						"origen": " "
+					},
+					{
+						"id": 6428058,
+						"dni": 28918714,
+						"cuil": 20289187147,
+						"email": "gabriel.saione@gmail.com",
+						"origen": " "
+					}
+				],
+				"cantTotal": 2
+			},
+			"domicilio": "LAS HERAS 509",
+			"localidad": "RAFAELA",
+			"provincia": "SANTA FE",
+			"cp": "2300",
+			"domAlternativos": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"datosLaborales": {
+			"monotributista": {
+				"datos": [
+					{
+						"tipo": "1",
+						"catagoria": "A",
+						"ganancias": "NI",
+						"iva": "NI",
+						"integrasociedades": "NO",
+						"fecha": "2017-06-24",
+						"codigo": "08"
+					}
+				],
+				"cantTotal": 1
+			},
+			"actividad": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"obraSocial": {
+				"datos": [
+					{
+						"descripcion": "O.S . DE LA ASOCIACION CIVIL PRO SINDICATO AMAS DE CASA DE LA REPUBLICA ARGENTINA",
+						"codigo": "001508"
+					}
+				],
+				"cantTotal": 1
+			},
+			"empAportes": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"sueldos": {
+				"datos": [
+					{
+						"id": 6387579,
+						"periodo": "2016-12-01T03:00:00Z",
+						"remuneracion": 36354,
+						"cuil": 20289187147,
+						"cuit": 30708028580
+					},
+					{
+						"id": 16419019,
+						"periodo": "2017-01-01T03:00:00Z",
+						"remuneracion": 26988,
+						"cuil": 20289187147,
+						"cuit": 30708028580
+					},
+					{
+						"id": 26678133,
+						"periodo": "2017-02-01T03:00:00Z",
+						"remuneracion": 26988,
+						"cuil": 20289187147,
+						"cuit": 30708028580
+					},
+					{
+						"id": 36907020,
+						"periodo": "2017-03-01T03:00:00Z",
+						"remuneracion": 26988,
+						"cuil": 20289187147,
+						"cuit": 30708028580
+					},
+					{
+						"id": 47082196,
+						"periodo": "2017-04-01T03:00:00Z",
+						"remuneracion": 31963,
+						"cuil": 20289187147,
+						"cuit": 30708028580
+					},
+					{
+						"id": 57519291,
+						"periodo": "2017-05-01T03:00:00Z",
+						"remuneracion": 26934,
+						"cuil": 20289187147,
+						"cuit": 30708028580
+					},
+					{
+						"id": 67953701,
+						"periodo": "2017-06-01T03:00:00Z",
+						"remuneracion": 42359,
+						"cuil": 20289187147,
+						"cuit": 30708028580
+					},
+					{
+						"id": 78473001,
+						"periodo": "2017-07-01T03:00:00Z",
+						"remuneracion": 29664,
+						"cuil": 20289187147,
+						"cuit": 30708028580
+					},
+					{
+						"id": 99370017,
+						"periodo": "2017-06-01T03:00:00Z",
+						"remuneracion": 42359,
+						"cuil": 20289187147,
+						"cuit": 30708028580
+					},
+					{
+						"id": 109791520,
+						"periodo": "2017-08-01T03:00:00Z",
+						"remuneracion": 29664,
+						"cuil": 20289187147,
+						"cuit": 30708028580
+					}
+				],
+				"cantTotal": 10
+			},
+			"empDomesticos": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"seguridadSocial": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"vinculos": {
+			"vinculos": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"otrosVinculos": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"boletinOficial": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"telefonos": {
+			"datos": [
+				{
+					"id": 3942107,
+					"dni": 28918714,
+					"tipo": "Fijo",
+					"cuil": 20289187147,
+					"tel": "03492423578",
+					"localidad": "Rafaela",
+					"provincia": "Santa Fe",
+					"origen": "Paginas Blancas"
+				}
+			],
+			"cantTotal": 1
+		},
+		"telefonosAdicionales": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"morosidad": {
+			"informacionBcra": {
+				"datos": [
+					{
+						"periodo": "2017-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 6,
+							"entidad": "BBVA BANCO FRANCES S.A.",
+							"codigoEnt": "00017"
+						},
+						"prestamo": 39000.0
+					},
+					{
+						"periodo": "2017-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 12,
+							"entidad": "BANCO HIPOTECARIO S.A.",
+							"codigoEnt": "00044"
+						},
+						"prestamo": 4000.0
+					},
+					{
+						"periodo": "2017-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 23,
+							"entidad": "HSBC BANK ARGENTINA S.A.",
+							"codigoEnt": "00150"
+						},
+						"prestamo": 72000.0
+					},
+					{
+						"periodo": "2017-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 6,
+							"entidad": "BBVA BANCO FRANCES S.A.",
+							"codigoEnt": "00017"
+						},
+						"prestamo": 38000.0
+					},
+					{
+						"periodo": "2017-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 12,
+							"entidad": "BANCO HIPOTECARIO S.A.",
+							"codigoEnt": "00044"
+						},
+						"prestamo": 5000.0
+					},
+					{
+						"periodo": "2017-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 23,
+							"entidad": "HSBC BANK ARGENTINA S.A.",
+							"codigoEnt": "00150"
+						},
+						"prestamo": 59000.0
+					},
+					{
+						"periodo": "2017-03-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 6,
+							"entidad": "BBVA BANCO FRANCES S.A.",
+							"codigoEnt": "00017"
+						},
+						"prestamo": 37000.0
+					},
+					{
+						"periodo": "2017-03-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 12,
+							"entidad": "BANCO HIPOTECARIO S.A.",
+							"codigoEnt": "00044"
+						},
+						"prestamo": 1000.0
+					},
+					{
+						"periodo": "2017-03-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 23,
+							"entidad": "HSBC BANK ARGENTINA S.A.",
+							"codigoEnt": "00150"
+						},
+						"prestamo": 52000.0
+					},
+					{
+						"periodo": "2017-06-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 23,
+							"entidad": "HSBC BANK ARGENTINA S.A.",
+							"codigoEnt": "00150"
+						},
+						"prestamo": 45000.0
+					},
+					{
+						"periodo": "2017-06-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 6,
+							"entidad": "BBVA BANCO FRANCES S.A.",
+							"codigoEnt": "00017"
+						},
+						"prestamo": 36000.0
+					},
+					{
+						"periodo": "2017-06-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 23,
+							"entidad": "HSBC BANK ARGENTINA S.A.",
+							"codigoEnt": "00150"
+						},
+						"prestamo": 45000.0
+					},
+					{
+						"periodo": "2017-07-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 6,
+							"entidad": "BBVA BANCO FRANCES S.A.",
+							"codigoEnt": "00017"
+						},
+						"prestamo": 34000.0
+					},
+					{
+						"periodo": "2017-07-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 23,
+							"entidad": "HSBC BANK ARGENTINA S.A.",
+							"codigoEnt": "00150"
+						},
+						"prestamo": 51000.0
+					},
+					{
+						"periodo": "2017-04-05T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 6,
+							"entidad": "BBVA BANCO FRANCES S.A.",
+							"codigoEnt": "00017"
+						},
+						"prestamo": 376000.0
+					},
+					{
+						"periodo": "2017-04-05T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 12,
+							"entidad": "BANCO HIPOTECARIO S.A.",
+							"codigoEnt": "00044"
+						},
+						"prestamo": 16000.0
+					},
+					{
+						"periodo": "2017-04-05T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 23,
+							"entidad": "HSBC BANK ARGENTINA S.A.",
+							"codigoEnt": "00150"
+						},
+						"prestamo": 527000.0
+					}
+				],
+				"cantTotal": 17
+			},
+			"chequesRechazados": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"deudoresBancoCentral": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"embargos": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"juiciosDemandado": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"juiciosActor": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"bienesPersonales": {
+			"propiedades": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"automotores": {
+				"datos": [
+					{
+						"dni": 28918714,
+						"dominio": "OPM522",
+						"compra": "2015-03-03T05:00:00Z",
+						"modelo": "FOCUS 5P 1.6L N MT S",
+						"porcentaje": 100,
+						"marca": "FORD",
+						"origen": "NACIONAL",
+						"tramite": "2015-03-03T05:00:00Z",
+						"tipo": "SEDAN 5 PUERTAS",
+						"cuil": 20289187147,
+						"anioModelo": 2015
+					}
+				],
+				"cantTotal": 1
+			},
+			"autosembargos": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"pagosImpuestos": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"participacionSocietaria": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"situacionFinanciera": {},
+		"variables": {
+			"variableRechazo": [],
+			"variableAprobada": [
+				"Edad",
+				"Dni",
+				"Laboral",
+				"Fallecidos",
+				"Ultimo periodo BCRA",
+				"Histórico BCRA",
+				"Cheque rechazados",
+				"Historico morosidad",
+				"Cantidad de Consulta"
+			]
+		},
+		"codigo": "A",
+		"idLog": 2261
+	},
+	"total_page": null
+}

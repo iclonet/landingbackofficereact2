@@ -1,0 +1,49 @@
+.img-logo-large{
+    margin-bottom: 10px;
+    height: 50px;
+}
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+  width: 50%; 
+  height: 100%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 40px;
+}
+
+.Btn-wrap {
+ white-space: normal;
+}
+
+.Br-bt-demo {
+  display: none ;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .Br-bt-demo {
+    display: block ;
+  }
+}
+
+@media only screen and (min-width: 768px) {}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .Absolute-Center.is-Responsive {
+    height: 65%; 
+  }
+}
+

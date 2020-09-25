@@ -1,0 +1,599 @@
+{
+	"status": 200,
+	"result": {
+		"code": 200,
+		"info": "OK"
+	},
+	"data": {
+		"datosParticulares": {
+			"id": {},
+			"nombre": "SERGIO DAVID",
+			"apellido": "DEPAOLINI",
+			"apellidoNombre": "DEPAOLINI, SERGIO DAVID",
+			"cuil": 20262845266,
+			"dni": 26284526,
+			"tipo": "DNI-EA",
+			"nacionalidad": "Argentina",
+			"anio": 1978,
+			"fechaNacimiento": "1978-04-28T05:00:00Z",
+			"edad": 39,
+			"sexo": "M",
+			"observaciones": {},
+			"mails": {
+				"datos": [
+					{
+						"id": 5587221,
+						"dni": 26284526,
+						"cuil": 20262845266,
+						"email": "tangoantigranizo@gmail.com",
+						"origen": " "
+					}
+				],
+				"cantTotal": 1
+			},
+			"domicilio": "CORVALAN 1371",
+			"localidad": "MONTE CHINGOLO",
+			"provincia": "BUENOS AIRES",
+			"cp": "1825",
+			"domAlternativos": {
+				"datos": [
+					{
+						"id": 731598,
+						"provinciaAlt": "BUENOS AIRES",
+						"cpAlt": "1825",
+						"cuil": 20262845266,
+						"localidadAlt": "LANUS",
+						"domicilioAlt": "RONDEAU 1460"
+					}
+				],
+				"cantTotal": 1
+			}
+		},
+		"datosLaborales": {
+			"datoLaboral": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"monotributista": {
+				"datos": [
+					{
+						"tipo": "Autonomo",
+						"catagoria": "NI",
+						"ganancias": "AC",
+						"iva": "AC",
+						"integrasociedades": "NO",
+						"fecha": "2017-06-24",
+						"codigo": "00"
+					},
+					{
+						"tipo": "Autonomo",
+						"catagoria": "NI",
+						"ganancias": "AC",
+						"iva": "AC",
+						"integrasociedades": "SI",
+						"fecha": "2017-07-24",
+						"codigo": "00"
+					}
+				],
+				"cantTotal": 2
+			},
+			"actividad": {
+				"datos": [
+					{
+						"id": 100000000,
+						"cuil": 20262845266,
+						"descripcion": "VENTA AL POR MAYOR DE MERCANCIAS N.C.P.",
+						"ciiu": 469090
+					},
+					{
+						"id": 100000001,
+						"cuil": 20262845266,
+						"descripcion": "SERVICIOS DE INFORMACION N.C.P.\nSERVICIOS DE AGENCIAS DE NOTICIAS Y SERVICIOS DE INFORMACIÓN N.C.P. INFORMACION Y COMUNICACIONES",
+						"ciiu": 639900
+					},
+					{
+						"id": 100000002,
+						"cuil": 20262845266,
+						"descripcion": "SERVICIOS DE ASESORAMIENTO, DIRECCIÓN Y GESTIÓN EMPRESARIAL REALIZADOS POR INTEGRANTES DE CUERPOS DE DIRECCIÓN EN SOCIEDADES EXCEPTO LAS ANÓNIMAS",
+						"ciiu": 702092
+					}
+				],
+				"cantTotal": 3
+			},
+			"obraSocial": {
+				"datos": [
+					{
+						"descripcion": "GALENO",
+						"codigo": "111111"
+					}
+				],
+				"cantTotal": 1
+			},
+			"empAportes": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"sueldos": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"empDomesticos": {
+				"datos": [
+					{
+						"id": 1,
+						"alta": "2011-01-01T03:00:00Z",
+						"modoliquida": "Quincenal",
+						"cuil": 20262845266,
+						"cuilEmple": 27311754012,
+						"estado": "ACTIVO",
+						"sueldo": 8000,
+						"nombre": "PARRA VANESA",
+						"baja": "2011-02-01T03:00:00Z"
+					},
+					{
+						"id": 4,
+						"alta": "2017-01-01T03:00:00Z",
+						"modoliquida": "Mensual",
+						"cuil": 20262845266,
+						"cuilEmple": 20262304613,
+						"estado": "ACTIVO",
+						"sueldo": 1000,
+						"nombre": "HUGO FERRAND",
+						"baja": "2011-02-01T03:00:00Z"
+					}
+				],
+				"cantTotal": 2
+			},
+			"domAportes": {
+				"datos": [
+					{
+						"id": 1,
+						"cuil": 20262845266,
+						"mes": "Abril",
+						"anio": 2017
+					},
+					{
+						"id": 1,
+						"cuil": 20262845266,
+						"mes": "Abril",
+						"anio": 2017
+					}
+				],
+				"cantTotal": 2
+			},
+			"seguridadSocial": {
+				"datos": [
+					{
+						"cuil": 20262845266,
+						"periodo": "2017-01-01",
+						"segSocialAportes": 1000,
+						"segSocialContribu": 50,
+						"segSocialRetencion": 45,
+						"obSocialAportes": 30,
+						"obSocialContribu": null,
+						"obSocialRetencion": null
+					}
+				],
+				"cantTotal": 1
+			}
+		},
+		"vinculos": {
+			"vinculos": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"otrosVinculos": {
+				"datos": [
+					{
+						"id": 1,
+						"fechaNacimiento": "1984-06-09T03:00:00Z",
+						"anioNacimiento": 1984,
+						"cuil": 20262845266,
+						"cuilvinculo": 27311754012,
+						"localidad": "MONTE CHINGOLO",
+						"cp": 1825,
+						"provincia": "BUENOS AIRES",
+						"nombre": "PARRA VANESA",
+						"dnivinculo": 31175401,
+						"direccion": "CORVALAN 1371 "
+					},
+					{
+						"id": 2,
+						"fechaNacimiento": "1971-08-27T03:00:00Z",
+						"anioNacimiento": 1971,
+						"cuil": 20262845266,
+						"cuilvinculo": 20220841783,
+						"localidad": "MONTE CHINGOLO",
+						"cp": 1825,
+						"provincia": "BUENOS AIRES",
+						"nombre": "DEPAOLINI GUSTAVO",
+						"dnivinculo": 22084178,
+						"direccion": "RONDEAU 1460"
+					}
+				],
+				"cantTotal": 2
+			}
+		},
+		"boletinOficial": {
+			"datos": [
+				{
+					"id": 1,
+					"razonSocial": "COBERTORES TANGO",
+					"fecha": "2017-01-01T03:00:00Z",
+					"cuil": 20262845266,
+					"fuente": "CABA",
+					"informe": "2017-01-01"
+				}
+			],
+			"cantTotal": 1
+		},
+		"telefonos": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"telefonosAdicionales": {
+			"datos": [
+				{
+					"id": 1,
+					"tipo": "PARTICULAR",
+					"cuil": 20262845266,
+					"tel": "01142467672",
+					"localidad": "Lanus",
+					"domicilio": "TUCUMAN 4125 - LANUS - BUENOS AIRES",
+					"cp": 1824,
+					"provincia": "Buenos Aires",
+					"nombre": "ORTIZ ROSA",
+					"cuitlinea": 20262304613
+				},
+				{
+					"id": 3,
+					"tipo": "LABORAL",
+					"cuil": 20262845266,
+					"tel": "01142300899",
+					"localidad": "Lanus",
+					"domicilio": "RONDEAU 1460 - MONTE CHINGOLO - BUENOS AIRES",
+					"cp": 1822,
+					"provincia": "Buenos Aires",
+					"nombre": "TALLER",
+					"cuitlinea": 20262304613
+				}
+			],
+			"cantTotal": 2
+		},
+		"morosidad": {
+			"informacionBcra": {
+				"datos": [
+					{
+						"periodo": "2016-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 1,
+							"entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+							"codigoEnt": "00007"
+						},
+						"prestamo": 84200.0
+					},
+					{
+						"periodo": "2016-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 6,
+							"entidad": "BBVA BANCO FRANCES S.A.",
+							"codigoEnt": "00017"
+						},
+						"prestamo": 33400.0
+					},
+					{
+						"periodo": "2016-01-01T03:00:00Z",
+						"situacion": "04",
+						"entidad": {
+							"id": 116,
+							"entidad": "F.F. PRIVADO BANCO SAENZ X",
+							"codigoEnt": "10780"
+						},
+						"prestamo": 900.0
+					},
+					{
+						"periodo": "2016-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 260,
+							"entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+							"codigoEnt": "70101"
+						},
+						"prestamo": 34000.0
+					},
+					{
+						"periodo": "2016-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 1,
+							"entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+							"codigoEnt": "00007"
+						},
+						"prestamo": 67300.0
+					},
+					{
+						"periodo": "2016-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 6,
+							"entidad": "BBVA BANCO FRANCES S.A.",
+							"codigoEnt": "00017"
+						},
+						"prestamo": 33400.0
+					},
+					{
+						"periodo": "2016-02-01T03:00:00Z",
+						"situacion": "04",
+						"entidad": {
+							"id": 116,
+							"entidad": "F.F. PRIVADO BANCO SAENZ X",
+							"codigoEnt": "10780"
+						},
+						"prestamo": 900.0
+					},
+					{
+						"periodo": "2016-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 260,
+							"entidad": "AMERICAN EXPRESS ARGENTINA S.A.",
+							"codigoEnt": "70101"
+						},
+						"prestamo": 35800.0
+					},
+					{
+						"periodo": "2017-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 1,
+							"entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+							"codigoEnt": "00007"
+						},
+						"prestamo": 61000.0
+					},
+					{
+						"periodo": "2017-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 6,
+							"entidad": "BBVA BANCO FRANCES S.A.",
+							"codigoEnt": "00017"
+						},
+						"prestamo": 29000.0
+					},
+					{
+						"periodo": "2017-01-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 25,
+							"entidad": "BANCO CREDICOOP COOPERATIVO LIMITADO",
+							"codigoEnt": "00191"
+						},
+						"prestamo": 3000.0
+					},
+					{
+						"periodo": "2017-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 1,
+							"entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+							"codigoEnt": "00007"
+						},
+						"prestamo": 59000.0
+					},
+					{
+						"periodo": "2017-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 6,
+							"entidad": "BBVA BANCO FRANCES S.A.",
+							"codigoEnt": "00017"
+						},
+						"prestamo": 24000.0
+					},
+					{
+						"periodo": "2017-02-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 25,
+							"entidad": "BANCO CREDICOOP COOPERATIVO LIMITADO",
+							"codigoEnt": "00191"
+						},
+						"prestamo": 6000.0
+					},
+					{
+						"periodo": "2017-03-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 1,
+							"entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+							"codigoEnt": "00007"
+						},
+						"prestamo": 67000.0
+					},
+					{
+						"periodo": "2017-03-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 6,
+							"entidad": "BBVA BANCO FRANCES S.A.",
+							"codigoEnt": "00017"
+						},
+						"prestamo": 22000.0
+					},
+					{
+						"periodo": "2017-03-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 25,
+							"entidad": "BANCO CREDICOOP COOPERATIVO LIMITADO",
+							"codigoEnt": "00191"
+						},
+						"prestamo": 6000.0
+					},
+					{
+						"periodo": "2017-06-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 16,
+							"entidad": "BANCO SANTANDER RIO S.A.",
+							"codigoEnt": "00072"
+						},
+						"prestamo": 6000.0
+					},
+					{
+						"periodo": "2017-06-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 25,
+							"entidad": "BANCO CREDICOOP COOPERATIVO LIMITADO",
+							"codigoEnt": "00191"
+						},
+						"prestamo": 2000.0
+					},
+					{
+						"periodo": "2017-06-01T03:00:00Z",
+						"situacion": "01",
+						"entidad": {
+							"id": 1,
+							"entidad": "BANCO DE GALICIA Y BUENOS AIRES S.A.",
+							"codigoEnt": "00007"
+						},
+						"prestamo": 72000.0
+					}
+				],
+				"cantTotal": 30
+			},
+			"chequesRechazados": {
+				"datos": [
+					{
+						"nroCheque": "78787878",
+						"fechaRechazo": "2017-01-01T05:00:00Z",
+						"monto": "787878",
+						"causal": "2",
+						"fechaPago": "",
+						"condicion": "",
+						"fechaLevantamiento": "2015-08-06T04:00:00Z",
+						"multa": "PAGADO",
+						"cuit": 0
+					}
+				],
+				"cantTotal": 1
+			},
+			"deudoresBancoCentral": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"embargos": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"juiciosDemandado": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"juiciosActor": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"bienesPersonales": {
+			"propiedades": {
+				"datos": {},
+				"cantTotal": 0
+			},
+			"automotores": {
+				"datos": [
+					{
+						"dni": 26284526,
+						"dominio": "AB256AY",
+						"compra": "2017-05-02T04:00:00Z",
+						"modelo": "AMAROK DC 2.0L TDI 180 CV 4X4 977",
+						"porcentaje": 100,
+						"marca": "VOLKSWAGEN",
+						"origen": "NACIONAL",
+						"tramite": "2017-05-02T04:00:00Z",
+						"tipo": "PICK-UP",
+						"cuil": 20262845266,
+						"anioModelo": 2017
+					},
+					{
+						"dni": 26284526,
+						"dominio": "ORS177",
+						"compra": "2015-04-10T04:00:00Z",
+						"modelo": "WHITE UP! 1.0 MPI",
+						"porcentaje": 100,
+						"marca": "VOLKSWAGEN",
+						"origen": "NACIONAL",
+						"tramite": "2015-04-10T04:00:00Z",
+						"tipo": "SEDAN 5 PUERTAS",
+						"cuil": 20262845266,
+						"anioModelo": 2015
+					}
+				],
+				"cantTotal": 2
+			},
+			"autosembargos": {
+				"datos": {},
+				"cantTotal": 0
+			}
+		},
+		"pagosImpuestos": {
+			"datos": [
+				{
+					"periodo": "2017-05-05T03:00:00Z",
+					"cuil": 20262845266,
+					"autonomo": 20,
+					"contriSocial": 90,
+					"segSocial": 50,
+					"monotributo": 1190,
+					"contriAutonomo": 80
+				},
+				{
+					"periodo": "2017-05-05T03:00:00Z",
+					"cuil": 20262845266,
+					"autonomo": 20,
+					"contriSocial": 90,
+					"segSocial": 50,
+					"monotributo": 1190,
+					"contriAutonomo": 80
+				},
+				{
+					"periodo": "2017-05-05T03:00:00Z",
+					"cuil": 20262845266,
+					"autonomo": 20,
+					"contriSocial": 90,
+					"segSocial": 50,
+					"monotributo": 1190,
+					"contriAutonomo": 80
+				}
+			],
+			"cantTotal": 3
+		},
+		"participacionSocietaria": {
+			"datos": {},
+			"cantTotal": 0
+		},
+		"situacionFinanciera": {},
+		"variables": {
+			"variableRechazo": [
+				"Cantidad de Consulta"
+			],
+			"variableAprobada": [
+				"Edad",
+				"Dni",
+				"Laboral",
+				"Fallecidos",
+				"Ultimo periodo BCRA",
+				"Histórico BCRA",
+				"Cheque rechazados",
+				"Historico morosidad"
+			]
+		},
+		"codigo": "R",
+		"idLog": 2491
+	},
+	"total_page": null
+}

@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"window.zoomLevel": 1,
+		"editor.formatOnSaveTimeout": 1500,
+		"editor.detectIndentation": false,
+		"editor.insertSpaces": false,
+		"editor.formatOnPaste": true,
+		"editor.formatOnType": true,
+		"editor.suggestSelection": "first",
+		"colorize.languages": [
+			"javascript",
+			// ...
+		],
+		"colorize.colorized_colors": [
+			"HEXA"
+		]
+	}
+}

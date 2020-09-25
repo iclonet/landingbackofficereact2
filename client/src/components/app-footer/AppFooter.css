@@ -1,0 +1,7 @@
+.brand-icon {
+    max-height: 101px;
+    min-width: 355px;
+   /* width: 25%;
+    vertical-align: center;*/
+    cursor: pointer;
+}
