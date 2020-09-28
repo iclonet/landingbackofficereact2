@@ -1,79 +1,159 @@
-import React, { Component, useEffect } from "react";
+import React, { Component, useEffect, useState } from "react";
+import { useFormik } from "formik";
 import { Panel, Row, Col } from "react-bootstrap";
-import PropTypes from "prop-types";
-import { Route } from "react-router-dom";
 import { FormGroup, FormControl, Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
+import { InputLabel } from "@material-ui/core";
+import {createCampaign} from '../api';
 
-class FormCampaña extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            deshabilitado: false,
-            parametros: false,
-            nuevo: false,
-        };
-    }
-
-    guardar = () => {
-        if (this.state.deshabilitado === false) {
-            this.setState({
-                deshabilitado: true,
-                parametros: true,
-                nuevo: true,
-            });
+const FormCampaña = () => {
+    const guardar = () => {
+        if (deshabilitado === false) {
+            setDeshabilitado(true);
+            setParametros(true);
+            setNuevo(true);
+            formik.handleSubmit();
         }
     };
+    const [error, setError] = useState("");
+    const [deshabilitado, setDeshabilitado] = useState(false);
+    const [parametros, setParametros] = useState(false);
+    const [nuevo, setNuevo] = useState(false);
+    const [campaña, setCampaña] = useState([]);
 
-    render() {
-        return (
-            <div style={{ width: "50%", marginLeft: "15%", marginTop: "5%" }}>
-                <h1>Nueva Campaña</h1>
-                <Panel header=" ">
-                    <div
+
+    const formik = useFormik({
+        initialValues: {
+            fecha_lanzamiento: "",
+            fecha_vencimiento: "",
+            habilitada: false,
+            nombre: "",
+            hash: {hashh},
+            nro_cliente: 84,
+        },
+        onSubmit: (values) => {
+        const { fecha_lanzamiento, fecha_vencimiento, habilitada, nombre, hash,nro_cliente } = values;
+        const cam = {fecha_lanzamiento, fecha_vencimiento, habilitada, nombre, hash,nro_cliente};
+        createCampaignFunc(cam);
+        console.log("formik in submit");
+        console.log(values);
+        console.log(cam);
+        },
+    });
+    async function createCampaignFunc(obj) {
+            const res = await createCampaign(obj);
+            setCampaña(res.data);
+      }
+
+    function makeHashString (){
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      
+        for (var i = 0; i < 5; i++)
+          text += possible.charAt(Math.floor(Math.random() * possible.length));
+          
+        return (text);
+      };
+    const hashh = makeHashString();
+
+      useEffect(() => {
+        try {
+          console.log(hashh);
+        } catch (err) {
+          setError(err);
+        }
+      }, []);
+
+    return (
+        <div style={{ width: "50%", marginLeft: "15%", marginTop: "5%" }}>
+            <h1>Nueva Campaña</h1>
+            <Panel header=" ">
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        flexDirection: "column",
+                    }}
+                >
+                    <FormGroup
                         style={{
+                            width: "50%",
+                            alignSelf: "center",
                             display: "flex",
                             justifyContent: "center",
                             flexDirection: "column",
                         }}
+                        onSubmit={formik.handleSubmit}
                     >
-                        <FormGroup
+                        <InputLabel
+                            style={{
+                                fontSize: "16pt",
+                                fontFamily: "Roboto",
+                                marginTop: "2%",
+                            }}
+                        >
+                            Hash
+                        </InputLabel>
+
+                        <FormControl
+                            style={{ marginBottom: "2%" }}
+                            placeholder={hashh}
+                            disabled = {true}
+                        ></FormControl>
+                        <InputLabel
+                            style={{ fontSize: "16pt", fontFamily: "Roboto" }}
+                        >
+                            Nombre
+                        </InputLabel>
+
+                        <FormControl
+                            style={{ marginBottom: "2%" }}
+                            placeholder="Nombre"
+                            onChange={formik.handleChange}
+                            value={formik.values.sucursalId}
+                            // onKeyPress={this.handleEnterPress}
+                        ></FormControl>
+                        <InputLabel
+                            style={{ fontSize: "16pt", fontFamily: "Roboto" }}
+                        >
+                            Fecha Lanzimiento
+                        </InputLabel>
+                        <FormControl
+                            style={{ marginBottom: "2%" }}
+                            placeholder="Fecha Lanzimiento"
+                            type="date"
+                            onChange={formik.handleChange}
+                            selected={formik.values.fecha_lanzamiento}
+                            // onKeyPress={this.handleEnterPress}
+                        ></FormControl>
+                        <InputLabel
+                            style={{ fontSize: "16pt", fontFamily: "Roboto" }}
+                        >
+                            Fecha Vencimiento
+                        </InputLabel>
+                        <FormControl
+                            type="date"
+                            style={{ marginBottom: "2%" }}
+                            placeholder="Fecha Vencimiento"
+                            onChange={formik.handleChange}
+                            selected={formik.values.fecha_vencimiento}
+                            // onKeyPress={this.handleEnterPress}
+                        ></FormControl>
+
+                        <Button
                             style={{
                                 width: "50%",
                                 alignSelf: "center",
-                                display: "flex",
-                                justifyContent: "center",
-                                flexDirection: "column",
+                                marginBottom: "2%",
                             }}
+                            type="submit"
+                            bsStyle="primary"
+                            disabled={deshabilitado}
+                            onClick={guardar}
                         >
-                            <FormControl
-                                style={{ marginBottom: "2%" }}
-                                placeholder="Hash"
-                                //value={this.state.texto_busqueda}
-                                // onKeyPress={this.handleEnterPress}
-                            ></FormControl>
-
-                            <FormControl
-                                style={{ marginBottom: "2%" }}
-                                placeholder="Nombre"
-                                //value={this.state.texto_busqueda}
-                                // onKeyPress={this.handleEnterPress}
-                            ></FormControl>
-
-                            <FormControl
-                                style={{ marginBottom: "2%" }}
-                                placeholder="Fecha Lanzimiento"
-                                //value={this.state.texto_busqueda}
-                                // onKeyPress={this.handleEnterPress}
-                            ></FormControl>
-
-                            <FormControl
-                                style={{ marginBottom: "2%" }}
-                                placeholder="Fecha Vencimiento"
-                                //value={this.state.texto_busqueda}
-                                // onKeyPress={this.handleEnterPress}
-                            ></FormControl>
-
+                            Guaradar
+                        </Button>
+                        {nuevo == true && (
                             <Button
                                 style={{
                                     width: "50%",
@@ -81,50 +161,28 @@ class FormCampaña extends React.Component {
                                     marginBottom: "2%",
                                 }}
                                 bsStyle="primary"
-                                disabled={this.state.deshabilitado}
-                                onClick={this.guardar}
-                            >
-                                Guaradar
-                            </Button>
-                            <Button
-                                style={
-                                    this.state.nuevo
-                                        ? {
-                                              width: "50%",
-                                              alignSelf: "center",
-                                              marginBottom: "2%",
-                                          }
-                                        : {
-                                              display: "none",
-                                          }
-                                }
-                                bsStyle="primary"
                                 //onClick={this.guardar}
                             >
                                 nuevo
                             </Button>
+                        )}
+                        {parametros == true && (
                             <Button
-                                style={
-                                    this.state.parametros
-                                        ? {
-                                              width: "50%",
-                                              alignSelf: "center",
-                                              marginBottom: "2%",
-                                          }
-                                        : {
-                                              display: "none",
-                                          }
-                                }
+                                style={{
+                                    width: "50%",
+                                    alignSelf: "center",
+                                    marginBottom: "2%",
+                                }}
                                 bsStyle="primary"
                                 //onClick={this.guardar}
                             >
                                 Agregar parametros
                             </Button>
-                        </FormGroup>
-                    </div>
-                </Panel>
-            </div>
-        );
-    }
-}
+                        )}
+                    </FormGroup>
+                </div>
+            </Panel>
+        </div>
+    );
+};
 export default FormCampaña;

@@ -5,6 +5,7 @@ import lstrings from '../../../../utils/LStrings';
 import "./ContactDialog.css";
 import agilDataLogo from '../../../../images/logo-icono.png';
 import Session from '../../../../utils/Session';
+import smartleads from "../../../../images/smartleads.png";
 
 
 class ContactDialog extends Component {
@@ -30,7 +31,7 @@ class ContactDialog extends Component {
                 <Modal.Body>
                     <Row className="contacto">
                         <Col lg={colSpan} xsHidden={true}>
-                            <img src={logo} className="img-responsive" alt=""/>
+                            <img src={smartleads} className="img-responsive" alt=""/>
                         </Col>
                         <Col lg={colSpan}>
                             <h5>Atención al cliente</h5>
