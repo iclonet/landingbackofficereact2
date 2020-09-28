@@ -11,6 +11,7 @@ import smartleads from "../../../../images/smartleads.png";
 class ContactDialog extends Component {
     render() {
         
+        
         let logo = agilDataLogo;
         let colSpan = 6;
         let email = lstrings.contacto_mail;
