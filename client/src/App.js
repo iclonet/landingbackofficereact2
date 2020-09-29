@@ -20,7 +20,9 @@ import Home from './scenes/home/Home';
 import Dashboard from './scenes/dashboard/Dashboard';
 import NoMatch from './scenes/no-match/NoMatch';
 import Session from './utils/Session';
-import 'react-block-ui/style.css';
+//import 'react-block-ui/style.css';
+import FormCampaña from './scenes/campaña/FormCambaña';
+
 
 
 class App extends Component {
@@ -110,6 +112,11 @@ class App extends Component {
 									pathname: '/dashboard',
 									state: { from: props.location }
 								}} />
+							else return <Home />;
+						}} />
+                        <Route exact path="/Campaña" render={props => {
+							if (Session.isAuthenticated())
+								return <FormCampaña />
 							else return <Home />;
 						}} />
 												

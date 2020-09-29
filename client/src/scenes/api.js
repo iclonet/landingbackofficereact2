@@ -8,15 +8,15 @@ export const api = axios.create({
 })
 
 
-export const createCamoaign = async (values) => {
+export const createCampaign = async (values) => {
 	const url = `estrategias/create`;
 	const request = { 
-        fecha_lanzamiento: values.fecha_lanzamiento,
-        fecha_vencimiento: values.fecha_vencimiento,
+        fechaLanzamiento: values.fechaLanzamiento,
+        fechaVencimiento: values.fechaVencimiento,
         habilitada: values.habilitada,
         nombre: values.nombre,
         hash: values.hash,
-        nro_cliente: values.nro_cliente,
+        nroCliente: values.nroCliente,
 									}
 	return await api.post(url, request);
 }

@@ -1,21 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Route, Redirect } from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch,
+    Redirect,
+} from "react-router-dom";
 import DashboardNav from "./components/navbar/Navbar";
 import AppFooter from "../../components/app-footer/AppFooter";
 import ContactDialog from "./components/contact-dialog/ContactDialog";
 import Campaña from "../campaña/Campaña";
 import Log from "../log/Log";
-import FAQ from "../faq/Faq";
 import Perfil from "../me/Perfil";
-
-import UiUtils from "../../utils/UiUtils";
 import ApiClient from "../../utils/ApiClient";
 import Session from "../../utils/Session";
 import smartleads from "../../images/smartleads.png";
-import emptyLogo from "../../images/logo-empty.svg";
-import lstrings from "../../utils/LStrings";
 import CompleteUserData from "../home/components/complete-user-data/CompleteUserData";
+import FormCampaña from '../campaña/FormCambaña';
+
 
 class Dashboard extends React.Component {
     constructor() {
@@ -120,12 +122,22 @@ class Dashboard extends React.Component {
                         }
                     />
                     <div className="container-fluid">
-                        <Route
-                            path={`${match.url}/campaña`}
-                            component={Campaña}
-                        />
-                        <Route path={`${match.url}/me`} component={Perfil} />
-                        <Route path={`${match.url}/log`} component={Log} />
+                        <Router>
+                            <Switch>
+                                <Route
+                                    path={`${match.url}/campaña`}
+                                    component={FormCampaña}
+                                />
+                                <Route
+                                    path={`${match.url}/me`}
+                                    component={Perfil}
+                                />
+                                <Route
+                                    path={`${match.url}/log`}
+                                    component={Log}
+                                />
+                            </Switch>
+                        </Router>
                     </div>
                 </div>
                 <div className="clearfix" />
