@@ -1,11 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {
-    BrowserRouter as Router,
     Route,
-    Switch,
-    Redirect,
-} from "react-router-dom";
+    Redirect
+} from 'react-router-dom';
 import DashboardNav from "./components/navbar/Navbar";
 import AppFooter from "../../components/app-footer/AppFooter";
 import ContactDialog from "./components/contact-dialog/ContactDialog";
@@ -122,8 +120,8 @@ class Dashboard extends React.Component {
                         }
                     />
                     <div className="container-fluid">
-                        <Router>
-                            <Switch>
+                       
+                            
                                 <Route
                                     path={`${match.url}/campaña`}
                                     component={FormCampaña}
@@ -136,8 +134,8 @@ class Dashboard extends React.Component {
                                     path={`${match.url}/log`}
                                     component={Log}
                                 />
-                            </Switch>
-                        </Router>
+                            
+                       
                     </div>
                 </div>
                 <div className="clearfix" />
