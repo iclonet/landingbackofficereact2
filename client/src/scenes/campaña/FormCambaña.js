@@ -2,12 +2,10 @@ import React, { Component, useEffect, useState } from "react";
 import { useFormik } from "formik";
 import { Panel, Row, Col } from "react-bootstrap";
 import { FormGroup, Button } from "react-bootstrap";
-import { Form } from "react-bootstrap";
-import { InputLabel } from "@material-ui/core";
-import  {createCampaign} from "../api";
+import  {createCampaign, hashh} from "../api";
 import { FormControl, TextField } from "@material-ui/core";
-import { Typography } from "@material-ui/core";
 import PropTypes from "prop-types";
+var randomstring = require("randomstring");
 
 
 const FormCampaña = () => {
@@ -24,15 +22,12 @@ const FormCampaña = () => {
     const [parametros, setParametros] = useState(false);
     const [nuevo, setNuevo] = useState(false);
     const [campaña, setCampaña] = useState([]);
-
     const formik = useFormik({
         initialValues: {
             fechaLanzamiento: "",
             fechaVencimiento: "",
             habilitada: false,
             nombre: "",
-            hash: "qqq",
-            nroCliente: 84,
         },
         onSubmit: (values) => {
             const {
@@ -40,20 +35,15 @@ const FormCampaña = () => {
                 fechaVencimiento,
                 habilitada,
                 nombre,
-                hash,
-                nroCliente,
             } = values;
             const cam = {
                 fechaLanzamiento,
                 fechaVencimiento,
                 habilitada,
                 nombre,
-                hash,
-                nroCliente,
             };
             createCampaignFunc(values);
             console.log("formik in submit");
-            console.log(hashh);
             console.log(values);
             console.log(cam);
         },
@@ -62,29 +52,22 @@ const FormCampaña = () => {
         const res = await createCampaign(obj);
         setCampaña(res.data);
     }
+   // const [hashh, setHashh] = useState("");
 
-    function makeHashString() {
-        var text = "";
-        var possible =
-            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-        for (var i = 0; i < 5; i++)
-            text += possible.charAt(
-                Math.floor(Math.random() * possible.length)
-            );
-
-        return text;
+    const label = (label) => {
+    <p id='label'>{label}</p>
     }
-    const hashh = makeHashString();
+    
 
     useEffect(() => {
         try {
-            console.log(hashh);
+           //setHashh(randomstring.generate(5)); 
         } catch (err) {
             setError(err);
         }
     }, []);
 
+    
     return (
         <div style={{ width: "50%", marginLeft: "15%", marginTop: "5%" }}>
             <h1>Nueva Campaña</h1>
@@ -112,13 +95,12 @@ const FormCampaña = () => {
                             disabled={true}
                             id="hash"
                             name="hash"
-                            //value={formik.values.apellido}
                             variant="outlined"
                         />
                         <TextField
                             style={{ marginBottom: "2%" }}
                             placeholder="Nombre"
-                            label="Nombre"
+                            label={label("Nombre")}
                             id="nombre"
                             name="nombre"
                             onChange={formik.handleChange}
@@ -127,8 +109,8 @@ const FormCampaña = () => {
                         />
                         <TextField
                             style={{ marginBottom: "2%" }}
-                            placeholder="Fecha Lanzimiento"
-                            label="Fecha Lanzimiento"
+                            placeholder="fecha Lanzamiento"
+                            label={label("fecha Lanzamiento")}
                             id="fechaLanzamiento"
                             name="fechaLanzamiento"
                             onChange={formik.handleChange}
@@ -138,7 +120,7 @@ const FormCampaña = () => {
                         <TextField
                             style={{ marginBottom: "2%" }}
                             placeholder="Fecha Vencimiento"
-                            label="Fecha Vencimiento"
+                            label={label("Fecha Vencimiento")}
                             id="fechaVencimiento"
                             name="fechaVencimiento"
                             onChange={formik.handleChange}

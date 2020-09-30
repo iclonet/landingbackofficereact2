@@ -13,6 +13,26 @@ textarea {
 input[type="checkbox"]{
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0) !important
 }
+#hash {
+    font-size: 16px;
+    color: #000;
+}
+#nombre {
+    font-size: 16px;
+    color: #000;
+}
+#fechaLanzamiento {
+    font-size: 16px;
+    color: #000;
+}
+#fechaVencimiento {
+    font-size: 16px;
+    color: #000;
+}
+#label {
+    font-size: 16px;
+    color: #000;
+}
 .wrapper {
     height: auto !important;
     min-height: calc(100vh - 50px) !important;
