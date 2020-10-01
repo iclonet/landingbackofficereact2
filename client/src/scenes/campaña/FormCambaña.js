@@ -11,6 +11,7 @@ import { makeStyles, MuiThemeProvider } from "@material-ui/core/styles";
 import Divider from "@material-ui/core/Divider";
 
 
+
 const FormCampaña = () => {
 
 
@@ -24,12 +25,15 @@ const FormCampaña = () => {
     }));
     const classes = useStyles();
     const guardar = () => {
-        if (deshabilitado === false && formik.values.nombre != "" && formik.values.fechaVencimiento != "" && formik.values.fechaLanzamiento != "") {
+        const fechaLanzamiento = new Date (document.getElementById('fechaLanzamiento').value);
+        const fechaVencimiento = new Date (document.getElementById('fechaVencimiento').value);
+        if (deshabilitado === false && fechaVencimiento > fechaLanzamiento && formik.values.nombre != "" && formik.values.fechaVencimiento != "" && formik.values.fechaLanzamiento != "") {
             setDeshabilitado(true);
             setParametros(true);
             setNuevo(true);
             formik.handleSubmit();
         }
+        
     };
     const nuevaCampaña = () => {
         if ( deshabilitado === true) {
@@ -40,13 +44,15 @@ const FormCampaña = () => {
         }
     };
     const nuevaParametros = () => {
-
+        window.location.replace("/dashboard/parameters")
     };
     const [error, setError] = useState("");
     const [deshabilitado, setDeshabilitado] = useState(false);
     const [parametros, setParametros] = useState(false);
     const [nuevo, setNuevo] = useState(false);
     const [campaña, setCampaña] = useState([]);
+    const [fecha, setFecha] = useState(true);
+
 
     const validation = Yup.object().shape({
         fechaVencimiento: Yup.string().required("requerido"),
@@ -94,6 +100,46 @@ const FormCampaña = () => {
         }
     }, []);
 
+    function errorText() {
+        return (
+          <div>
+            <p
+              style={{
+                marginTop: "0px",
+                fontSize: "10pt",
+                color: "red",
+              }}
+            >
+              Fecha Vencimiento no puede ser antes de la fecha Lanzamiento !
+            </p>
+          </div>
+        );
+      }
+      function formatDate(date) {
+        var d = new Date(date),
+            month = '' + (d.getMonth() + 1),
+            day = '' + (d.getDate() +1),
+            year = d.getFullYear();
+    
+        if (month.length < 2) 
+            month = '0' + month;
+        if (day.length < 2) 
+            day = '0' + day;
+    
+        return [year, month, day].join('-');
+    }
+
+      function handleDateChange() {
+        const fechaVencimiento = new Date (document.getElementById('fechaVencimiento').value);
+        formik.setFieldValue("fechaVencimiento", formatDate(fechaVencimiento));
+        const fechaLanzamiento = new Date (document.getElementById('fechaLanzamiento').value);
+        if(fechaVencimiento < fechaLanzamiento){
+            setFecha(false);
+        }
+        if(fechaVencimiento > fechaLanzamiento){
+            setFecha(true);
+        }
+      }
     return (
         <div
             style={{
@@ -182,8 +228,6 @@ const FormCampaña = () => {
                         helperText={formik.errors.fechaLanzamiento}
                         error={formik.errors.fechaLanzamiento}
                         variant="outlined"
-                      
-                        //excludeDates={populateFeriados(feriados)}
                     />
                 </FormControl>
                 <FormControl className={classes.formControl}>
@@ -202,14 +246,14 @@ const FormCampaña = () => {
                         type="date"
                         value={formik.values.fechaVencimiento}
                         selected={formik.values.fechaVencimiento}
-                        onChange={formik.handleChange}
+                        onChange={() => handleDateChange()}
                         helperText={formik.errors.fechaVencimiento}
                         error={formik.errors.fechaVencimiento}
                         variant="outlined"
                         
-                        //excludeDates={populateFeriados(feriados)}
                     />
                 </FormControl>
+                { fecha == false && errorText()}
 
                 <Button
                     style={{
@@ -245,7 +289,7 @@ const FormCampaña = () => {
                             marginBottom: "2%",
                         }}
                         bsStyle="primary"
-                        //onClick={this.guardar}
+                        onClick={nuevaParametros}
                     >
                         Agregar parametros
                     </Button>

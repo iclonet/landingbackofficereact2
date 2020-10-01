@@ -22,6 +22,7 @@
 		"numeral": "^2.0.6",
 		"pdfmake": "^0.1.68",
 		"prop-types": "^15.7.2",
+		"query": "^0.2.0",
 		"randomstring": "^1.1.5",
 		"react": "^16.13.1",
 		"react-16-bootstrap-date-picker": "^5.1.2",

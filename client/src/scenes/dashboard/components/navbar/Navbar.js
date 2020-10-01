@@ -72,7 +72,7 @@ class DashboardNav extends Component {
                                     title={<span>Administrar Parametros</span>}
                                     id="basic-nav-dropdown"
                                 >
-                                    <LinkContainer to="/dashboard/">
+                                    <LinkContainer to="/dashboard/parameters">
                                         <MenuItem>Nuevo</MenuItem>
                                     </LinkContainer>
                                     <LinkContainer to="/dashboard/">
