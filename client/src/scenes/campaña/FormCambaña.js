@@ -110,7 +110,7 @@ const FormCampaña = () => {
                 color: "red",
               }}
             >
-              Fecha Vencimiento no puede ser antes de la fecha Lanzamiento !
+              ¡ Fecha Vencimiento no puede ser antes de la fecha Lanzamiento !
             </p>
           </div>
         );

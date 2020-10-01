@@ -31,10 +31,11 @@ class DashboardNav extends Component {
                     }}
                 >
                     <Navbar fluid>
-                        <Navbar.Header>
-                            <Navbar.Brand>
-                                <LinkContainer to="/dashboard" >
+                        <Navbar.Header style= {{marginLeft: '2%'}}>
+                            <Navbar.Brand >
+                                <LinkContainer to="/dashboard"style={{paddingTop: '15%'}} >
                                     <img
+                                        
                                         className="img-responsive"
                                         src={this.props.logo}
                                         alt=""
