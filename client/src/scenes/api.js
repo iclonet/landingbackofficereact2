@@ -1,5 +1,6 @@
 import axios from 'axios';
 var randomstring = require("randomstring");
+import React, { Component } from 'react';
 
 //const urlBase = 'http://localhost:8080/api/v1/'
 export const api = axios.create({
@@ -8,6 +9,15 @@ export const api = axios.create({
 			'Content-Type': 'application/json'
 	},
 })
+
+const NroClient = (props) => {
+	function id (){
+		return id = props.id;
+	}
+	return (
+		id()
+	);
+}
 
 export const hashh = randomstring.generate(5) ;
 
@@ -19,7 +29,8 @@ export const createCampaign = async (values) => {
         habilitada: values.habilitada,
         nombre: values.nombre,
         hash: hashh,
-        nroCliente: values.nroCliente,
-									}
+        nroCliente: 84,
+									}	
+									console.log(request);						
 	return await api.post(url, request);
 }
