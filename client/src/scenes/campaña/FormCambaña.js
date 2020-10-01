@@ -8,6 +8,8 @@ import PropTypes from "prop-types";
 var randomstring = require("randomstring");
 import * as Yup from "yup";
 import { makeStyles, MuiThemeProvider } from "@material-ui/core/styles";
+import Divider from "@material-ui/core/Divider";
+
 
 const FormCampaña = () => {
 
@@ -104,6 +106,10 @@ const FormCampaña = () => {
             }}
         >
             <h1 style={{ alignSelf: "center" }}>Nueva Campaña</h1>
+            <Divider style={{
+                    width: "70%",
+                    alignSelf: "center",
+                }} />
             <form
                 style={{
                     width: "70%",
