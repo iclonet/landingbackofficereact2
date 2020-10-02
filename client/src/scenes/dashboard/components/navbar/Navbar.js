@@ -11,17 +11,20 @@ import {
 import Session from "../../../../utils/Session";
 import PropTypes from "prop-types";
 import WhatsappContact from "./components/WhatsappContact";
+import smartleads from "../../../../images/smartleads.png";
+import ContactDialog from "../contact-dialog/ContactDialog";
 
-class DashboardNav extends Component {
 
-    componentDidMount() {}
 
-    onLogout = () => {
+const DashboardNav = (props) => {
+
+    const onLogout = () => {
         Session.clear();
         location.reload();
     };
-
-    render() {
+    const onCloseContactDialog = () => {
+        return false
+    };
         return (
             <div>
                 <div
@@ -37,7 +40,7 @@ class DashboardNav extends Component {
                                     <img
                                         
                                         className="img-responsive"
-                                        src={this.props.logo}
+                                        src={smartleads}
                                         alt=""
                                     />
                                 </LinkContainer>
@@ -180,13 +183,13 @@ class DashboardNav extends Component {
 
                                         <MenuItem
                                             onSelect={
-                                                this.props.onShowContactDialog
+                                                props.onShowContactDialog
                                             }
                                         >
                                             <i className="fa fa-address-card-o" />
                                             Contacto
                                         </MenuItem>
-                                        <MenuItem onSelect={this.onLogout}>
+                                        <MenuItem onSelect={onLogout}>
                                             <i className="fa fa-sign-out" />
                                             Cerrar sesión
                                         </MenuItem>
@@ -196,9 +199,9 @@ class DashboardNav extends Component {
                         </Navbar.Collapse>
                     </Navbar>
                 </div>
+                
             </div>
         );
-    }
 }
 
 DashboardNav.propTypes = {

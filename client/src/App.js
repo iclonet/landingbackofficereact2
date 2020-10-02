@@ -21,7 +21,8 @@ import Dashboard from './scenes/dashboard/Dashboard';
 import NoMatch from './scenes/no-match/NoMatch';
 import Session from './utils/Session';
 //import 'react-block-ui/style.css';
-import FormCampaña from './scenes/campaña/FormCambaña';
+import MainDash from './scenes/dashboard/MainDash';
+import Perfil from './scenes/me/Perfil';
 
 
 
@@ -114,9 +115,14 @@ class App extends Component {
 								}} />
 							else return <Home />;
 						}} />
-                        <Route exact path="/Campaña" render={props => {
+                        <Route exact path="/campaña" render={props => {
 							if (Session.isAuthenticated())
-								return <FormCampaña />
+								return <MainDash />
+							else return <Home />;
+						}} />
+                        <Route exact path="/me" render={props => {
+							if (Session.isAuthenticated())
+								return <Perfil />
 							else return <Home />;
 						}} />
 												

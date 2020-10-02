@@ -1,13 +1,11 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
-import { Panel, Row, Col } from "react-bootstrap";
-import { FormGroup, Button } from "react-bootstrap";
+import {  Button } from "react-bootstrap";
 import { createCampaign, hashh } from "../api";
 import { FormControl, TextField, InputLabel } from "@material-ui/core";
 import PropTypes from "prop-types";
-var randomstring = require("randomstring");
 import * as Yup from "yup";
-import { makeStyles, MuiThemeProvider } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Divider from "@material-ui/core/Divider";
 import AddParameters from "../Parametros/AddParameters";
 
@@ -16,7 +14,8 @@ const FormCampaña = (props) => {
     const [ form , setForm ] = React.useState(true);
     const [ parametro , setParametro ] = React.useState(false);
     const id = props.id ;
-
+    const hash1 = props.hash;
+    let showParam = props.showParam ;
     const Form = (props) => {
     
         const useStyles = makeStyles((theme) => ({
@@ -49,9 +48,16 @@ const FormCampaña = (props) => {
         };
         const nuevaParametros = () => {
             setForm(false);
-            setParametro(true);
+            setParametro(true)
+            
             //window.location.replace("/dashboard/parameters")
         };
+
+        function set (){
+            if(form == true){
+                setParametro(false)
+            }
+        }
         const [error, setError] = useState("");
         const [deshabilitado, setDeshabilitado] = useState(false);
         const [parametros, setParametros] = useState(false);
@@ -101,7 +107,8 @@ const FormCampaña = (props) => {
     
         useEffect(() => {
             try {
-                console.log(formik.errors.nombre);
+                console.log(hash1);
+                console.log(showParam);
                 //setHashh(randomstring.generate(5));
             } catch (err) {
                 setError(err);
@@ -187,7 +194,7 @@ const FormCampaña = (props) => {
                         <TextField
                             className={classes.textField}
                             style={{ marginBottom: "2%" }}
-                            placeholder={hashh}
+                            placeholder={hash1}
                             disabled={true}
                             id="hash"
                             name="hash"
@@ -310,7 +317,7 @@ const FormCampaña = (props) => {
     return (
         <div>
             { form == true ? <Form id={id} /> : null}
-            { parametro == true ? <AddParameters hash = {hashh} /> : null}
+            { parametro == true ? <AddParameters hash = {hash1} /> : null}
         </div>
         
     );

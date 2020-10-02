@@ -1,22 +1,28 @@
-import React from "react";
+import React ,{ useEffect, useState }  from "react";
 import PropTypes from "prop-types";
-import {
-    Route,
-    Redirect
-} from 'react-router-dom';
-import DashboardNav from "./components/navbar/Navbar";
+import { Route } from "react-router-dom";
+//import DashboardNav from "./components/navbar/Navbar";
 import AppFooter from "../../components/app-footer/AppFooter";
 import ContactDialog from "./components/contact-dialog/ContactDialog";
-import Campaña from "../campaña/Campaña";
 import Log from "../log/Log";
 import Perfil from "../me/Perfil";
 import ApiClient from "../../utils/ApiClient";
 import Session from "../../utils/Session";
 import smartleads from "../../images/smartleads.png";
-import CompleteUserData from "../home/components/complete-user-data/CompleteUserData";
-import FormCampaña from '../campaña/FormCambaña';
-import AddParameters from '../Parametros/AddParameters';
+import AddParameters from "../Parametros/AddParameters";
+import { LinkContainer } from "react-router-bootstrap";
+import {
+    Navbar,
+    Nav,
+    NavItem,
+    NavDropdown,
+    MenuItem,
+    Col,
+} from "react-bootstrap";
+import WhatsappContact from "./components/navbar/components/WhatsappContact";
+import { Button } from "react-bootstrap";
 import MainDash from './MainDash';
+import { createCampaign, hashh } from "../api";
 
 
 class Dashboard extends React.Component {
@@ -27,6 +33,8 @@ class Dashboard extends React.Component {
             logo: "",
             mostrarCompleteUserData: false,
             user: {},
+            mainDash: false,
+            showP : false
         };
     }
 
@@ -92,6 +100,14 @@ class Dashboard extends React.Component {
         });
     };
 
+    mainDashFunc = () => {
+            this.setState({
+                mainDash: true,
+                //showP: false
+            });
+            
+
+    }
     render() {
         let match = {
             path: "/dashboard",
@@ -100,48 +116,215 @@ class Dashboard extends React.Component {
             params: {},
         };
 
+        const DashboardNav = () => {
+            const onLogout = () => {
+                Session.clear();
+                location.reload();
+            };
+            const onCloseContactDialog = () => {
+                return false;
+            };
+            return (
+                <div>
+                    <div
+                        style={{
+                            display: "inherit",
+                            marginBottom: "30px",
+                        }}
+                    >
+                        <Navbar fluid>
+                            <Navbar.Header style={{ marginLeft: "2%" }}>
+                                <Navbar.Brand>
+                                    <LinkContainer
+                                        to="/dashboard"
+                                        style={{ paddingTop: "15%" }}
+                                    >
+                                        <img
+                                            className="img-responsive"
+                                            src={smartleads}
+                                            alt=""
+                                        />
+                                    </LinkContainer>
+                                </Navbar.Brand>
+                                <Navbar.Toggle />
+                            </Navbar.Header>
+                            <Navbar.Collapse>
+                                <Nav
+                                    pullLeft
+                                    style={{
+                                        marginTop: "3px",
+                                        minWidth: "76%",
+                                        marginLeft: "32px",
+                                        borderBottom:
+                                            "1px solid rgb(69, 105, 134)",
+                                    }}
+                                >
+                                    <NavDropdown
+                                        title={<span>Administrar Campaña</span>}
+                                        id="basic-nav-dropdown"
+                                    >
+
+                                        <MenuItem onClick= {this.mainDashFunc}>
+                                        Nueva
+                                        </MenuItem>
+                                        <LinkContainer to="/dashboard/">
+                                            <MenuItem>Buscar</MenuItem>
+                                        </LinkContainer>
+                                        <LinkContainer to="/dashboard/">
+                                            <MenuItem>Reportes</MenuItem>
+                                        </LinkContainer>
+                                    </NavDropdown>
+
+                                    <NavDropdown
+                                        title={
+                                            <span>Administrar Parametros</span>
+                                        }
+                                        id="basic-nav-dropdown"
+                                    >
+                                        <LinkContainer to="/dashboard/parameters">
+                                            <MenuItem>Nuevo</MenuItem>
+                                        </LinkContainer>
+                                        <LinkContainer to="/dashboard/">
+                                            <MenuItem>Buscar</MenuItem>
+                                        </LinkContainer>
+                                    </NavDropdown>
+                                    <NavItem disabled>
+                                        <Col
+                                            style={{
+                                                width: "90px",
+                                            }}
+                                            md={12}
+                                        ></Col>
+                                    </NavItem>
+                                    <NavItem disabled>
+                                        <Col
+                                            style={{
+                                                width: "90px",
+                                            }}
+                                            md={12}
+                                        ></Col>
+                                    </NavItem>
+
+                                    <NavItem disabled>
+                                        <Col
+                                            style={{
+                                                width: "90px",
+                                            }}
+                                            md={12}
+                                        ></Col>
+                                    </NavItem>
+                                    <NavItem disabled>
+                                        <Col
+                                            style={{
+                                                width: "90px",
+                                            }}
+                                            md={12}
+                                        ></Col>
+                                    </NavItem>
+                                    <NavItem disabled>
+                                        <Col
+                                            style={{
+                                                width: "90px",
+                                            }}
+                                            md={12}
+                                        ></Col>
+                                    </NavItem>
+                                    <NavItem disabled>
+                                        <Col
+                                            style={{
+                                                width: "90px",
+                                            }}
+                                            md={12}
+                                        ></Col>
+                                    </NavItem>
+                                    <NavItem disabled>
+                                        <Col
+                                            style={{
+                                                width: "90px",
+                                            }}
+                                            md={12}
+                                        ></Col>
+                                    </NavItem>
+                                    <NavItem disabled>
+                                        <Col
+                                            style={{
+                                                width: "90px",
+                                            }}
+                                            md={12}
+                                        ></Col>
+                                    </NavItem>
+                                    <Nav
+                                        pullRight
+                                        style={{
+                                            marginTop: "-10px",
+                                            marginRight: "0px",
+                                            marginBottom: "25px",
+                                        }}
+                                    >
+                                        <WhatsappContact />
+
+                                        <NavDropdown
+                                            style={{
+                                                borderRight:
+                                                    "1px solid rgb(69, 105, 134)",
+                                                borderLeft:
+                                                    "1px solid rgb(69, 105, 134)",
+                                            }}
+                                            title={
+                                                <span>
+                                                    {" "}
+                                                    <i className="fa fa-user-circle-o"></i>
+                                                    {Session.getUser().userName}{" "}
+                                                </span>
+                                            }
+                                            id="basic-nav-dropdown"
+                                        >
+                                            <LinkContainer to="/dashboard/me">
+                                                <MenuItem>
+                                                    <i className="fa fa-user-circle-o" />
+                                                    Ver perfil
+                                                </MenuItem>
+                                            </LinkContainer>
+
+                                            <MenuItem
+                                                onSelect={
+                                                    this.onShowContactDialog
+                                                }
+                                            >
+                                                <i className="fa fa-address-card-o" />
+                                                Contacto
+                                            </MenuItem>
+                                            <MenuItem onSelect={onLogout}>
+                                                <i className="fa fa-sign-out" />
+                                                Cerrar sesión
+                                            </MenuItem>
+                                        </NavDropdown>
+                                    </Nav>
+                                </Nav>
+                            </Navbar.Collapse>
+                        </Navbar>
+                    </div>
+                </div>
+            );
+        };
         return (
             <div>
                 <div className="wrapper">
-                    <DashboardNav
-                        onShowContactDialog={this.onShowContactDialog}
-                        logo={this.state.logo}
-                    />
+                    <DashboardNav />
+
                     <ContactDialog
                         show={this.state.showingContactDialog}
                         onClose={this.onCloseContactDialog}
                     />
-                    <CompleteUserData
-                        data={this.state.user}
-                        mostrarCompleteUserData={
-                            this.state.mostrarCompleteUserData
-                        }
-                        onCerrarCompleteUserData={this.cerrarCompleteUserData}
-                        onCancelarCompleteUserData={
-                            this.cancelarCompleteUserData
-                        }
-                    />
                     <div className="container-fluid">
-                       
-                            
-                                <Route
-                                    path={`${match.url}/campaña`}
-                                    component={MainDash}
-                                />
-                                <Route
-                                    path={`${match.url}/parameters`}
-                                    component={AddParameters}
-                                />
-                                <Route
-                                    path={`${match.url}/me`}
-                                    component={Perfil}
-                                />
-                                <Route
-                                    path={`${match.url}/log`}
-                                    component={Log}
-                                />
-                            
-                       
+
+                        {this.state.mainDash == true ? <MainDash hash={hashh} showParam ={this.state.showP}/> : null}
+                        
+                        <Route
+                            path={`${match.url}/parameters`}
+                            component={AddParameters}
+                        />
+                        <Route path={`${match.url}/me`} component={Perfil} />
                     </div>
                 </div>
                 <div className="clearfix" />
