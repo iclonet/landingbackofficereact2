@@ -56,7 +56,7 @@ const AddParameters = (props) => {
              <div className={classes.root}>
             <Grid container spacing={3}>
                 <Grid item xs={6}>
-                    <Paper className={classes.paper}>
+                    <Paper className={classes.paper} elevation={3}>
                         <Paper
                             style={{
                                 marginTop: "-5%",
@@ -74,7 +74,7 @@ const AddParameters = (props) => {
                     </Paper>
                 </Grid>
                 <Grid item xs={6}>
-                    <Paper className={classes.paper}>
+                    <Paper className={classes.paper} elevation={3}>
                         <form onSubmit={formik.handleSubmit}>
                             <FormControl style={{ width: "90%" }}>
                                 <TextField
