@@ -8,6 +8,8 @@ import QuestionDialog from '../../components/question-dialog/QuestionDialog';
 import UserDialog from './components/user-dialog/UserDialog';
 import ChangePasswordDialog from './components/change-password-dialog/ChangePasswordDialog';
 import TableUsers from './components/table-users/TableUsers';
+import DashboardNav from "../dashboard/components/navbar/Navbar";
+
 
 class Perfil extends Component {
 
@@ -205,6 +207,8 @@ class Perfil extends Component {
 
     return (
       <div>
+        <DashboardNav />
+        <div>
         <UserDialog show={this.state.userDialog.showing} user={this.state.userDialog.user} onClose={this.onCloseUserDialog} onCreateUser={this.onCreateUser} onModifiedUser={this.onModifiedUser} />
         <ChangePasswordDialog show={this.state.showingChangePasswordDialog} onClose={this.onCloseChangePasswordDialog} onChangePassword={this.onChangePassword} />
         <QuestionDialog show={this.state.deleteDialog.showing} title="Atención" message={this.state.deleteDialog.message} onAccept={this.onAcceptDelete} onCancel={this.onCloseDeleteDialog} />
@@ -237,6 +241,8 @@ class Perfil extends Component {
           </Row>
         </Panel>}
       </div>
+      </div>
+      
     );
   }
 }

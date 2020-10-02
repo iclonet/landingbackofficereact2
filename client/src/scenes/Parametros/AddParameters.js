@@ -6,6 +6,10 @@ import { FormControl, TextField, Button } from "@material-ui/core";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Divider from "@material-ui/core/Divider";
+import DashboardNav from "../dashboard/components/navbar/Navbar";
+import {hashh } from "../api";
+
+
 
 const AddParameters = (props) => {
     const useStyles = makeStyles((theme) => ({
@@ -45,9 +49,10 @@ const AddParameters = (props) => {
     const label = (label) => {
         <p id="label">{label}</p>;
     };
-    const hash = props.hash;
     return (
-        <div className={classes.root}>
+        <div>
+            <DashboardNav />
+             <div className={classes.root}>
             <Grid container spacing={1}>
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>
@@ -63,7 +68,7 @@ const AddParameters = (props) => {
                             }}
                         >
                             {" "}
-                            Campaña #{hash}
+                            Campaña #{hashh}
                         </Paper>
                     </Paper>
                 </Grid>
@@ -282,6 +287,8 @@ const AddParameters = (props) => {
                 </Grid>
             </Grid>
         </div>
+        </div>
+       
     );
 };
 export default AddParameters;

@@ -1,4 +1,4 @@
-﻿import React, { Component } from "react";
+﻿import React, { useEffect, useState } from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import {
     Navbar,
@@ -14,195 +14,211 @@ import WhatsappContact from "./components/WhatsappContact";
 import smartleads from "../../../../images/smartleads.png";
 import ContactDialog from "../contact-dialog/ContactDialog";
 
-
-
 const DashboardNav = (props) => {
-
     const onLogout = () => {
         Session.clear();
         location.reload();
     };
-    const onCloseContactDialog = () => {
-        return false
+
+    const [showingContactDialog, setShowingContactDialog] = React.useState(
+        false
+    );
+
+    const onShowContactDialog = () => {
+        setShowingContactDialog(true);
     };
-        return (
-            <div>
-                <div
-                    style={{
-                        display: "inherit",
-                        marginBottom: "30px",
-                    }}
-                >
-                    <Navbar fluid>
-                        <Navbar.Header style= {{marginLeft: '2%'}}>
-                            <Navbar.Brand >
-                                <LinkContainer to="/dashboard"style={{paddingTop: '15%'}} >
-                                    <img
-                                        
-                                        className="img-responsive"
-                                        src={smartleads}
-                                        alt=""
-                                    />
+
+    const onCloseContactDialog = () => {
+        setShowingContactDialog(false);
+    };
+    return (
+        <div>
+            <div
+                style={{
+                    display: "inherit",
+                    marginBottom: "30px",
+                }}
+            >
+                <Navbar fluid>
+                    <Navbar.Header style={{ marginLeft: "2%" }}>
+                        <Navbar.Brand>
+                            <LinkContainer
+                                to="/dashboard"
+                                style={{ paddingTop: "15%" }}
+                            >
+                                <img
+                                    className="img-responsive"
+                                    src={smartleads}
+                                    alt=""
+                                />
+                            </LinkContainer>
+                        </Navbar.Brand>
+                        <Navbar.Toggle />
+                    </Navbar.Header>
+                    <Navbar.Collapse>
+                        <Nav
+                            pullLeft
+                            style={{
+                                marginTop: "3px",
+                                minWidth: "76%",
+                                marginLeft: "32px",
+                                borderBottom: "1px solid rgb(69, 105, 134)",
+                            }}
+                        >
+                            <NavDropdown
+                                title={<span>Administrar Campaña</span>}
+                                id="basic-nav-dropdown"
+                            >
+                                <MenuItem
+                                    onClick={() =>
+                                        window.location.replace("/campaña")
+                                    }
+                                >
+                                    Nueva
+                                </MenuItem>
+                                <LinkContainer to="/dashboard/">
+                                    <MenuItem>Buscar</MenuItem>
                                 </LinkContainer>
-                            </Navbar.Brand>
-                            <Navbar.Toggle />
-                        </Navbar.Header>
-                        <Navbar.Collapse>
+                                <LinkContainer to="/dashboard/">
+                                    <MenuItem>Reportes</MenuItem>
+                                </LinkContainer>
+                            </NavDropdown>
+
+                            <NavDropdown
+                                title={<span>Administrar Parametros</span>}
+                                id="basic-nav-dropdown"
+                            >
+                                <MenuItem
+                                    onClick={() =>
+                                        window.location.replace("/parameters")
+                                    }
+                                >
+                                    Nuevo
+                                </MenuItem>
+
+                                <LinkContainer to="/dashboard/">
+                                    <MenuItem>Buscar</MenuItem>
+                                </LinkContainer>
+                            </NavDropdown>
+                            <NavItem disabled>
+                                <Col
+                                    style={{
+                                        width: "90px",
+                                    }}
+                                    md={12}
+                                ></Col>
+                            </NavItem>
+                            <NavItem disabled>
+                                <Col
+                                    style={{
+                                        width: "90px",
+                                    }}
+                                    md={12}
+                                ></Col>
+                            </NavItem>
+
+                            <NavItem disabled>
+                                <Col
+                                    style={{
+                                        width: "90px",
+                                    }}
+                                    md={12}
+                                ></Col>
+                            </NavItem>
+                            <NavItem disabled>
+                                <Col
+                                    style={{
+                                        width: "90px",
+                                    }}
+                                    md={12}
+                                ></Col>
+                            </NavItem>
+                            <NavItem disabled>
+                                <Col
+                                    style={{
+                                        width: "90px",
+                                    }}
+                                    md={12}
+                                ></Col>
+                            </NavItem>
+                            <NavItem disabled>
+                                <Col
+                                    style={{
+                                        width: "90px",
+                                    }}
+                                    md={12}
+                                ></Col>
+                            </NavItem>
+                            <NavItem disabled>
+                                <Col
+                                    style={{
+                                        width: "90px",
+                                    }}
+                                    md={12}
+                                ></Col>
+                            </NavItem>
+                            <NavItem disabled>
+                                <Col
+                                    style={{
+                                        width: "90px",
+                                    }}
+                                    md={12}
+                                ></Col>
+                            </NavItem>
                             <Nav
-                                pullLeft
+                                pullRight
                                 style={{
-                                    marginTop: "3px",
-                                    minWidth: "76%",
-                                    marginLeft: "32px",
-                                    borderBottom: "1px solid rgb(69, 105, 134)",
+                                    marginTop: "-10px",
+                                    marginRight: "0px",
+                                    marginBottom: "25px",
                                 }}
                             >
-                                <NavDropdown
-                                    title={<span>Administrar Campaña</span>}
-                                    id="basic-nav-dropdown"
-                                >
-                                    <LinkContainer to="/dashboard/campaña">
-                                        <MenuItem>Nueva</MenuItem>
-                                    </LinkContainer>
-                                    <LinkContainer to="/dashboard/">
-                                        <MenuItem>Buscar</MenuItem>
-                                    </LinkContainer>
-                                    <LinkContainer to="/dashboard/">
-                                        <MenuItem>Reportes</MenuItem>
-                                    </LinkContainer>
-                                </NavDropdown>
+                                <WhatsappContact />
 
                                 <NavDropdown
-                                    title={<span>Administrar Parametros</span>}
-                                    id="basic-nav-dropdown"
-                                >
-                                    <LinkContainer to="/dashboard/parameters">
-                                        <MenuItem>Nuevo</MenuItem>
-                                    </LinkContainer>
-                                    <LinkContainer to="/dashboard/">
-                                        <MenuItem>Buscar</MenuItem>
-                                    </LinkContainer>
-                                </NavDropdown>
-                                <NavItem disabled>
-                                    <Col
-                                        style={{
-                                            width: "90px",
-                                        }}
-                                        md={12}
-                                    ></Col>
-                                </NavItem>
-                                <NavItem disabled>
-                                    <Col
-                                        style={{
-                                            width: "90px",
-                                        }}
-                                        md={12}
-                                    ></Col>
-                                </NavItem>
-
-                                <NavItem disabled>
-                                    <Col
-                                        style={{
-                                            width: "90px",
-                                        }}
-                                        md={12}
-                                    ></Col>
-                                </NavItem>
-                                <NavItem disabled>
-                                    <Col
-                                        style={{
-                                            width: "90px",
-                                        }}
-                                        md={12}
-                                    ></Col>
-                                </NavItem>
-                                <NavItem disabled>
-                                    <Col
-                                        style={{
-                                            width: "90px",
-                                        }}
-                                        md={12}
-                                    ></Col>
-                                </NavItem>
-                                <NavItem disabled>
-                                    <Col
-                                        style={{
-                                            width: "90px",
-                                        }}
-                                        md={12}
-                                    ></Col>
-                                </NavItem>
-                                <NavItem disabled>
-                                    <Col
-                                        style={{
-                                            width: "90px",
-                                        }}
-                                        md={12}
-                                    ></Col>
-                                </NavItem>
-                                <NavItem disabled>
-                                    <Col
-                                        style={{
-                                            width: "90px",
-                                        }}
-                                        md={12}
-                                    ></Col>
-                                </NavItem>
-                                <Nav
-                                    pullRight
                                     style={{
-                                        marginTop: "-10px",
-                                        marginRight: "0px",
-                                        marginBottom: "25px",
+                                        borderRight:
+                                            "1px solid rgb(69, 105, 134)",
+                                        borderLeft:
+                                            "1px solid rgb(69, 105, 134)",
                                     }}
+                                    title={
+                                        <span>
+                                            {" "}
+                                            <i className="fa fa-user-circle-o"></i>
+                                            {Session.getUser().userName}{" "}
+                                        </span>
+                                    }
+                                    id="basic-nav-dropdown"
                                 >
-                                    <WhatsappContact />
-
-                                    <NavDropdown
-                                        style={{
-                                            borderRight:
-                                                "1px solid rgb(69, 105, 134)",
-                                            borderLeft:
-                                                "1px solid rgb(69, 105, 134)",
-                                        }}
-                                        title={
-                                            <span>
-                                                {" "}
-                                                <i className="fa fa-user-circle-o"></i>
-                                                {Session.getUser().userName}{" "}
-                                            </span>
-                                        }
-                                        id="basic-nav-dropdown"
-                                    >
-                                        <LinkContainer to="/dashboard/me">
-                                            <MenuItem>
-                                                <i className="fa fa-user-circle-o" />
-                                                Ver perfil
-                                            </MenuItem>
-                                        </LinkContainer>
-
-                                        <MenuItem
-                                            onSelect={
-                                                props.onShowContactDialog
-                                            }
-                                        >
-                                            <i className="fa fa-address-card-o" />
-                                            Contacto
+                                    <LinkContainer to="/me">
+                                        <MenuItem>
+                                            <i className="fa fa-user-circle-o" />
+                                            Ver perfil
                                         </MenuItem>
-                                        <MenuItem onSelect={onLogout}>
-                                            <i className="fa fa-sign-out" />
-                                            Cerrar sesión
-                                        </MenuItem>
-                                    </NavDropdown>
-                                </Nav>
+                                    </LinkContainer>
+
+                                    <MenuItem onSelect={onShowContactDialog}>
+                                        <i className="fa fa-address-card-o" />
+                                        Contacto
+                                    </MenuItem>
+                                    <MenuItem onSelect={onLogout}>
+                                        <i className="fa fa-sign-out" />
+                                        Cerrar sesión
+                                    </MenuItem>
+                                </NavDropdown>
                             </Nav>
-                        </Navbar.Collapse>
-                    </Navbar>
-                </div>
-                
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
             </div>
-        );
-}
+            <ContactDialog
+                show={showingContactDialog}
+                onClose={onCloseContactDialog}
+            />
+        </div>
+    );
+};
 
 DashboardNav.propTypes = {
     onShowContactDialog: PropTypes.func.isRequired,

@@ -3,14 +3,11 @@ import UiUtils from '../../utils/UiUtils';
 import ApiClient from '../../utils/ApiClient';
 import FormCampaña from '../campaña/FormCambaña';
 import DashboardNav from "../dashboard/components/navbar/Navbar";
-import { getBsProps } from "react-bootstrap/lib/utils/bootstrapUtils";
-
+import {hashh } from "../api";
 
 const MainDash = (props) => {
   const [error, setError] = useState();
   const[user , setUser] = React.useState([]);
-  const hash = props.hash;
-  const showParam = props.showParam;
   useEffect(() => {
     try {
       getData();
@@ -44,8 +41,8 @@ const MainDash = (props) => {
     
         return (
           <div>
-          
-            <FormCampaña id= {user.idCliente} hash={hash} showParam={showParam}/>
+            <DashboardNav />
+            <FormCampaña id= {user.idCliente} hash={hashh} />
           </div>
         );
       }

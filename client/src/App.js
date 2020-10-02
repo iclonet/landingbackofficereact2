@@ -23,6 +23,7 @@ import Session from './utils/Session';
 //import 'react-block-ui/style.css';
 import MainDash from './scenes/dashboard/MainDash';
 import Perfil from './scenes/me/Perfil';
+import AddParameters from './scenes/Parametros/AddParameters';
 
 
 
@@ -118,6 +119,11 @@ class App extends Component {
                         <Route exact path="/campaña" render={props => {
 							if (Session.isAuthenticated())
 								return <MainDash />
+							else return <Home />;
+						}} />
+                        <Route exact path="/parameters" render={props => {
+							if (Session.isAuthenticated())
+								return <AddParameters />
 							else return <Home />;
 						}} />
                         <Route exact path="/me" render={props => {

@@ -8,6 +8,8 @@ import * as Yup from "yup";
 import { makeStyles } from "@material-ui/core/styles";
 import Divider from "@material-ui/core/Divider";
 import AddParameters from "../Parametros/AddParameters";
+import { LinkContainer } from "react-router-bootstrap";
+
 
 
 const FormCampaña = (props) => {
@@ -15,7 +17,6 @@ const FormCampaña = (props) => {
     const [ parametro , setParametro ] = React.useState(false);
     const id = props.id ;
     const hash1 = props.hash;
-    let showParam = props.showParam ;
     const Form = (props) => {
     
         const useStyles = makeStyles((theme) => ({
@@ -47,17 +48,12 @@ const FormCampaña = (props) => {
             }
         };
         const nuevaParametros = () => {
-            setForm(false);
-            setParametro(true)
-            
-            //window.location.replace("/dashboard/parameters")
+            <LinkContainer to="/parameters" />
+                                        
+            //window.location.replace("/parameters")
         };
 
-        function set (){
-            if(form == true){
-                setParametro(false)
-            }
-        }
+        
         const [error, setError] = useState("");
         const [deshabilitado, setDeshabilitado] = useState(false);
         const [parametros, setParametros] = useState(false);
@@ -108,7 +104,6 @@ const FormCampaña = (props) => {
         useEffect(() => {
             try {
                 console.log(hash1);
-                console.log(showParam);
                 //setHashh(randomstring.generate(5));
             } catch (err) {
                 setError(err);
@@ -298,17 +293,18 @@ const FormCampaña = (props) => {
                         </Button>
                     )}
                     {parametros == true && formik.values.nombre != "" && formik.values.fechaVencimiento != "" && formik.values.fechaLanzamiento != ""  && (
+                        <LinkContainer style={{
+                            width: "50%",
+                            alignSelf: "center",
+                            marginBottom: "2%",
+                        }} to="/parameters">
                         <Button
-                            style={{
-                                width: "50%",
-                                alignSelf: "center",
-                                marginBottom: "2%",
-                            }}
                             bsStyle="primary"
-                            onClick={nuevaParametros}
                         >
                             Agregar parametros
                         </Button>
+                    </LinkContainer>
+                       
                     )}
                 </form>
             </div>
@@ -316,8 +312,7 @@ const FormCampaña = (props) => {
     }
     return (
         <div>
-            { form == true ? <Form id={id} /> : null}
-            { parametro == true ? <AddParameters hash = {hash1} /> : null}
+             <Form id={id} /> 
         </div>
         
     );
