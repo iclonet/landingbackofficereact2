@@ -15,7 +15,8 @@ const AddParameters = (props) => {
     const useStyles = makeStyles((theme) => ({
         root: {
             flexGrow: 1,
-            margin: theme.spacing(4)
+            margin: theme.spacing(4),
+            marginTop: theme.spacing(8)
         },
         paper: {
             padding: theme.spacing(2),
@@ -53,7 +54,7 @@ const AddParameters = (props) => {
         <div>
             <DashboardNav />
              <div className={classes.root}>
-            <Grid container spacing={1}>
+            <Grid container spacing={3}>
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>
                         <Paper

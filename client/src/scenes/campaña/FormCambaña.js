@@ -7,14 +7,12 @@ import PropTypes from "prop-types";
 import * as Yup from "yup";
 import { makeStyles } from "@material-ui/core/styles";
 import Divider from "@material-ui/core/Divider";
-import AddParameters from "../Parametros/AddParameters";
 import { LinkContainer } from "react-router-bootstrap";
 
 
 
 const FormCampaña = (props) => {
-    const [ form , setForm ] = React.useState(true);
-    const [ parametro , setParametro ] = React.useState(false);
+
     const id = props.id ;
     const hash1 = props.hash;
     const Form = (props) => {
@@ -47,13 +45,6 @@ const FormCampaña = (props) => {
                 location.reload();
             }
         };
-        const nuevaParametros = () => {
-            <LinkContainer to="/parameters" />
-                                        
-            //window.location.replace("/parameters")
-        };
-
-        
         const [error, setError] = useState("");
         const [deshabilitado, setDeshabilitado] = useState(false);
         const [parametros, setParametros] = useState(false);
