@@ -9,6 +9,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Divider from "@material-ui/core/Divider";
 import { LinkContainer } from "react-router-bootstrap";
 import Paper from "@material-ui/core/Paper";
+import { Typography } from "@material-ui/core";
+
 
 const FormCampaña = (props) => {
     const id = props.id;
@@ -225,7 +227,7 @@ const FormCampaña = (props) => {
                                 onChange={formik.handleChange}
                                 value={formik.values.nombre}
                                 variant="outlined"
-                                helperText={formik.errors.nombre}
+                                helperText= {<Typography component={'span'} style={{fontSize: '14px'}}>{formik.errors.nombre}</Typography>}
                                 error={formik.errors.nombre}
                             />
                         </FormControl>
@@ -246,7 +248,7 @@ const FormCampaña = (props) => {
                                 value={formik.values.fechaLanzamiento}
                                 selected={formik.values.fechaLanzamiento}
                                 onChange={formik.handleChange}
-                                helperText={formik.errors.fechaLanzamiento}
+                                helperText={<Typography component={'span'} style={{fontSize: '14px'}}>{formik.errors.fechaLanzamiento}</Typography>}
                                 error={formik.errors.fechaLanzamiento}
                                 variant="outlined"
                             />
@@ -268,7 +270,7 @@ const FormCampaña = (props) => {
                                 value={formik.values.fechaVencimiento}
                                 selected={formik.values.fechaVencimiento}
                                 onChange={() => handleDateChange()}
-                                helperText={formik.errors.fechaVencimiento}
+                                helperText={<Typography component={'span'} style={{fontSize: '14px'}}>{formik.errors.fechaVencimiento}</Typography>}
                                 error={formik.errors.fechaVencimiento}
                                 variant="outlined"
                             />
