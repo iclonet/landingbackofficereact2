@@ -7,11 +7,11 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import Divider from "@material-ui/core/Divider";
 
-const AddParameters = () => {
+const AddParameters = (props) => {
     const useStyles = makeStyles((theme) => ({
         root: {
             flexGrow: 1,
-            margin: theme.spacing(4),
+            margin: theme.spacing(4)
         },
         paper: {
             padding: theme.spacing(2),
@@ -21,6 +21,16 @@ const AddParameters = () => {
         },
         textField: {
             marginTop: theme.spacing(3),
+        },
+        textFieldFull: {
+            marginTop: theme.spacing(3),
+            width: '90%',
+            marginLeft: theme.spacing(3),
+        },
+        textFieldM: {
+            marginTop: theme.spacing(3),
+            width: '65%',
+            marginLeft: theme.spacing(10),
         },
     }));
     const classes = useStyles();
@@ -35,6 +45,7 @@ const AddParameters = () => {
     const label = (label) => {
         <p id="label">{label}</p>;
     };
+    const hash = props.hash;
     return (
         <div className={classes.root}>
             <Grid container spacing={1}>
@@ -45,22 +56,50 @@ const AddParameters = () => {
                                 marginTop: "-5%",
                                 marginLeft: "2%",
                                 padding: "1%",
-                                width: "20%",
+                                width: "30%",
                                 textAlign: "center",
                                 backgroundColor: "var(--primary-color)",
                                 color: "white",
                             }}
                         >
                             {" "}
-                            Campaña #h{" "}
+                            Campaña #{hash}
                         </Paper>
                     </Paper>
                 </Grid>
                 <Grid item xs={6}>
                     <Paper className={classes.paper}>
                         <form onSubmit={formik.handleSubmit}>
-                            <FormControl >
+                            <FormControl style={{ width: "90%" }}>
                                 <TextField
+                                    className={classes.textFieldFull}
+                                    placeholder="Titulo encabezado (opcional)"
+                                    label={label("Titulo encabezado (opcional)")}
+                                    id="nombre"
+                                    name="Tituloencabezado"
+                                    //onChange={formik.handleChange}
+                                    //value={formik.values.nombre}
+                                    variant="outlined"
+                                    // helperText={formik.errors.nombre}
+                                    // error={formik.errors.nombre}
+                                />
+                                <Grid container>
+                                    <Grid item xs={6}>
+                                    <TextField
+                                    className={classes.textField}
+                                    placeholder="DNI"
+                                    label={label("DNI")}
+                                    id="nombre"
+                                    name="DNI"
+                                    //onChange={formik.handleChange}
+                                    //value={formik.values.nombre}
+                                    variant="outlined"
+                                    // helperText={formik.errors.nombre}
+                                    // error={formik.errors.nombre}
+                                />
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                    <TextField
                                     className={classes.textField}
                                     placeholder="Nombre"
                                     label={label("Nombre")}
@@ -69,48 +108,176 @@ const AddParameters = () => {
                                     //onChange={formik.handleChange}
                                     //value={formik.values.nombre}
                                     variant="outlined"
-                                   // helperText={formik.errors.nombre}
-                                   // error={formik.errors.nombre}
+                                    // helperText={formik.errors.nombre}
+                                    // error={formik.errors.nombre}
                                 />
-                                 <TextField
+                                    </Grid>
+                                </Grid>
+                                <Grid container>
+                                    <Grid item xs={6}>
+                                    <TextField
                                     className={classes.textField}
-                                    placeholder="Nombre"
-                                    label={label("Nombre")}
+                                    placeholder="Apellido"
+                                    label={label("Apellido")}
                                     id="nombre"
-                                    name="nombre"
+                                    name="Apellido"
                                     //onChange={formik.handleChange}
                                     //value={formik.values.nombre}
                                     variant="outlined"
-                                   // helperText={formik.errors.nombre}
-                                   // error={formik.errors.nombre}
+                                    // helperText={formik.errors.nombre}
+                                    // error={formik.errors.nombre}
                                 />
-                                 <TextField
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                    <TextField
                                     className={classes.textField}
-                                    placeholder="Nombre"
-                                    label={label("Nombre")}
+                                    placeholder="Prefijo"
+                                    label={label("Prefijo")}
                                     id="nombre"
-                                    name="nombre"
+                                    name="Prefijo"
                                     //onChange={formik.handleChange}
                                     //value={formik.values.nombre}
                                     variant="outlined"
-                                   // helperText={formik.errors.nombre}
-                                   // error={formik.errors.nombre}
+                                    // helperText={formik.errors.nombre}
+                                    // error={formik.errors.nombre}
                                 />
-                                 <TextField
+                                    </Grid>
+                                </Grid>
+                                <Grid container>
+                                    <Grid item xs={6}>
+                                    <TextField
                                     className={classes.textField}
-                                    placeholder="Nombre"
-                                    label={label("Nombre")}
+                                    placeholder="Telefono"
+                                    label={label("Telefono")}
                                     id="nombre"
-                                    name="nombre"
+                                    name="Telefono"
                                     //onChange={formik.handleChange}
                                     //value={formik.values.nombre}
                                     variant="outlined"
-                                   // helperText={formik.errors.nombre}
-                                   // error={formik.errors.nombre}
+                                    // helperText={formik.errors.nombre}
+                                    // error={formik.errors.nombre}
                                 />
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                    <TextField
+                                    className={classes.textField}
+                                    placeholder="Email"
+                                    label={label("Email")}
+                                    id="nombre"
+                                    name="Email"
+                                    //onChange={formik.handleChange}
+                                    //value={formik.values.nombre}
+                                    variant="outlined"
+                                    // helperText={formik.errors.nombre}
+                                    // error={formik.errors.nombre}
+                                />
+                                    </Grid>
+                                </Grid>
+                                <Grid container>
+                                    <Grid item xs={6}>
+                                    <TextField
+                                    className={classes.textField}
+                                    placeholder="Provencia"
+                                    label={label("Provencia")}
+                                    id="nombre"
+                                    name="Provencia"
+                                    //onChange={formik.handleChange}
+                                    //value={formik.values.nombre}
+                                    variant="outlined"
+                                    // helperText={formik.errors.nombre}
+                                    // error={formik.errors.nombre}
+                                />
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                    <TextField
+                                    className={classes.textField}
+                                    placeholder="Localidad"
+                                    label={label("Localidad")}
+                                    id="nombre"
+                                    name="Localidad"
+                                    //onChange={formik.handleChange}
+                                    //value={formik.values.nombre}
+                                    variant="outlined"
+                                    // helperText={formik.errors.nombre}
+                                    // error={formik.errors.nombre}
+                                />
+                                    </Grid>
+                                </Grid>
+                                <Grid container>
+                                    <Grid item xs={6}>
+                                    <TextField
+                                    className={classes.textField}
+                                    placeholder=".."
+                                    label={label("..")}
+                                    id="nombre"
+                                    name=".."
+                                    //onChange={formik.handleChange}
+                                    //value={formik.values.nombre}
+                                    variant="outlined"
+                                    // helperText={formik.errors.nombre}
+                                    // error={formik.errors.nombre}
+                                />
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                    <TextField
+                                    className={classes.textField}
+                                    placeholder=".."
+                                    label={label("..")}
+                                    id="nombre"
+                                    name=".."
+                                    //onChange={formik.handleChange}
+                                    //value={formik.values.nombre}
+                                    variant="outlined"
+                                    // helperText={formik.errors.nombre}
+                                    // error={formik.errors.nombre}
+                                />
+                                    </Grid>
+                                </Grid>
+                                <Grid container>
+                                    <Grid item xs={6}>
+                                    <TextField
+                                    className={classes.textField}
+                                    placeholder=".."
+                                    label={label("..")}
+                                    id="nombre"
+                                    name=".."
+                                    //onChange={formik.handleChange}
+                                    //value={formik.values.nombre}
+                                    variant="outlined"
+                                    // helperText={formik.errors.nombre}
+                                    // error={formik.errors.nombre}
+                                />
+                                    </Grid>
+                                    
+                                </Grid>
+                                <TextField
+                                    className={classes.textFieldM}
+                                    placeholder=".."
+                                    label={label("..")}
+                                    id="nombre"
+                                    name=".."
+                                    //onChange={formik.handleChange}
+                                    //value={formik.values.nombre}
+                                    variant="outlined"
+                                    // helperText={formik.errors.nombre}
+                                    // error={formik.errors.nombre}
+                                />
+                                <TextField
+                                    className={classes.textFieldM}
+                                    placeholder=".."
+                                    label={label("..")}
+                                    id="nombre"
+                                    name=".."
+                                    //onChange={formik.handleChange}
+                                    //value={formik.values.nombre}
+                                    variant="outlined"
+                                    // helperText={formik.errors.nombre}
+                                    // error={formik.errors.nombre}
+                                />
+                               
+                               
                             </FormControl>
                         </form>
-                       
                     </Paper>
                 </Grid>
             </Grid>

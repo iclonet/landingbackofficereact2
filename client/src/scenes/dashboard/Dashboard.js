@@ -16,6 +16,7 @@ import smartleads from "../../images/smartleads.png";
 import CompleteUserData from "../home/components/complete-user-data/CompleteUserData";
 import FormCampaña from '../campaña/FormCambaña';
 import AddParameters from '../Parametros/AddParameters';
+import MainDash from './MainDash';
 
 
 class Dashboard extends React.Component {
@@ -125,7 +126,7 @@ class Dashboard extends React.Component {
                             
                                 <Route
                                     path={`${match.url}/campaña`}
-                                    component={FormCampaña}
+                                    component={MainDash}
                                 />
                                 <Route
                                     path={`${match.url}/parameters`}

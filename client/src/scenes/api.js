@@ -1,8 +1,6 @@
 import axios from 'axios';
 var randomstring = require("randomstring");
-import React, { Component } from 'react';
 
-//const urlBase = 'http://localhost:8080/api/v1/'
 export const api = axios.create({
 	baseURL: 'http://localhost:8080/api/v1/',
 	headers: {
@@ -29,7 +27,7 @@ export const createCampaign = async (values) => {
         habilitada: values.habilitada,
         nombre: values.nombre,
         hash: hashh,
-        nroCliente: 84,
+        nroCliente: values.nroCliente,
 									}	
 									console.log(request);						
 	return await api.post(url, request);

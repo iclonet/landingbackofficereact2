@@ -242,7 +242,3 @@ class Perfil extends Component {
 }
 
 export default Perfil;
-
-class Id extends Component {
-  
-}
