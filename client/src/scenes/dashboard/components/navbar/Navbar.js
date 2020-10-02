@@ -40,7 +40,7 @@ const DashboardNav = (props) => {
                 }}
             >
                 <Navbar fluid>
-                    <Navbar.Header style={{ marginLeft: "2%" }}>
+                    <Navbar.Header style={{ marginLeft: "4%" }}>
                         <Navbar.Brand>
                             <LinkContainer
                                 to="/dashboard"
