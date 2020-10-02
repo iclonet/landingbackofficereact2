@@ -220,10 +220,6 @@ const DashboardNav = (props) => {
     );
 };
 
-DashboardNav.propTypes = {
-    onShowContactDialog: PropTypes.func.isRequired,
-    logo: PropTypes.string.isRequired,
-    match: PropTypes.object,
-};
+
 
 export default DashboardNav;

@@ -183,10 +183,10 @@ const AddParameters = (props) => {
                                     <Grid item xs={6}>
                                     <TextField
                                     className={classes.textField}
-                                    placeholder="Provencia"
-                                    label={label("Provencia")}
+                                    placeholder="Provincia"
+                                    label={label("Provincia")}
                                     id="nombre"
-                                    name="Provencia"
+                                    name="Provincia"
                                     //onChange={formik.handleChange}
                                     //value={formik.values.nombre}
                                     variant="outlined"
