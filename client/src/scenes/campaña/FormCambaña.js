@@ -10,7 +10,7 @@ import Divider from "@material-ui/core/Divider";
 import { LinkContainer } from "react-router-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import { Typography } from "@material-ui/core";
-
+import './css/formCampaña.css';
 
 const FormCampaña = (props) => {
     const id = props.id;
@@ -24,8 +24,6 @@ const FormCampaña = (props) => {
                 display: "flex",
                 justifyContent: "center",
                 flexDirection: "column",
-                marginLeft: "20%",
-                marginTop: "5%",
             },
             formControl: {
                 width: "100%",
@@ -151,13 +149,18 @@ const FormCampaña = (props) => {
             const fechaVencimiento = new Date(
                 document.getElementById("fechaVencimiento").value
             );
+            const fechaLanzamiento = new Date(
+                document.getElementById("fechaLanzamiento").value
+            );
             formik.setFieldValue(
                 "fechaVencimiento",
                 formatDate(fechaVencimiento)
             );
-            const fechaLanzamiento = new Date(
-                document.getElementById("fechaLanzamiento").value
+            formik.setFieldValue(
+                "fechaLanzamiento",
+                formatDate(fechaLanzamiento)
             );
+           
             if (fechaVencimiento < fechaLanzamiento) {
                 setFecha(false);
             }
@@ -166,12 +169,9 @@ const FormCampaña = (props) => {
             }
         }
         return (
-            <div
-                style={{
-                    width: "50%",
-                }}
+            <div id= "divid"
             >
-                <Paper className={classes.paper} elevation={3}>
+                <Paper id = "paper" className={classes.paper} elevation={3}>
                     <h1 style={{ alignSelf: "center" }}>Nueva Campaña</h1>
                     <Divider
                         style={{
@@ -233,11 +233,7 @@ const FormCampaña = (props) => {
                         </FormControl>
                         <FormControl className={classes.formControl}>
                             <InputLabel
-                                style={{
-                                    fontSize: "16pt",
-                                    fontFamily: "Roboto",
-                                }}
-                            >
+                             id="fechalabel">
                                 Fecha Lanzamiento
                             </InputLabel>
                             <TextField
@@ -247,19 +243,15 @@ const FormCampaña = (props) => {
                                 type="date"
                                 value={formik.values.fechaLanzamiento}
                                 selected={formik.values.fechaLanzamiento}
-                                onChange={formik.handleChange}
+                                onChange={() => handleDateChange()}
                                 helperText={<Typography component={'span'} style={{fontSize: '14px'}}>{formik.errors.fechaLanzamiento}</Typography>}
                                 error={formik.errors.fechaLanzamiento}
                                 variant="outlined"
                             />
                         </FormControl>
                         <FormControl className={classes.formControl}>
-                            <InputLabel
-                                style={{
-                                    fontSize: "16pt",
-                                    fontFamily: "Roboto",
-                                }}
-                            >
+                        <InputLabel
+                             id="fechalabel">
                                 Fecha Vencimiento
                             </InputLabel>
                             <TextField

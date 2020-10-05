@@ -9,12 +9,12 @@ import {
     Col,
 } from "react-bootstrap";
 import Session from "../../../../utils/Session";
-import PropTypes from "prop-types";
 import WhatsappContact from "./components/WhatsappContact";
 import smartleads from "../../../../images/smartleads.png";
 import ContactDialog from "../contact-dialog/ContactDialog";
 
-const DashboardNav = (props) => {
+const DashboardNav = () => {
+
     const onLogout = () => {
         Session.clear();
         location.reload();
@@ -76,7 +76,7 @@ const DashboardNav = (props) => {
                                 >
                                     Nueva
                                 </MenuItem>
-                                <LinkContainer to="/dashboard/">
+                                <LinkContainer to="/buscarCampaña">
                                     <MenuItem>Buscar</MenuItem>
                                 </LinkContainer>
                                 <LinkContainer to="/dashboard/">
@@ -216,6 +216,7 @@ const DashboardNav = (props) => {
                 show={showingContactDialog}
                 onClose={onCloseContactDialog}
             />
+
         </div>
     );
 };

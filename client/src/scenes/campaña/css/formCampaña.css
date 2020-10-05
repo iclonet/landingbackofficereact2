@@ -1,0 +1,91 @@
+@media only screen and (min-width: 320px) {
+    #fechalabel {
+        font-family: 'Roboto';
+        font-size: 14px;
+       
+     };
+     #divid {
+         width: 60%;
+     }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {
+    #fechalabel {
+        font-family: 'Roboto';
+        font-size: 16px;
+       
+    }
+    #divid {
+        width: 58%;
+    }
+    #paper{
+        
+        margin-left: 12%;
+        margin-top: 3%,
+     }
+}
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    #fechalabel {
+        font-family: 'Roboto';
+        font-size: 18px;
+    }
+    #divid {
+        width: 55%;
+    }
+    #paper{
+        
+        margin-left: 13%;
+        margin-top: 4%,
+     }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    #fechalabel {
+        font-family: 'Roboto';
+        font-size: 20px;
+    }
+    #divid {
+        width: 52%;
+    }
+    #paper{
+       
+        margin-left: 15%;
+        margin-top: 4%,
+     }
+
+}
+
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    #fechalabel {
+        font-family: 'Roboto';
+        font-size: 22px;
+    }
+    #divid {
+        width: 50%;
+    }
+    #paper{
+        
+        margin-left: 15%;
+        margin-top: 5%,
+     }
+     #buscar {
+        font-size: 14px;   
+     }
+     #buscarR {
+         color: black;
+         font-size: 22px;
+     }
+    }
