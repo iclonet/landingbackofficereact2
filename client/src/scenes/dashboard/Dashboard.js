@@ -45,7 +45,7 @@ const Dashboard = () => {
                     <DashboardNav />
 
                     <div className="container-fluid">
-                        <h1 style={{marginLeft: '10%'}}> ¡Hola {user.nombre}!</h1>
+                        
                     </div>
                 </div>
                 <div className="clearfix" />
