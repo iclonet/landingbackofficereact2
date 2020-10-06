@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import UiUtils from '../../utils/UiUtils';
 import ApiClient from '../../utils/ApiClient';
 import FormCampaña from '../campaña/FormCambaña';
-import DashboardNav from "../dashboard/components/navbar/Navbar";
 import {hashh } from "../api";
 
 
@@ -42,7 +41,6 @@ const MainDash = (props) => {
     
         return (
           <div>
-            <DashboardNav />
             <FormCampaña id= {user.idCliente} hash={hashh} />
           </div>
         );

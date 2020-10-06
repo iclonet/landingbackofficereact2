@@ -12,6 +12,8 @@ import Switch from "@material-ui/core/Switch";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 
+
+
 const AddParameters = (props) => {
     const useStyles = makeStyles((theme) => ({
         root: {
@@ -50,7 +52,7 @@ const AddParameters = (props) => {
         },
     }));
     const classes = useStyles();
-
+    
     const validation = Yup.object().shape({});
 
     const formik = useFormik({
@@ -58,6 +60,7 @@ const AddParameters = (props) => {
         validationSchema: validation,
         onSubmit: (values) => {},
     });
+    const hash = props.hash;
     const label = (label) => {
         <p id="label">{label}</p>;
     };
@@ -84,7 +87,7 @@ const AddParameters = (props) => {
                                     }}
                                 >
                                     {" "}
-                                    Campaña #{hashh}
+                                    Campaña #{hash || hashh}
                                 </Paper>
                             </Paper>
                         </Grid>

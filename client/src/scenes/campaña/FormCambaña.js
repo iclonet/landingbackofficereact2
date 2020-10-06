@@ -11,10 +11,17 @@ import { LinkContainer } from "react-router-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import { Typography } from "@material-ui/core";
 import './css/formCampaña.css';
+import { Addon } from "react-bootstrap/lib/InputGroup";
+import AddParameters from "../Parametros/AddParameters";
+import DashboardNav from "../dashboard/components/navbar/Navbar";
+ 
 
 const FormCampaña = (props) => {
     const id = props.id;
     const hash1 = props.hash;
+    const [form, setForm] = useState(true);
+    const [param, setParam] = useState(false);
+
     const Form = (props) => {
         const useStyles = makeStyles((theme) => ({
             paper: {
@@ -61,12 +68,19 @@ const FormCampaña = (props) => {
                 location.reload();
             }
         };
+        const addParam = () => {
+            if(form == true){
+                setForm(false);
+                setParam(true);
+            }
+        }
         const [error, setError] = useState("");
         const [deshabilitado, setDeshabilitado] = useState(false);
         const [parametros, setParametros] = useState(false);
         const [nuevo, setNuevo] = useState(false);
         const [campaña, setCampaña] = useState([]);
         const [fecha, setFecha] = useState(true);
+       
 
         const validation = Yup.object().shape({
             fechaVencimiento: Yup.string().required("requerido"),
@@ -169,7 +183,9 @@ const FormCampaña = (props) => {
             }
         }
         return (
-            <div id= "divid"
+            <div>
+                <DashboardNav />
+                <div id= "divid"
             >
                 <Paper id = "paper" className={classes.paper} elevation={3}>
                     <h1 style={{ alignSelf: "center" }}>Nueva Campaña</h1>
@@ -302,27 +318,27 @@ const FormCampaña = (props) => {
                             formik.values.nombre != "" &&
                             formik.values.fechaVencimiento != "" &&
                             formik.values.fechaLanzamiento != "" && (
-                                <LinkContainer
-                                    style={{
+                                
+                                    <Button bsStyle="primary" onClick = {addParam} style={{
                                         width: "50%",
                                         alignSelf: "center",
                                         marginBottom: "2%",
-                                    }}
-                                    to="/parameters"
-                                >
-                                    <Button bsStyle="primary">
+                                    }}>
                                         Agregar parametros
                                     </Button>
-                                </LinkContainer>
+                        
                             )}
                     </form>
                 </Paper>
             </div>
+            </div>
+           
         );
     };
     return (
         <div>
-            <Form id={id} />
+           {form == true ? <Form id={id} /> : null } 
+           {param == true ? <AddParameters hash={hash1} /> : null } 
         </div>
     );
 };
