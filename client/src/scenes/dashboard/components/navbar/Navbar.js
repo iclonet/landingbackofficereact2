@@ -76,9 +76,14 @@ const DashboardNav = () => {
                                 >
                                     Nueva
                                 </MenuItem>
-                                <LinkContainer to="/buscarCampaña">
-                                    <MenuItem>Buscar</MenuItem>
-                                </LinkContainer>
+                                
+                                <MenuItem
+                                    onClick={() =>
+                                        window.location.replace("/buscarCampaña")
+                                    }
+                                >
+                                    Buscar
+                                </MenuItem>
                                 <LinkContainer to="/dashboard/">
                                     <MenuItem>Reportes</MenuItem>
                                 </LinkContainer>

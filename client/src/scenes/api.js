@@ -23,6 +23,39 @@ export const createCampaign = async (values) => {
     
     return await api.post(url, request);
 };
+export const addParametrs = async (values) => {
+    const url = `parametros/create`;
+    const request = {
+        texto: values.texto,
+        habilitaNombre: values.habilitaNombre,
+        habilitaApellido: values.habilitaApellido,
+        habilitaLocalidad: values.habilitaLocalidad,
+        habilitaProvincia: values.habilitaProvincia,
+        validaEmail: values.validaEmail,
+        validaSms: values.validaSms,
+        validaScore: values.validaScore,
+        validaDni: values.validaDni,
+        imagenBackground: values.imagenBackground,
+        imagenLogo: values.imagenLogo,
+        estrategia: values.estrategia,
+        hash: values.hash,
+        textoSobreImagen: values.textoSobreImagen,
+        textoDebajoImagen: values.textoDebajoImagen,
+        textoPieFormulario: values.textoPieFormulario,
+        titulo1Formulario: values.titulo1Formulario,
+        detalle1Formulario: values.detalle1Formulario,
+        titulo2Formulario: values.titulo2Formulario,
+        detalle2Formulario: values.detalle2Formulario,
+        titulo3Formulario: values.titulo3Formulario,
+        detalle3Formulario: values.detalle3Formulario,
+        titulo4Formulario: values.titulo4Formulario,
+        detalle4Formulario: values.detalle4Formulario,
+        titulo5Formulario: values.titulo5Formulario,
+        detalle5Formulario: values.detalle5Formulario,
+    };
+    
+    return await api.post(url, request);
+};
 export const getCampaigns = async () => {
     const url = `estrategias/findAll`;
     return await api.get(url);

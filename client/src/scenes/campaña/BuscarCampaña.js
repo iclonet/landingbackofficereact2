@@ -13,7 +13,6 @@ import Grid from "@material-ui/core/Grid";
 import DashboardNav from "../dashboard/components/navbar/Navbar";
 import Divider from "@material-ui/core/Divider";
 import "./css/formCampaña.css";
-import { LinkContainer } from "react-router-bootstrap";
 import AddParameters from "../Parametros/AddParameters";
 
 
@@ -105,7 +104,8 @@ const BuscarCampaña = (props) => {
         }
     }
    const [hash , setHash] = React.useState('');
-    const SearchCapaign = () => {
+
+   const SearchCapaign = () => {
         const clientId = user.idCliente;
         
         return (
