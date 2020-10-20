@@ -53,7 +53,8 @@ export const addParametrs = async (values) => {
         titulo5Formulario: values.titulo5Formulario,
         detalle5Formulario: values.detalle5Formulario,
     };
-    
+    console.log("api add parametross");
+    console.log(request);
     return await api.post(url, request);
 };
 export const getCampaigns = async () => {
