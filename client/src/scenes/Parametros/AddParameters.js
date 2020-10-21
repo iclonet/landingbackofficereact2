@@ -12,7 +12,7 @@ import { hashh } from "../api";
 import Switch from "@material-ui/core/Switch";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
-import { addParametrs, getCampaigns } from "../api";
+import { addParametrs, getCampaignByHash } from "../api";
 import { Typography } from "@material-ui/core";
 
 const AddParameters = (props) => {
@@ -128,8 +128,8 @@ const AddParameters = (props) => {
         setParametrs(res.data);
     }
     const [campañas, setCampañas] = useState([]);
-    async function getCampaignFunc() {
-        const res = await getCampaigns();
+    async function getCampaignByHashFunc(h) {
+        const res = await getCampaignByHash(h);
         setCampañas(res.data);
     }
     const hashprops = props.hash;
@@ -139,62 +139,56 @@ const AddParameters = (props) => {
     const [deshabilitado, setDeshabilitado] = useState(false);
 
     const handleChangeSMS = () => {
-        if(formik.values.validaSms == false){
-           
-             formik.setFieldValue("validaSms", true);
+        if (formik.values.validaSms == false) {
+            formik.setFieldValue("validaSms", true);
         }
-        if(formik.values.validaSms == true){
-           
+        if (formik.values.validaSms == true) {
             formik.setFieldValue("validaSms", false);
-       }
+        }
     };
     const handleChangeEMAIL = () => {
-        if(formik.values.validaEmail == false){
-           
+        if (formik.values.validaEmail == false) {
             formik.setFieldValue("validaEmail", true);
-       }
-       if(formik.values.validaEmail == true){
-          
-           formik.setFieldValue("validaEmail", false);
-      }
+        }
+        if (formik.values.validaEmail == true) {
+            formik.setFieldValue("validaEmail", false);
+        }
     };
     const handleChangeScore = () => {
-        if(formik.values.validaScore == false){
-           
+        if (formik.values.validaScore == false) {
             formik.setFieldValue("validaScore", true);
-       }
-       if(formik.values.validaScore == true){
-          
-           formik.setFieldValue("validaScore", false);
-      }
+        }
+        if (formik.values.validaScore == true) {
+            formik.setFieldValue("validaScore", false);
+        }
     };
     const handleChangeProvincia = () => {
-        if(formik.values.habilitaProvincia == false){
-           
+        if (formik.values.habilitaProvincia == false) {
             formik.setFieldValue("habilitaProvincia", true);
-       }
-       if(formik.values.habilitaProvincia == true){
-          
-           formik.setFieldValue("habilitaProvincia", false);
-      }
+        }
+        if (formik.values.habilitaProvincia == true) {
+            formik.setFieldValue("habilitaProvincia", false);
+        }
     };
     const handleChangeLocalidad = () => {
-        if(formik.values.habilitaLocalidad == false){
-           
+        if (formik.values.habilitaLocalidad == false) {
             formik.setFieldValue("habilitaLocalidad", true);
-       }
-       if(formik.values.habilitaLocalidad == true){
-          
-           formik.setFieldValue("habilitaLocalidad", false);
-      }
+        }
+        if (formik.values.habilitaLocalidad == true) {
+            formik.setFieldValue("habilitaLocalidad", false);
+        }
     };
     const [error, setError] = useState("");
 
     useEffect(() => {
         try {
-            getCampaignFunc();
+            getCampaignByHashFunc(hashprops);
             id();
-            console.log(campañas);
+            console.log(hashprops);
+            console.log(
+                campañas.map((campaña) => (
+                    `${campaña.id}`
+                )));
             console.log(estrategiaID);
         } catch (err) {
             setError(err);
@@ -217,12 +211,33 @@ const AddParameters = (props) => {
         setDeshabilitado(true);
         formik.handleSubmit();
     };
-    const uploadlogo = (event) =>{
-        formik.setFieldValue("imagenLogo", event.target.files[0]);
-    }
-    const uploadImagen = (event) =>{
-        formik.setFieldValue("imagenBackground", event.target.files[0]);
-    }
+    const uploadlogo = async (e) => {
+        const file = e.target.files[0];
+        const base64 = await convertBase64(file);
+        const base64String = base64.toString();
+        console.log(base64String);
+        formik.setFieldValue("imagenLogo", base64String);
+    };
+    const uploadImagen = async (e) => {
+        const file = e.target.files[0];
+        const base64 = await convertBase64(file);
+        const base64String = base64.toString();
+        console.log(base64String);
+        formik.setFieldValue("imagenBackground", base64String);
+    };
+    const convertBase64 = (file) => {
+        return new Promise((resolve, reject) => {
+            const fileReader = new FileReader();
+            fileReader.readAsDataURL(file);
+            fileReader.onload = () => {
+                resolve(fileReader.result);
+            };
+            fileReader.onerror = (error) => {
+                reject(error);
+            };
+        });
+    };
+
     return (
         <div>
             <div>
@@ -249,33 +264,45 @@ const AddParameters = (props) => {
                                         {" "}
                                         Campaña #{hashprops || hashh}
                                     </Paper>
-                                    
-                                    <Button
-                                        variant="contained"
-                                        component="label"
-                                       
-                                        style={{marginTop: '3%', marginRight: '50%' }}
+
+                                    <div
+                                        style={{
+                                            marginTop: "3%",
+                                            marginRight: "50%",
+                                        }}
                                     >
-                                        <h4>Upload logo</h4>
+                                        <h3>Upload logo</h3>
                                         <input
                                             type="file"
-                                            onChange= {uploadlogo}
+                                            onChange={(e) => {
+                                                uploadlogo(e);
+                                            }}
                                         />
-                                    </Button>
-                                    <Button
-                                        variant="contained"
-                                        component="label"
-                                        style={{marginTop: '40%', width: '90%'}}
-                                    >
-                                        <h4>Upload imagen campaña</h4>
+                                    </div>
+
+                                    <div style={{
+                                            marginTop: "40%",
+                                            
+                                        }}>
+                                        <h3 style={{
+                                            
+                                            marginLeft: "3%",
+                                        }}>Upload imagen campaña</h3>
                                         <input
+                                        style={{
+                                           
+                                            marginLeft: "20%",
+                                        }}
                                             type="file"
-                                            onChange= {uploadImagen}
+                                            onChange={(e) => {
+                                                uploadImagen(e);
+                                            }}
                                         />
-                                    </Button>
+                                    </div>
+
                                     <FormControl
                                         style={{
-                                            marginTop: '15%',
+                                            marginTop: "15%",
                                             display: "flex",
                                             justifyContent: "center",
                                             flexDirection: "column",
@@ -290,13 +317,18 @@ const AddParameters = (props) => {
                                             id="nombre"
                                             name="textoSobreImagen"
                                             onChange={formik.handleChange}
-                                            value={formik.values.textoSobreImagen}
+                                            value={
+                                                formik.values.textoSobreImagen
+                                            }
                                             variant="outlined"
-                                            helperText={formik.errors.textoSobreImagen}
-                                            error={formik.errors.textoSobreImagen}
+                                            helperText={
+                                                formik.errors.textoSobreImagen
+                                            }
+                                            error={
+                                                formik.errors.textoSobreImagen
+                                            }
                                         />
                                     </FormControl>
-                                   
                                 </Paper>
                             </Grid>
                             <Grid item xs={6}>
