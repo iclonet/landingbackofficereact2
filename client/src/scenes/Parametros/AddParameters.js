@@ -12,7 +12,7 @@ import { hashh } from "../api";
 import Switch from "@material-ui/core/Switch";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
-import { addParametrs, getCampaignByHash } from "../api";
+import { addParametrs, getCampaigns } from "../api";
 import { Typography } from "@material-ui/core";
 
 const AddParameters = (props) => {
@@ -90,7 +90,7 @@ const AddParameters = (props) => {
         },
         validationSchema: validation,
         onSubmit: (values) => {
-            console.log(values);
+            console.log(values,typeof(values.estrategia));
             const {
                 texto,
                 habilitaNombre,
@@ -127,9 +127,9 @@ const AddParameters = (props) => {
         const res = await addParametrs(obj);
         setParametrs(res.data);
     }
-    const [campañas, setCampañas] = useState([]);
-    async function getCampaignByHashFunc(h) {
-        const res = await getCampaignByHash(h);
+    const [campañas, setCampañas] = useState("");
+    async function getCampaignsFunc() {
+        const res = await getCampaigns();
         setCampañas(res.data);
     }
     const hashprops = props.hash;
@@ -182,48 +182,47 @@ const AddParameters = (props) => {
 
     useEffect(() => {
         try {
-            getCampaignByHashFunc(hashprops);
-            id();
+            getCampaignsFunc();
+            {
+                id;
+            }
             console.log(hashprops);
-            console.log(
-                campañas.map((campaña) => (
-                    `${campaña.id}`
-                )));
-            console.log(estrategiaID);
+            console.log(campañas);
+            // console.log(estrategiaID);
         } catch (err) {
             setError(err);
         }
     }, []);
     const [estrategiaID, setEstrategiaID] = React.useState("");
-    function id() {
-        {
+
+    const id = () => 
+        
             campañas &&
-                campañas
-                    .filter((cam) => cam.hash == hashprops)
-                    .map((campaña) =>
-                        setEstrategiaID("id" + ":" + ` ${campaña.hash} `)
-                    );
-        }
-    }
+            campañas
+                .filter((cam) => cam.hash == hashprops)
+                .map((campaña) =>  `{ "id": ${campaña.id} }`);
+        
+    
+
     const guardar = () => {
         formik.setFieldValue("hash", hashprops || hashh);
-        formik.setFieldValue("estrategia", estrategiaID);
+        formik.setFieldValue("estrategia", JSON.parse(id()));
         setDeshabilitado(true);
         formik.handleSubmit();
     };
     const uploadlogo = async (e) => {
         const file = e.target.files[0];
         const base64 = await convertBase64(file);
-        const base64String = base64.toString();
-        console.log(base64String);
-        formik.setFieldValue("imagenLogo", base64String);
+        var strImage = base64.replace(/^data:image\/[a-z]+;base64,/, "");
+        console.log(strImage);
+        formik.setFieldValue("imagenLogo", strImage);
     };
     const uploadImagen = async (e) => {
         const file = e.target.files[0];
         const base64 = await convertBase64(file);
-        const base64String = base64.toString();
-        console.log(base64String);
-        formik.setFieldValue("imagenBackground", base64String);
+        var strImage = base64.replace(/^data:image\/[a-z]+;base64,/, "");
+        console.log(strImage);
+        formik.setFieldValue("imagenBackground", strImage);
     };
     const convertBase64 = (file) => {
         return new Promise((resolve, reject) => {
@@ -280,19 +279,22 @@ const AddParameters = (props) => {
                                         />
                                     </div>
 
-                                    <div style={{
-                                            marginTop: "40%",
-                                            
-                                        }}>
-                                        <h3 style={{
-                                            
-                                            marginLeft: "3%",
-                                        }}>Upload imagen campaña</h3>
-                                        <input
+                                    <div
                                         style={{
-                                           
-                                            marginLeft: "20%",
+                                            marginTop: "40%",
                                         }}
+                                    >
+                                        <h3
+                                            style={{
+                                                marginLeft: "3%",
+                                            }}
+                                        >
+                                            Upload imagen campaña
+                                        </h3>
+                                        <input
+                                            style={{
+                                                marginLeft: "20%",
+                                            }}
                                             type="file"
                                             onChange={(e) => {
                                                 uploadImagen(e);

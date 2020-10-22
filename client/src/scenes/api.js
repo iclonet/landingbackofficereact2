@@ -64,4 +64,5 @@ export const getCampaigns = async () => {
 export const getCampaignByHash = async (hash) => {
     const url = `estrategias/findByHash?hash=${hash}`;
     return await api.get(url);
+    
 };
