@@ -11,7 +11,6 @@ import { LinkContainer } from "react-router-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import { Typography } from "@material-ui/core";
 import './css/formCampaña.css';
-import { Addon } from "react-bootstrap/lib/InputGroup";
 import AddParameters from "../Parametros/AddParameters";
 import DashboardNav from "../dashboard/components/navbar/Navbar";
  
@@ -240,6 +239,7 @@ const FormCampaña = (props) => {
                                 label={label("Nombre")}
                                 id="nombre"
                                 name="nombre"
+                                disabled={deshabilitado}
                                 onChange={formik.handleChange}
                                 value={formik.values.nombre}
                                 variant="outlined"
@@ -253,6 +253,7 @@ const FormCampaña = (props) => {
                                 Fecha Lanzamiento
                             </InputLabel>
                             <TextField
+                                disabled={deshabilitado}
                                 style={{ marginBottom: "2%" }}
                                 className={classes.textField}
                                 id="fechaLanzamiento"
@@ -271,6 +272,7 @@ const FormCampaña = (props) => {
                                 Fecha Vencimiento
                             </InputLabel>
                             <TextField
+                                disabled={deshabilitado}
                                 style={{ marginBottom: "2%" }}
                                 className={classes.textField}
                                 id="fechaVencimiento"
@@ -311,7 +313,7 @@ const FormCampaña = (props) => {
                                     bsStyle="primary"
                                     onClick={nuevaCampaña}
                                 >
-                                    nuevo
+                                    Nuevo
                                 </Button>
                             )}
                         {parametros == true &&

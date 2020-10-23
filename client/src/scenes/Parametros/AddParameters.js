@@ -8,12 +8,12 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import Divider from "@material-ui/core/Divider";
 import DashboardNav from "../dashboard/components/navbar/Navbar";
-import { hashh } from "../api";
 import Switch from "@material-ui/core/Switch";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import { addParametrs, getCampaigns } from "../api";
 import { Typography } from "@material-ui/core";
+
 
 const AddParameters = (props) => {
     const useStyles = makeStyles((theme) => ({
@@ -57,7 +57,11 @@ const AddParameters = (props) => {
     }));
     const classes = useStyles();
 
-    const validation = Yup.object().shape({});
+    const validation = Yup.object().shape({
+        imagenLogo: Yup.string().required(),
+        imagenBackground: Yup.string().required(),
+        texto: Yup.string().required("Requerido"),
+    });
 
     const formik = useFormik({
         initialValues: {
@@ -90,7 +94,7 @@ const AddParameters = (props) => {
         },
         validationSchema: validation,
         onSubmit: (values) => {
-            console.log(values,typeof(values.estrategia));
+            console.log(values, typeof values.estrategia);
             const {
                 texto,
                 habilitaNombre,
@@ -179,6 +183,9 @@ const AddParameters = (props) => {
         }
     };
     const [error, setError] = useState("");
+    const [imgbg, setImgbg] = useState(true);
+    const [logo, setLogo] = useState(true);
+    const [warning, setWarning] = useState(false);
 
     useEffect(() => {
         try {
@@ -193,22 +200,37 @@ const AddParameters = (props) => {
             setError(err);
         }
     }, []);
-    const [estrategiaID, setEstrategiaID] = React.useState("");
+    const [edit, setEdit] = React.useState(false);
 
-    const id = () => 
-        
-            campañas &&
-            campañas
-                .filter((cam) => cam.hash == hashprops)
-                .map((campaña) =>  `{ "id": ${campaña.id} }`);
-        
-    
+    const id = () =>
+        campañas &&
+        campañas
+            .filter((cam) => cam.hash == hashprops)
+            .map((campaña) => `{ "id": ${campaña.id} }`);
 
     const guardar = () => {
-        formik.setFieldValue("hash", hashprops || hashh);
+        formik.setFieldValue("hash", hashprops);
         formik.setFieldValue("estrategia", JSON.parse(id()));
-        setDeshabilitado(true);
         formik.handleSubmit();
+        if (
+            formik.values.imagenBackground == "" ||
+            formik.values.imagenLogo == "" ||
+            formik.values.texto == ""
+        ) {
+            setImgbg(false);
+            setLogo(false);
+            setWarning(true);
+        }
+        if (
+            formik.values.imagenBackground != "" &&
+            formik.values.imagenLogo != "" && formik.values.texto != ""
+        ) {
+            setWarning(false);
+            setImgbg(true);
+            setLogo(true);
+            setDeshabilitado(true);
+            setEdit(true);
+        }
     };
     const uploadlogo = async (e) => {
         const file = e.target.files[0];
@@ -236,762 +258,816 @@ const AddParameters = (props) => {
             };
         });
     };
-
+    function errorText( w , ml , mr) {
+        return (
+            <div>
+                <Divider
+                    style={{
+                        width: w,
+                        backgroundColor: "red",
+                        marginTop: "2%",
+                        marginLeft: ml
+                    }}
+                />
+                <p
+                    style={{
+                        marginTop: "0px",
+                        marginRight: mr ,
+                        fontSize: "10pt",
+                        color: "red",
+                    }}
+                >
+                    requerido
+                </p>
+            </div>
+        );
+    }
     return (
         <div>
             <div>
                 <DashboardNav />
             </div>
             <form onSubmit={formik.handleSubmit}>
-                <Paper className={classes.paperMain} elevation={3}>
-                    <div className={classes.root}>
-                        <Grid container spacing={3}>
-                            <Grid item xs={6}>
-                                <Paper className={classes.paper} elevation={3}>
-                                    <Paper
-                                        style={{
-                                            marginTop: "-7%",
-                                            marginLeft: "2%",
-                                            padding: "1%",
-                                            width: "30%",
-                                            textAlign: "center",
-                                            backgroundColor:
-                                                "var(--primary-color)",
-                                            color: "white",
-                                        }}
-                                    >
-                                        {" "}
-                                        Campaña #{hashprops || hashh}
-                                    </Paper>
+                <div className={classes.root}>
+                    <Grid container spacing={3}>
+                        <Grid item xs={6}>
+                            <Paper className={classes.paper} elevation={3}>
+                                <Paper
+                                    style={{
+                                        marginTop: "-7%",
+                                        marginLeft: "2%",
+                                        padding: "1%",
+                                        width: "30%",
+                                        textAlign: "center",
+                                        backgroundColor: "var(--primary-color)",
+                                        color: "white",
+                                    }}
+                                >
+                                    {" "}
+                                    Campaña #{hashprops}
+                                </Paper>
 
-                                    <div
-                                        style={{
-                                            marginTop: "3%",
-                                            marginRight: "50%",
-                                        }}
-                                    >
-                                        <h3>Upload logo</h3>
+                                <div
+                                    style={{
+                                        marginTop: "8%",
+                                        marginRight: "50%",
+                                    }}
+                                >
+                                    <h3>Upload logo</h3>
+                                    <FormControl>
                                         <input
+                                            name="imagenLogo"
+                                            disabled={deshabilitado}
                                             type="file"
                                             onChange={(e) => {
                                                 uploadlogo(e);
                                             }}
                                         />
-                                    </div>
-
-                                    <div
+                                    </FormControl>
+                                    
+                                </div>
+                                {logo == false && errorText("60%" , "0%" , "40%")}
+                                <div
+                                    style={{
+                                        marginTop: "40%",
+                                    }}
+                                >
+                                    <h3
                                         style={{
-                                            marginTop: "40%",
+                                            marginLeft: "3%",
                                         }}
                                     >
-                                        <h3
-                                            style={{
-                                                marginLeft: "3%",
-                                            }}
-                                        >
-                                            Upload imagen campaña
-                                        </h3>
+                                        Upload imagen campaña
+                                    </h3>
+                                    <FormControl>
                                         <input
                                             style={{
                                                 marginLeft: "20%",
                                             }}
                                             type="file"
+                                            disabled={deshabilitado}
+                                            name="imagenBackground"
                                             onChange={(e) => {
                                                 uploadImagen(e);
                                             }}
                                         />
-                                    </div>
-
-                                    <FormControl
+                                    </FormControl>
+                                    
+                                </div>
+                                {imgbg == false && errorText("70%" , "16%" , "0%")}
+                                <FormControl
+                                    style={{
+                                        marginTop: "21%",
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        flexDirection: "column",
+                                    }}
+                                >
+                                    <TextField
+                                        className={classes.textFieldFull}
+                                        placeholder="Texto sobre imagen campaña (opcional)"
+                                        label={label(
+                                            "Texto sobre imagen campaña (opcional)"
+                                        )}
+                                        id="nombre"
+                                        disabled={deshabilitado}
+                                        name="textoSobreImagen"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.textoSobreImagen}
+                                        variant="outlined"
+                                        helperText={
+                                            formik.errors.textoSobreImagen
+                                        }
+                                        error={formik.errors.textoSobreImagen}
+                                    />
+                                </FormControl>
+                            </Paper>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <Paper className={classes.paper} elevation={3}>
+                                <FormControl
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        flexDirection: "column",
+                                    }}
+                                >
+                                    <TextField
+                                        className={classes.textFieldFull}
+                                        placeholder="Titulo encabezado (opcional)"
+                                        label={label(
+                                            "Titulo encabezado (opcional)"
+                                        )}
+                                        id="nombre"
+                                        disabled={deshabilitado}
+                                        name="texto"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.texto}
+                                        variant="outlined"
+                                        helperText={<Typography component={'span'} style={{fontSize: '14px'}}>{formik.errors.texto}</Typography>}
+                                        error={formik.errors.texto}
+                                    />
+                                </FormControl>
+                                <Grid container>
+                                    <Grid item xs={6}>
+                                        <FormControl>
+                                            <TextField
+                                                className={classes.textField}
+                                                disabled={true}
+                                                placeholder="DNI"
+                                                label={label("DNI")}
+                                                id="nombre"
+                                                name="DNI"
+                                                //onChange={formik.handleChange}
+                                                //value={formik.values.nombre}
+                                                variant="outlined"
+                                                // helperText={formik.errors.nombre}
+                                                // error={formik.errors.nombre}
+                                            />
+                                        </FormControl>
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                        <FormControl>
+                                            <TextField
+                                                className={classes.textField}
+                                                placeholder="Nombre"
+                                                label={label("Nombre")}
+                                                id="nombre"
+                                                disabled={true}
+                                                name="nombre"
+                                                //onChange={formik.handleChange}
+                                                //value={formik.values.nombre}
+                                                variant="outlined"
+                                                // helperText={formik.errors.nombre}
+                                                // error={formik.errors.nombre}
+                                            />
+                                        </FormControl>
+                                    </Grid>
+                                </Grid>
+                                <Grid container>
+                                    <Grid item xs={6}>
+                                        <TextField
+                                            className={classes.textField}
+                                            placeholder="Apellido"
+                                            label={label("Apellido")}
+                                            id="nombre"
+                                            disabled={true}
+                                            name="Apellido"
+                                            //onChange={formik.handleChange}
+                                            //value={formik.values.nombre}
+                                            variant="outlined"
+                                            // helperText={formik.errors.nombre}
+                                            // error={formik.errors.nombre}
+                                        />
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                        <TextField
+                                            className={classes.textField}
+                                            placeholder="Prefijo"
+                                            label={label("Prefijo")}
+                                            id="nombre"
+                                            disabled={true}
+                                            name="Prefijo"
+                                            //onChange={formik.handleChange}
+                                            //value={formik.values.nombre}
+                                            variant="outlined"
+                                            // helperText={formik.errors.nombre}
+                                            // error={formik.errors.nombre}
+                                        />
+                                    </Grid>
+                                </Grid>
+                                <Grid container>
+                                    <Grid item xs={6}>
+                                        <TextField
+                                            className={classes.textField}
+                                            placeholder="Telefono"
+                                            label={label("Telefono")}
+                                            id="nombre"
+                                            name="Telefono"
+                                            disabled={true}
+                                            //onChange={formik.handleChange}
+                                            //value={formik.values.nombre}
+                                            variant="outlined"
+                                            // helperText={formik.errors.nombre}
+                                            // error={formik.errors.nombre}
+                                        />
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                        <TextField
+                                            className={classes.textField}
+                                            placeholder="Email"
+                                            label={label("Email")}
+                                            id="nombre"
+                                            name="Email"
+                                            disabled={true}
+                                            //onChange={formik.handleChange}
+                                            //value={formik.values.nombre}
+                                            variant="outlined"
+                                            // helperText={formik.errors.nombre}
+                                            // error={formik.errors.nombre}
+                                        />
+                                    </Grid>
+                                </Grid>
+                                <Grid container>
+                                    <Grid
                                         style={{
-                                            marginTop: "15%",
                                             display: "flex",
                                             justifyContent: "center",
                                             flexDirection: "column",
                                         }}
+                                        item
+                                        xs={6}
                                     >
-                                        <TextField
-                                            className={classes.textFieldFull}
-                                            placeholder="Texto sobre imagen campaña"
-                                            label={label(
-                                                "Texto sobre imagen campaña"
-                                            )}
-                                            id="nombre"
-                                            name="textoSobreImagen"
-                                            onChange={formik.handleChange}
-                                            value={
-                                                formik.values.textoSobreImagen
-                                            }
-                                            variant="outlined"
-                                            helperText={
-                                                formik.errors.textoSobreImagen
-                                            }
-                                            error={
-                                                formik.errors.textoSobreImagen
-                                            }
-                                        />
-                                    </FormControl>
-                                </Paper>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <Paper className={classes.paper} elevation={3}>
-                                    <FormControl
-                                        style={{
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            flexDirection: "column",
-                                        }}
-                                    >
-                                        <TextField
-                                            className={classes.textFieldFull}
-                                            placeholder="Titulo encabezado (opcional)"
-                                            label={label(
-                                                "Titulo encabezado (opcional)"
-                                            )}
-                                            id="nombre"
-                                            name="texto"
-                                            onChange={formik.handleChange}
-                                            value={formik.values.texto}
-                                            variant="outlined"
-                                            helperText={formik.errors.texto}
-                                            error={formik.errors.texto}
-                                        />
-                                    </FormControl>
-                                    <Grid container>
-                                        <Grid item xs={6}>
-                                            <FormControl>
-                                                <TextField
-                                                    className={
-                                                        classes.textField
-                                                    }
-                                                    disabled={true}
-                                                    placeholder="DNI"
-                                                    label={label("DNI")}
-                                                    id="nombre"
-                                                    name="DNI"
-                                                    //onChange={formik.handleChange}
-                                                    //value={formik.values.nombre}
-                                                    variant="outlined"
-                                                    // helperText={formik.errors.nombre}
-                                                    // error={formik.errors.nombre}
-                                                />
-                                            </FormControl>
-                                        </Grid>
-                                        <Grid item xs={6}>
-                                            <FormControl>
-                                                <TextField
-                                                    className={
-                                                        classes.textField
-                                                    }
-                                                    placeholder="Nombre"
-                                                    label={label("Nombre")}
-                                                    id="nombre"
-                                                    disabled={true}
-                                                    name="nombre"
-                                                    //onChange={formik.handleChange}
-                                                    //value={formik.values.nombre}
-                                                    variant="outlined"
-                                                    // helperText={formik.errors.nombre}
-                                                    // error={formik.errors.nombre}
-                                                />
-                                            </FormControl>
-                                        </Grid>
-                                    </Grid>
-                                    <Grid container>
-                                        <Grid item xs={6}>
-                                            <TextField
-                                                className={classes.textField}
-                                                placeholder="Apellido"
-                                                label={label("Apellido")}
-                                                id="nombre"
-                                                disabled={true}
-                                                name="Apellido"
-                                                //onChange={formik.handleChange}
-                                                //value={formik.values.nombre}
-                                                variant="outlined"
-                                                // helperText={formik.errors.nombre}
-                                                // error={formik.errors.nombre}
-                                            />
-                                        </Grid>
-                                        <Grid item xs={6}>
-                                            <TextField
-                                                className={classes.textField}
-                                                placeholder="Prefijo"
-                                                label={label("Prefijo")}
-                                                id="nombre"
-                                                disabled={true}
-                                                name="Prefijo"
-                                                //onChange={formik.handleChange}
-                                                //value={formik.values.nombre}
-                                                variant="outlined"
-                                                // helperText={formik.errors.nombre}
-                                                // error={formik.errors.nombre}
-                                            />
-                                        </Grid>
-                                    </Grid>
-                                    <Grid container>
-                                        <Grid item xs={6}>
-                                            <TextField
-                                                className={classes.textField}
-                                                placeholder="Telefono"
-                                                label={label("Telefono")}
-                                                id="nombre"
-                                                name="Telefono"
-                                                disabled={true}
-                                                //onChange={formik.handleChange}
-                                                //value={formik.values.nombre}
-                                                variant="outlined"
-                                                // helperText={formik.errors.nombre}
-                                                // error={formik.errors.nombre}
-                                            />
-                                        </Grid>
-                                        <Grid item xs={6}>
-                                            <TextField
-                                                className={classes.textField}
-                                                placeholder="Email"
-                                                label={label("Email")}
-                                                id="nombre"
-                                                name="Email"
-                                                disabled={true}
-                                                //onChange={formik.handleChange}
-                                                //value={formik.values.nombre}
-                                                variant="outlined"
-                                                // helperText={formik.errors.nombre}
-                                                // error={formik.errors.nombre}
-                                            />
-                                        </Grid>
-                                    </Grid>
-                                    <Grid container>
-                                        <Grid
+                                        <FormGroup
                                             style={{
-                                                display: "flex",
-                                                justifyContent: "center",
-                                                flexDirection: "column",
+                                                alignSelf: "center",
+                                                marginTop: "5%",
                                             }}
-                                            item
-                                            xs={6}
+                                            row
                                         >
-                                            <FormGroup
-                                                style={{
-                                                    alignSelf: "center",
-                                                    marginTop: "5%",
-                                                }}
-                                                row
-                                            >
-                                                <FormControlLabel
-                                                    control={
-                                                        <Switch
-                                                            name="checkedA"
-                                                            onChange={
-                                                                handleChangeProvincia
-                                                            }
-                                                        />
-                                                    }
-                                                    label={<h4>Provincia</h4>}
-                                                />
-                                            </FormGroup>
-                                        </Grid>
-                                        <Grid
-                                            style={{
-                                                display: "flex",
-                                                justifyContent: "center",
-                                                flexDirection: "column",
-                                            }}
-                                            item
-                                            xs={6}
-                                        >
-                                            <FormGroup
-                                                style={{
-                                                    alignSelf: "center",
-                                                    marginTop: "5%",
-                                                }}
-                                                row
-                                            >
-                                                <FormControlLabel
-                                                    control={
-                                                        <Switch
-                                                            name="checkedA"
-                                                            onChange={
-                                                                handleChangeLocalidad
-                                                            }
-                                                        />
-                                                    }
-                                                    label={<h4>Localidad</h4>}
-                                                />
-                                            </FormGroup>
-                                        </Grid>
+                                            <FormControlLabel
+                                                control={
+                                                    <Switch
+                                                        name="checkedA"
+                                                        disabled={deshabilitado}
+                                                        onChange={
+                                                            handleChangeProvincia
+                                                        }
+                                                    />
+                                                }
+                                                label={<h4>Provincia</h4>}
+                                            />
+                                        </FormGroup>
                                     </Grid>
                                     <Grid
                                         style={{
-                                            marginTop: "2%",
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            flexDirection: "column",
                                         }}
-                                        container
+                                        item
+                                        xs={6}
                                     >
-                                        <Grid
+                                        <FormGroup
                                             style={{
-                                                display: "flex",
-                                                justifyContent: "center",
-                                                flexDirection: "column",
+                                                alignSelf: "center",
+                                                marginTop: "5%",
                                             }}
-                                            item
-                                            xs={6}
+                                            row
                                         >
-                                            <FormGroup
-                                                style={{
-                                                    alignSelf: "center",
-                                                    marginTop: "3%",
-                                                }}
-                                                row
-                                            >
-                                                <FormControlLabel
-                                                    control={
-                                                        <Switch
-                                                            name="checkedA"
-                                                            onChange={
-                                                                handleChangeSMS
-                                                            }
-                                                        />
-                                                    }
-                                                    label={<h4>Valida SMS</h4>}
-                                                />
-                                            </FormGroup>
-                                        </Grid>
-                                        <Grid
-                                            style={{
-                                                display: "flex",
-                                                justifyContent: "center",
-                                                flexDirection: "column",
-                                            }}
-                                            item
-                                            xs={6}
-                                        >
-                                            <FormGroup
-                                                style={{
-                                                    alignSelf: "center",
-                                                    marginTop: "3%",
-                                                }}
-                                                row
-                                            >
-                                                <FormControlLabel
-                                                    control={
-                                                        <Switch
-                                                            name="checkedA"
-                                                            onChange={
-                                                                handleChangeEMAIL
-                                                            }
-                                                        />
-                                                    }
-                                                    label={
-                                                        <h4>Valida Email</h4>
-                                                    }
-                                                />
-                                            </FormGroup>
-                                        </Grid>
+                                            <FormControlLabel
+                                                control={
+                                                    <Switch
+                                                        name="checkedA"
+                                                        disabled={deshabilitado}
+                                                        onChange={
+                                                            handleChangeLocalidad
+                                                        }
+                                                    />
+                                                }
+                                                label={<h4>Localidad</h4>}
+                                            />
+                                        </FormGroup>
                                     </Grid>
-                                    <Grid container>
-                                        <Grid
+                                </Grid>
+                                <Grid
+                                    style={{
+                                        marginTop: "2%",
+                                    }}
+                                    container
+                                >
+                                    <Grid
+                                        style={{
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            flexDirection: "column",
+                                        }}
+                                        item
+                                        xs={6}
+                                    >
+                                        <FormGroup
                                             style={{
-                                                display: "flex",
-                                                justifyContent: "center",
-                                                flexDirection: "column",
+                                                alignSelf: "center",
+                                                marginTop: "3%",
                                             }}
-                                            item
-                                            xs={6}
+                                            row
                                         >
-                                            <FormGroup
-                                                style={{
-                                                    alignSelf: "center",
-                                                    marginTop: "3%",
-                                                }}
-                                                row
-                                            >
-                                                <FormControlLabel
-                                                    control={
-                                                        <Switch
-                                                            name="checkedA"
-                                                            onChange={
-                                                                handleChangeScore
-                                                            }
-                                                        />
-                                                    }
-                                                    label={
-                                                        <h4>Valida Score</h4>
-                                                    }
-                                                />
-                                            </FormGroup>
-                                        </Grid>
+                                            <FormControlLabel
+                                                control={
+                                                    <Switch
+                                                        name="checkedA"
+                                                        disabled={deshabilitado}
+                                                        onChange={
+                                                            handleChangeSMS
+                                                        }
+                                                    />
+                                                }
+                                                label={<h4>Valida SMS</h4>}
+                                            />
+                                        </FormGroup>
                                     </Grid>
-                                    <FormControl
+                                    <Grid
                                         style={{
                                             display: "flex",
                                             justifyContent: "center",
                                             flexDirection: "column",
                                         }}
+                                        item
+                                        xs={6}
                                     >
-                                        <TextField
-                                            className={classes.textFieldM}
-                                            placeholder="Titulo 1 pie formulario (opcional)"
-                                            label={label(
-                                                "Titulo 1 pie formulario (opcional)"
-                                            )}
-                                            id="nombre"
-                                            name="titulo1Formulario"
-                                            onChange={formik.handleChange}
-                                            value={
-                                                formik.values.titulo1Formulario
-                                            }
-                                            variant="outlined"
-                                            helperText={
-                                                formik.errors.titulo1Formulario
-                                            }
-                                            error={
-                                                formik.errors.titulo1Formulario
-                                            }
-                                        />
-                                    </FormControl>
-                                    <FormControl
+                                        <FormGroup
+                                            style={{
+                                                alignSelf: "center",
+                                                marginTop: "3%",
+                                            }}
+                                            row
+                                        >
+                                            <FormControlLabel
+                                                control={
+                                                    <Switch
+                                                        name="checkedA"
+                                                        disabled={deshabilitado}
+                                                        onChange={
+                                                            handleChangeEMAIL
+                                                        }
+                                                    />
+                                                }
+                                                label={<h4>Valida Email</h4>}
+                                            />
+                                        </FormGroup>
+                                    </Grid>
+                                </Grid>
+                                <Grid container>
+                                    <Grid
                                         style={{
                                             display: "flex",
                                             justifyContent: "center",
                                             flexDirection: "column",
                                         }}
+                                        item
+                                        xs={6}
                                     >
-                                        <TextField
-                                            className={classes.textFieldM}
-                                            placeholder="Detalle 1 pie formulario (opcional)"
-                                            label={label(
-                                                "Detalle 1 pie formulario (opcional)"
-                                            )}
-                                            id="nombre"
-                                            name="detalle1Formulario"
-                                            onChange={formik.handleChange}
-                                            value={
-                                                formik.values.detalle1Formulario
-                                            }
-                                            variant="outlined"
-                                            helperText={
-                                                formik.errors.detalle1Formulario
-                                            }
-                                            error={
-                                                formik.errors.detalle1Formulario
-                                            }
-                                        />
-                                    </FormControl>
-                                    <FormControl
-                                        style={{
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            flexDirection: "column",
-                                        }}
-                                    >
-                                        <TextField
-                                            className={classes.textFieldM}
-                                            placeholder="Titulo 2 pie formulario (opcional)"
-                                            label={label(
-                                                "Titulo 2 pie formulario (opcional)"
-                                            )}
-                                            id="nombre"
-                                            name="titulo2Formulario"
-                                            onChange={formik.handleChange}
-                                            value={
-                                                formik.values.titulo2Formulario
-                                            }
-                                            variant="outlined"
-                                            helperText={
-                                                formik.errors.titulo2Formulario
-                                            }
-                                            error={
-                                                formik.errors.titulo2Formulario
-                                            }
-                                        />
-                                    </FormControl>
-                                    <FormControl
-                                        style={{
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            flexDirection: "column",
-                                        }}
-                                    >
-                                        <TextField
-                                            className={classes.textFieldM}
-                                            placeholder="Detalle 2 pie formulario (opcional)"
-                                            label={label(
-                                                "Detalle 2 pie formulario (opcional)"
-                                            )}
-                                            id="nombre"
-                                            name="detalle2Formulario"
-                                            onChange={formik.handleChange}
-                                            value={
-                                                formik.values.detalle2Formulario
-                                            }
-                                            variant="outlined"
-                                            helperText={
-                                                formik.errors.detalle2Formulario
-                                            }
-                                            error={
-                                                formik.errors.detalle2Formulario
-                                            }
-                                        />
-                                    </FormControl>
-                                    <FormControl
-                                        style={{
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            flexDirection: "column",
-                                        }}
-                                    >
-                                        <TextField
-                                            className={classes.textFieldM}
-                                            placeholder="Titulo 3 pie formulario (opcional)"
-                                            label={label(
-                                                "Titulo 3 pie formulario (opcional)"
-                                            )}
-                                            id="nombre"
-                                            name="titulo3Formulario"
-                                            onChange={formik.handleChange}
-                                            value={
-                                                formik.values.titulo3Formulario
-                                            }
-                                            variant="outlined"
-                                            helperText={
-                                                formik.errors.titulo3Formulario
-                                            }
-                                            error={
-                                                formik.errors.titulo3Formulario
-                                            }
-                                        />
-                                    </FormControl>
-                                    <FormControl
-                                        style={{
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            flexDirection: "column",
-                                        }}
-                                    >
-                                        <TextField
-                                            className={classes.textFieldM}
-                                            placeholder="Detalle 3 pie formulario (opcional)"
-                                            label={label(
-                                                "Detalle 3 pie formulario (opcional)"
-                                            )}
-                                            id="nombre"
-                                            name="detalle3Formulario"
-                                            onChange={formik.handleChange}
-                                            value={
-                                                formik.values.detalle3Formulario
-                                            }
-                                            variant="outlined"
-                                            helperText={
-                                                formik.errors.detalle3Formulario
-                                            }
-                                            error={
-                                                formik.errors.detalle3Formulario
-                                            }
-                                        />
-                                    </FormControl>
-                                    <FormControl
-                                        style={{
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            flexDirection: "column",
-                                        }}
-                                    >
-                                        <TextField
-                                            className={classes.textFieldM}
-                                            placeholder="Titulo 4 pie formulario (opcional)"
-                                            label={label(
-                                                "Titulo 4 pie formulario (opcional)"
-                                            )}
-                                            id="nombre"
-                                            name="titulo4Formulario"
-                                            onChange={formik.handleChange}
-                                            value={
-                                                formik.values.titulo4Formulario
-                                            }
-                                            variant="outlined"
-                                            helperText={
-                                                formik.errors.titulo4Formulario
-                                            }
-                                            error={
-                                                formik.errors.titulo4Formulario
-                                            }
-                                        />
-                                    </FormControl>
-                                    <FormControl
-                                        style={{
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            flexDirection: "column",
-                                        }}
-                                    >
-                                        <TextField
-                                            className={classes.textFieldM}
-                                            placeholder="Detalle 4 pie formulario (opcional)"
-                                            label={label(
-                                                "Detalle 4 pie formulario (opcional)"
-                                            )}
-                                            id="nombre"
-                                            name="detalle4Formulario"
-                                            onChange={formik.handleChange}
-                                            value={
-                                                formik.values.detalle4Formulario
-                                            }
-                                            variant="outlined"
-                                            helperText={
-                                                formik.errors.detalle4Formulario
-                                            }
-                                            error={
-                                                formik.errors.detalle4Formulario
-                                            }
-                                        />
-                                    </FormControl>
-                                    <FormControl
-                                        style={{
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            flexDirection: "column",
-                                        }}
-                                    >
-                                        <TextField
-                                            className={classes.textFieldM}
-                                            placeholder="Titulo 5 pie formulario (opcional)"
-                                            label={label(
-                                                "Titulo 5 pie formulario (opcional)"
-                                            )}
-                                            id="nombre"
-                                            name="titulo5Formulario"
-                                            onChange={formik.handleChange}
-                                            value={
-                                                formik.values.titulo5Formulario
-                                            }
-                                            variant="outlined"
-                                            helperText={
-                                                formik.errors.titulo5Formulario
-                                            }
-                                            error={
-                                                formik.errors.titulo5Formulario
-                                            }
-                                        />
-                                    </FormControl>
-                                    <FormControl
-                                        style={{
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            flexDirection: "column",
-                                        }}
-                                    >
-                                        <TextField
-                                            className={classes.textFieldM}
-                                            label={label(
-                                                "Detalle 5 pie formulario (opcional)"
-                                            )}
-                                            placeholder="Detalle 5 pie formulario (opcional)"
-                                            id="nombre"
-                                            name="detalle5Formulario"
-                                            onChange={formik.handleChange}
-                                            value={
-                                                formik.values.detalle5Formulario
-                                            }
-                                            variant="outlined"
-                                            helperText={
-                                                formik.errors.detalle5Formulario
-                                            }
-                                            error={
-                                                formik.errors.detalle5Formulario
-                                            }
-                                        />
-                                    </FormControl>
-                                </Paper>
-                            </Grid>
-                        </Grid>
-                    </div>
-                    <Divider
-                        style={{
-                            backgroundColor: "black",
-                            marginLeft: "5%",
-                            marginRight: "5%",
-                        }}
-                    />
-                    <Grid container spacing={0} style={{ paddingBottom: "2%" }}>
-                        <Grid
-                            item
-                            xs={6}
-                            style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                flexDirection: "column",
-                            }}
-                        >
-                            <FormControl
-                                style={{
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    flexDirection: "column",
-                                }}
-                            >
-                                <TextField
-                                    className={classes.textFieldFull}
-                                    label={label("Texto pie imagen")}
-                                    placeholder="Texto pie imagen"
-                                    id="nombre"
-                                    name="textoDebajoImagen"
-                                    onChange={formik.handleChange}
-                                    value={formik.values.textoDebajoImagen}
-                                    variant="outlined"
-                                    helperText={formik.errors.textoDebajoImagen}
-                                    error={formik.errors.textoDebajoImagen}
-                                />
-                            </FormControl>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={6}
-                            style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                flexDirection: "column",
-                            }}
-                        >
-                            <FormControl
-                                style={{
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    flexDirection: "column",
-                                }}
-                            >
-                                <TextField
-                                    className={classes.textFieldFull}
-                                    label={label(
-                                        "Texto final formulario (opcional)"
-                                    )}
-                                    placeholder="Texto final formulario (opcional)"
-                                    id="nombre"
-                                    name="textoPieFormulario"
-                                    onChange={formik.handleChange}
-                                    value={formik.values.textoPieFormulario}
-                                    variant="outlined"
-                                    helperText={
-                                        formik.errors.textoPieFormulario
-                                    }
-                                    error={formik.errors.textoPieFormulario}
-                                />
-                            </FormControl>
+                                        <FormGroup
+                                            style={{
+                                                alignSelf: "center",
+                                                marginTop: "3%",
+                                            }}
+                                            row
+                                        >
+                                            <FormControlLabel
+                                                control={
+                                                    <Switch
+                                                        name="checkedA"
+                                                        disabled={deshabilitado}
+                                                        onChange={
+                                                            handleChangeScore
+                                                        }
+                                                    />
+                                                }
+                                                label={<h4>Valida Score</h4>}
+                                            />
+                                        </FormGroup>
+                                    </Grid>
+                                </Grid>
+                                <FormControl
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        flexDirection: "column",
+                                    }}
+                                >
+                                    <TextField
+                                        className={classes.textFieldM}
+                                        placeholder="Titulo 1 pie formulario (opcional)"
+                                        label={label(
+                                            "Titulo 1 pie formulario (opcional)"
+                                        )}
+                                        id="nombre"
+                                        disabled={deshabilitado}
+                                        name="titulo1Formulario"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.titulo1Formulario}
+                                        variant="outlined"
+                                        helperText={
+                                            formik.errors.titulo1Formulario
+                                        }
+                                        error={formik.errors.titulo1Formulario}
+                                    />
+                                </FormControl>
+                                <FormControl
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        flexDirection: "column",
+                                    }}
+                                >
+                                    <TextField
+                                        className={classes.textFieldM}
+                                        placeholder="Detalle 1 pie formulario (opcional)"
+                                        label={label(
+                                            "Detalle 1 pie formulario (opcional)"
+                                        )}
+                                        id="nombre"
+                                        disabled={deshabilitado}
+                                        name="detalle1Formulario"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.detalle1Formulario}
+                                        variant="outlined"
+                                        helperText={
+                                            formik.errors.detalle1Formulario
+                                        }
+                                        error={formik.errors.detalle1Formulario}
+                                    />
+                                </FormControl>
+                                <FormControl
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        flexDirection: "column",
+                                    }}
+                                >
+                                    <TextField
+                                        className={classes.textFieldM}
+                                        placeholder="Titulo 2 pie formulario (opcional)"
+                                        label={label(
+                                            "Titulo 2 pie formulario (opcional)"
+                                        )}
+                                        id="nombre"
+                                        disabled={deshabilitado}
+                                        name="titulo2Formulario"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.titulo2Formulario}
+                                        variant="outlined"
+                                        helperText={
+                                            formik.errors.titulo2Formulario
+                                        }
+                                        error={formik.errors.titulo2Formulario}
+                                    />
+                                </FormControl>
+                                <FormControl
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        flexDirection: "column",
+                                    }}
+                                >
+                                    <TextField
+                                        className={classes.textFieldM}
+                                        placeholder="Detalle 2 pie formulario (opcional)"
+                                        label={label(
+                                            "Detalle 2 pie formulario (opcional)"
+                                        )}
+                                        id="nombre"
+                                        disabled={deshabilitado}
+                                        name="detalle2Formulario"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.detalle2Formulario}
+                                        variant="outlined"
+                                        helperText={
+                                            formik.errors.detalle2Formulario
+                                        }
+                                        error={formik.errors.detalle2Formulario}
+                                    />
+                                </FormControl>
+                                <FormControl
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        flexDirection: "column",
+                                    }}
+                                >
+                                    <TextField
+                                        className={classes.textFieldM}
+                                        placeholder="Titulo 3 pie formulario (opcional)"
+                                        label={label(
+                                            "Titulo 3 pie formulario (opcional)"
+                                        )}
+                                        id="nombre"
+                                        name="titulo3Formulario"
+                                        disabled={deshabilitado}
+                                        onChange={formik.handleChange}
+                                        value={formik.values.titulo3Formulario}
+                                        variant="outlined"
+                                        helperText={
+                                            formik.errors.titulo3Formulario
+                                        }
+                                        error={formik.errors.titulo3Formulario}
+                                    />
+                                </FormControl>
+                                <FormControl
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        flexDirection: "column",
+                                    }}
+                                >
+                                    <TextField
+                                        className={classes.textFieldM}
+                                        placeholder="Detalle 3 pie formulario (opcional)"
+                                        label={label(
+                                            "Detalle 3 pie formulario (opcional)"
+                                        )}
+                                        id="nombre"
+                                        disabled={deshabilitado}
+                                        name="detalle3Formulario"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.detalle3Formulario}
+                                        variant="outlined"
+                                        helperText={
+                                            formik.errors.detalle3Formulario
+                                        }
+                                        error={formik.errors.detalle3Formulario}
+                                    />
+                                </FormControl>
+                                <FormControl
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        flexDirection: "column",
+                                    }}
+                                >
+                                    <TextField
+                                        className={classes.textFieldM}
+                                        placeholder="Titulo 4 pie formulario (opcional)"
+                                        label={label(
+                                            "Titulo 4 pie formulario (opcional)"
+                                        )}
+                                        id="nombre"
+                                        disabled={deshabilitado}
+                                        name="titulo4Formulario"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.titulo4Formulario}
+                                        variant="outlined"
+                                        helperText={
+                                            formik.errors.titulo4Formulario
+                                        }
+                                        error={formik.errors.titulo4Formulario}
+                                    />
+                                </FormControl>
+                                <FormControl
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        flexDirection: "column",
+                                    }}
+                                >
+                                    <TextField
+                                        className={classes.textFieldM}
+                                        placeholder="Detalle 4 pie formulario (opcional)"
+                                        label={label(
+                                            "Detalle 4 pie formulario (opcional)"
+                                        )}
+                                        id="nombre"
+                                        disabled={deshabilitado}
+                                        name="detalle4Formulario"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.detalle4Formulario}
+                                        variant="outlined"
+                                        helperText={
+                                            formik.errors.detalle4Formulario
+                                        }
+                                        error={formik.errors.detalle4Formulario}
+                                    />
+                                </FormControl>
+                                <FormControl
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        flexDirection: "column",
+                                    }}
+                                >
+                                    <TextField
+                                        className={classes.textFieldM}
+                                        placeholder="Titulo 5 pie formulario (opcional)"
+                                        label={label(
+                                            "Titulo 5 pie formulario (opcional)"
+                                        )}
+                                        id="nombre"
+                                        disabled={deshabilitado}
+                                        name="titulo5Formulario"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.titulo5Formulario}
+                                        variant="outlined"
+                                        helperText={
+                                            formik.errors.titulo5Formulario
+                                        }
+                                        error={formik.errors.titulo5Formulario}
+                                    />
+                                </FormControl>
+                                <FormControl
+                                    style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        flexDirection: "column",
+                                    }}
+                                >
+                                    <TextField
+                                        className={classes.textFieldM}
+                                        label={label(
+                                            "Detalle 5 pie formulario (opcional)"
+                                        )}
+                                        placeholder="Detalle 5 pie formulario (opcional)"
+                                        id="nombre"
+                                        disabled={deshabilitado}
+                                        name="detalle5Formulario"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.detalle5Formulario}
+                                        variant="outlined"
+                                        helperText={
+                                            formik.errors.detalle5Formulario
+                                        }
+                                        error={formik.errors.detalle5Formulario}
+                                    />
+                                </FormControl>
+                            </Paper>
                         </Grid>
                     </Grid>
-                    <Button
+                </div>
+                <Divider
+                    style={{
+                        backgroundColor: "black",
+                        marginLeft: "5%",
+                        marginRight: "5%",
+                    }}
+                />
+                <Grid container spacing={0} style={{ paddingBottom: "2%" }}>
+                    <Grid
+                        item
+                        xs={6}
                         style={{
-                            width: "30%",
-                            alignSelf: "center",
-                            marginBottom: "2%",
+                            display: "flex",
+                            justifyContent: "center",
+                            flexDirection: "column",
                         }}
-                        type="submit"
-                        bsStyle="primary"
-                        disabled={deshabilitado}
-                        onClick={guardar}
                     >
-                        Guardar
-                    </Button>
-                </Paper>
+                        <FormControl
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                flexDirection: "column",
+                            }}
+                        >
+                            <TextField
+                                className={classes.textFieldFull}
+                                label={label("Texto pie imagen (opcional)")}
+                                placeholder="Texto pie imagen (opcional)"
+                                id="nombre"
+                                disabled={deshabilitado}
+                                name="textoDebajoImagen"
+                                onChange={formik.handleChange}
+                                value={formik.values.textoDebajoImagen}
+                                variant="outlined"
+                                helperText={formik.errors.textoDebajoImagen}
+                                error={formik.errors.textoDebajoImagen}
+                            />
+                        </FormControl>
+                    </Grid>
+                    <Grid
+                        item
+                        xs={6}
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            flexDirection: "column",
+                        }}
+                    >
+                        <FormControl
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                flexDirection: "column",
+                            }}
+                        >
+                            <TextField
+                                className={classes.textFieldFull}
+                                label={label(
+                                    "Texto final formulario (opcional)"
+                                )}
+                                placeholder="Texto final formulario (opcional)"
+                                id="nombre"
+                                disabled={deshabilitado}
+                                name="textoPieFormulario"
+                                onChange={formik.handleChange}
+                                value={formik.values.textoPieFormulario}
+                                variant="outlined"
+                                helperText={formik.errors.textoPieFormulario}
+                                error={formik.errors.textoPieFormulario}
+                            />
+                        </FormControl>
+                    </Grid>
+                </Grid>
+                <Grid container spacing={0} style={{ paddingBottom: "2%" }}>
+                    <Grid
+                        item
+                        xs
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            flexDirection: "column",
+                        }}
+                    >
+                        {" "}
+                        <Button
+                            style={{ width: "20%", alignSelf: "center" }}
+                            bsStyle="primary"
+                            onClick={() => window.location.reload(false)}
+                        >
+                            Volver
+                        </Button>
+                    </Grid>
+                    {edit == true && (
+                        <Grid
+                            item
+                            xs
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                flexDirection: "column",
+                            }}
+                        >
+                            {" "}
+                            <Button
+                                style={{ width: "20%", alignSelf: "center" }}
+                                bsStyle="primary"
+                            >
+                                Editar
+                            </Button>
+                        </Grid>
+                    )}
+                    {warning == true && (
+                        <Grid
+                            item
+                            xs
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                flexDirection: "column",
+                            }}
+                        >
+                            {" "}
+                            <p style={{ color: "red", alignSelf: "center" , fontSize : '18px' }}>Revise los campos requeridos </p>
+                        </Grid>
+                    )}
+                    <Grid
+                        item
+                        xs
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            flexDirection: "column",
+                        }}
+                    >
+                        <Button
+                            style={{ width: "20%", alignSelf: "center" }}
+                            type="submit"
+                            bsStyle="primary"
+                            disabled={deshabilitado}
+                            onClick={guardar}
+                        >
+                            Guardar
+                        </Button>
+                    </Grid>
+                </Grid>
             </form>
         </div>
     );

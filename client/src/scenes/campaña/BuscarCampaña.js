@@ -107,7 +107,7 @@ const BuscarCampaña = (props) => {
 
    const SearchCapaign = () => {
         const clientId = user.idCliente;
-        
+    
         return (
             <div>
                 <DashboardNav />
@@ -177,7 +177,8 @@ const BuscarCampaña = (props) => {
                                                 cam.nroCliente == clientId
                                         )
                                         .map((campaña) => (
-                                            setHash(campaña.hash),
+                                            
+                                            
                                             <div
                                                 id="buscarR"
                                                 className={classes.root}
@@ -291,7 +292,13 @@ const BuscarCampaña = (props) => {
                                                                 marginTop: "4%",
                                                             }}
                                                             bsStyle="primary"
-                                                            onClick = {addParam}
+                                                            onClick = { () =>{
+                                                                if(search == true){
+                                                                    setSearch(false);
+                                                                    setParam(true);
+                                                                    setHash(campaña.hash)
+                                                                }
+                                                            }}
                                                         >
                                                             Agregar Parametros
                                                         </Button>

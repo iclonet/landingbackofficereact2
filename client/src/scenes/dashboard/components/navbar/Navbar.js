@@ -89,22 +89,6 @@ const DashboardNav = () => {
                                 </LinkContainer>
                             </NavDropdown>
 
-                            <NavDropdown
-                                title={<span>Administrar Parametros</span>}
-                                id="basic-nav-dropdown"
-                            >
-                                <MenuItem
-                                    onClick={() =>
-                                        window.location.replace("/parameters")
-                                    }
-                                >
-                                    Nuevo
-                                </MenuItem>
-
-                                <LinkContainer to="/dashboard/">
-                                    <MenuItem>Buscar</MenuItem>
-                                </LinkContainer>
-                            </NavDropdown>
                             <NavItem disabled>
                                 <Col
                                     style={{
