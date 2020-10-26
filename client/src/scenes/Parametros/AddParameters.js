@@ -290,7 +290,7 @@ const AddParameters = (props) => {
             <form onSubmit={formik.handleSubmit}>
                 <div className={classes.root}>
                     <Grid container spacing={3}>
-                        <Grid item xs={6}>
+                        <Grid item xs>
                             <Paper className={classes.paper} elevation={3}>
                                 <Paper
                                     style={{
@@ -316,6 +316,7 @@ const AddParameters = (props) => {
                                     <h3>Upload logo</h3>
                                     <FormControl>
                                         <input
+                                            id= "imagenLogo"
                                             name="imagenLogo"
                                             disabled={deshabilitado}
                                             type="file"
@@ -383,7 +384,7 @@ const AddParameters = (props) => {
                                 </FormControl>
                             </Paper>
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item xs>
                             <Paper className={classes.paper} elevation={3}>
                                 <FormControl
                                     style={{
@@ -933,7 +934,7 @@ const AddParameters = (props) => {
                 <Grid container spacing={0} style={{ paddingBottom: "2%" }}>
                     <Grid
                         item
-                        xs={6}
+                        xs
                         style={{
                             display: "flex",
                             justifyContent: "center",
@@ -964,7 +965,7 @@ const AddParameters = (props) => {
                     </Grid>
                     <Grid
                         item
-                        xs={6}
+                        xs
                         style={{
                             display: "flex",
                             justifyContent: "center",
