@@ -88,7 +88,11 @@ function searchPerson(option, query, nombre, provincia, nacionalidad, edadgt, ed
     if (per_page !== undefined) {
         url += `&per_page=${per_page}`;
     }
-    return apiCall(HTTP_METHODS.get, url);
+
+	// Agrego parámetro consulta web
+	url += `&web_request=true`;
+
+	return apiCall(HTTP_METHODS.get, url);
 }
 
 function getPerson(cuil) {
@@ -112,7 +116,11 @@ function searchCompanies(option, query, page, per_page, modo_busqueda) {
     if (per_page !== undefined) {
         url += `&per_page=${per_page}`;
     }
-    return apiCall(HTTP_METHODS.get, url);
+
+	// Agrego parámetro consulta web
+	url += `&web_request=true`;
+
+	return apiCall(HTTP_METHODS.get, url);
 }
 
 function getCompany(cuit) {
@@ -127,6 +135,10 @@ function searchCarOwners(option, query, page, per_page) {
     if (per_page !== undefined) {
         url += `&per_page=${per_page}`;
     }
+
+	// Agrego parámetro consulta web
+	url += `&web_request=true`;
+
     return apiCall(HTTP_METHODS.get, url);
 }
 
@@ -139,11 +151,15 @@ function searchTelefonos(option, query, page, per_page) {
     if (per_page !== undefined) {
         url += `&per_page=${per_page}`;
     }
+
+	// Agrego parámetro consulta web
+	url += `&web_request=true`;
+
     return apiCall(HTTP_METHODS.get, url);
 }
 
 function getAccount() {
-    return apiCall(HTTP_METHODS.get, 'account/me');
+    return apiCall(HTTP_METHODS.get, 'account/me/client');
 }
 
 function getClientLogo(idCliente) {
@@ -194,7 +210,7 @@ function getUsers(clienteId) {
 }
 
 function getCurrentUser() {
-    return apiCall(HTTP_METHODS.get, 'account/me/currentUser');
+    return apiCall(HTTP_METHODS.get, 'account/me');
 }
 
 function completeUserData() {
@@ -224,7 +240,7 @@ function getLog(user_id, fecha_desde, fecha_hasta,
         idCliente = `cliente=${cliente}&`;
     }
     if (consumeCredito === '1') {
-        consumeCreditoParam = `consumeCredito=${consumeCredito}&`
+        consumeCreditoParam = `consumeCredito=true&`
     }
 
 	return apiCall(HTTP_METHODS.get,
