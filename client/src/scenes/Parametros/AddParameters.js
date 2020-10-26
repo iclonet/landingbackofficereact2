@@ -13,7 +13,11 @@ import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import { addParametrs, getCampaigns } from "../api";
 import { Typography } from "@material-ui/core";
-
+//import Button from "@material-ui/core/Button";
+import CloudUploadIcon from "@material-ui/icons/CloudUpload";
+import AddIcon from "@material-ui/icons/Add";
+import { Fab } from "@material-ui/core";
+import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 
 const AddParameters = (props) => {
     const useStyles = makeStyles((theme) => ({
@@ -53,6 +57,7 @@ const AddParameters = (props) => {
         },
         button: {
             margin: theme.spacing(1),
+            width: "15px",
         },
     }));
     const classes = useStyles();
@@ -127,10 +132,70 @@ const AddParameters = (props) => {
         },
     });
     const [parametrs, setParametrs] = useState([]);
+
     async function addParametrsFunc(obj) {
         const res = await addParametrs(obj);
         setParametrs(res.data);
+        if (
+            res.status == 201 &&
+            formik.values.imagenBackground != "" &&
+            formik.values.imagenLogo != "" &&
+            formik.values.texto != ""
+        ) {
+            setWarning(false);
+            setImgbg(true);
+            setLogo(true);
+            setDeshabilitado(true);
+            setEdit(true);
+            console.log("status === 200");
+        }
+        if (res.status == 500) {
+            window.alert("algo ocurrió mal !");
+        }
+        /*
+        if (
+            res.status == 500 ||
+            formik.values.imagenBackground == "" ||
+            formik.values.imagenLogo == "" ||
+            formik.values.texto == ""
+        ) {
+            console.log("status != 200");
+            setWarning(true);
+            setImgbg(false);
+            setLogo(false);
+            setWarning(true);
+        }
+        */
     }
+
+    const guardar = () => {
+        formik.setFieldValue("hash", hashprops);
+        formik.setFieldValue("estrategia", JSON.parse(id()));
+        formik.handleSubmit();
+        
+        if (
+            formik.values.imagenBackground == "" ||
+            formik.values.imagenLogo == "" ||
+            formik.values.texto == ""
+        ) {
+            setImgbg(false);
+            setLogo(false);
+            setWarning(true);
+        }
+        /*
+        if (
+            formik.values.imagenBackground != "" &&
+            formik.values.imagenLogo != "" &&
+            formik.values.texto != ""
+        ) {
+            setWarning(false);
+            setImgbg(true);
+            setLogo(true);
+            setDeshabilitado(true);
+            setEdit(true);
+        }
+        */
+    };
     const [campañas, setCampañas] = useState("");
     async function getCampaignsFunc() {
         const res = await getCampaigns();
@@ -186,7 +251,8 @@ const AddParameters = (props) => {
     const [imgbg, setImgbg] = useState(true);
     const [logo, setLogo] = useState(true);
     const [warning, setWarning] = useState(false);
-
+    const [checklogo, setChecklogo] = useState(false);
+    const [checkimage, setCheckimage] = useState(false);
     useEffect(() => {
         try {
             getCampaignsFunc();
@@ -208,36 +274,13 @@ const AddParameters = (props) => {
             .filter((cam) => cam.hash == hashprops)
             .map((campaña) => `{ "id": ${campaña.id} }`);
 
-    const guardar = () => {
-        formik.setFieldValue("hash", hashprops);
-        formik.setFieldValue("estrategia", JSON.parse(id()));
-        formik.handleSubmit();
-        if (
-            formik.values.imagenBackground == "" ||
-            formik.values.imagenLogo == "" ||
-            formik.values.texto == ""
-        ) {
-            setImgbg(false);
-            setLogo(false);
-            setWarning(true);
-        }
-        if (
-            formik.values.imagenBackground != "" &&
-            formik.values.imagenLogo != "" && formik.values.texto != ""
-        ) {
-            setWarning(false);
-            setImgbg(true);
-            setLogo(true);
-            setDeshabilitado(true);
-            setEdit(true);
-        }
-    };
     const uploadlogo = async (e) => {
         const file = e.target.files[0];
         const base64 = await convertBase64(file);
         var strImage = base64.replace(/^data:image\/[a-z]+;base64,/, "");
         console.log(strImage);
         formik.setFieldValue("imagenLogo", strImage);
+        setChecklogo(true);
     };
     const uploadImagen = async (e) => {
         const file = e.target.files[0];
@@ -245,6 +288,7 @@ const AddParameters = (props) => {
         var strImage = base64.replace(/^data:image\/[a-z]+;base64,/, "");
         console.log(strImage);
         formik.setFieldValue("imagenBackground", strImage);
+        setCheckimage(true);
     };
     const convertBase64 = (file) => {
         return new Promise((resolve, reject) => {
@@ -258,7 +302,7 @@ const AddParameters = (props) => {
             };
         });
     };
-    function errorText( w , ml , mr) {
+    function errorText(w, ml, mr) {
         return (
             <div>
                 <Divider
@@ -266,13 +310,13 @@ const AddParameters = (props) => {
                         width: w,
                         backgroundColor: "red",
                         marginTop: "2%",
-                        marginLeft: ml
+                        marginLeft: ml,
                     }}
                 />
                 <p
                     style={{
                         marginTop: "0px",
-                        marginRight: mr ,
+                        marginRight: mr,
                         fontSize: "10pt",
                         color: "red",
                     }}
@@ -315,19 +359,39 @@ const AddParameters = (props) => {
                                 >
                                     <h3>Upload logo</h3>
                                     <FormControl>
-                                        <input
-                                            id= "imagenLogo"
-                                            name="imagenLogo"
-                                            disabled={deshabilitado}
-                                            type="file"
-                                            onChange={(e) => {
-                                                uploadlogo(e);
-                                            }}
-                                        />
+                                        <label htmlFor="upload-logo">
+                                            <input
+                                                style={{ display: "none" }}
+                                                id="upload-logo"
+                                                name="upload-logo"
+                                                type="file"
+                                                disabled={deshabilitado}
+                                                onChange={(e) => {
+                                                    uploadlogo(e);
+                                                }}
+                                            />
+                                            <Fab
+                                                disabled={deshabilitado}
+                                                color="secondary"
+                                                size="small"
+                                                component="span"
+                                                aria-label="add"
+                                                variant="extended"
+                                            >
+                                                <AddIcon /> Upload logo
+                                            </Fab>
+                                        </label>
                                     </FormControl>
-                                    
+                                    {checklogo == true && (
+                                        <div>
+                                            <CheckCircleIcon
+                                                fontSize="large"
+                                                color="primary"
+                                            />
+                                        </div>
+                                    )}
                                 </div>
-                                {logo == false && errorText("60%" , "0%" , "40%")}
+                                {logo == false && errorText("60%", "0%", "40%")}
                                 <div
                                     style={{
                                         marginTop: "40%",
@@ -341,21 +405,40 @@ const AddParameters = (props) => {
                                         Upload imagen campaña
                                     </h3>
                                     <FormControl>
-                                        <input
-                                            style={{
-                                                marginLeft: "20%",
-                                            }}
-                                            type="file"
-                                            disabled={deshabilitado}
-                                            name="imagenBackground"
-                                            onChange={(e) => {
-                                                uploadImagen(e);
-                                            }}
-                                        />
+                                        <label htmlFor="upload-photo">
+                                            <input
+                                                style={{ display: "none" }}
+                                                id="upload-photo"
+                                                name="upload-photo"
+                                                type="file"
+                                                disabled={deshabilitado}
+                                                onChange={(e) => {
+                                                    uploadImagen(e);
+                                                }}
+                                            />
+                                            <Fab
+                                                disabled={deshabilitado}
+                                                color="secondary"
+                                                size="small"
+                                                component="span"
+                                                aria-label="add"
+                                                variant="extended"
+                                            >
+                                                <AddIcon /> Upload imagen
+                                            </Fab>
+                                        </label>
                                     </FormControl>
-                                    
+                                    {checkimage == true && (
+                                        <div>
+                                            <CheckCircleIcon
+                                                fontSize="large"
+                                                color="primary"
+                                            />
+                                        </div>
+                                    )}
                                 </div>
-                                {imgbg == false && errorText("70%" , "16%" , "0%")}
+                                {imgbg == false &&
+                                    errorText("70%", "16%", "0%")}
                                 <FormControl
                                     style={{
                                         marginTop: "21%",
@@ -405,7 +488,14 @@ const AddParameters = (props) => {
                                         onChange={formik.handleChange}
                                         value={formik.values.texto}
                                         variant="outlined"
-                                        helperText={<Typography component={'span'} style={{fontSize: '14px'}}>{formik.errors.texto}</Typography>}
+                                        helperText={
+                                            <Typography
+                                                component={"span"}
+                                                style={{ fontSize: "14px" }}
+                                            >
+                                                {formik.errors.texto}
+                                            </Typography>
+                                        }
                                         error={formik.errors.texto}
                                     />
                                 </FormControl>
@@ -517,7 +607,7 @@ const AddParameters = (props) => {
                                             flexDirection: "column",
                                         }}
                                         item
-                                        xs={6}
+                                        xs
                                     >
                                         <FormGroup
                                             style={{
@@ -547,7 +637,7 @@ const AddParameters = (props) => {
                                             flexDirection: "column",
                                         }}
                                         item
-                                        xs={6}
+                                        xs
                                     >
                                         <FormGroup
                                             style={{
@@ -584,7 +674,7 @@ const AddParameters = (props) => {
                                             flexDirection: "column",
                                         }}
                                         item
-                                        xs={6}
+                                        xs
                                     >
                                         <FormGroup
                                             style={{
@@ -614,7 +704,7 @@ const AddParameters = (props) => {
                                             flexDirection: "column",
                                         }}
                                         item
-                                        xs={6}
+                                        xs
                                     >
                                         <FormGroup
                                             style={{
@@ -646,7 +736,7 @@ const AddParameters = (props) => {
                                             flexDirection: "column",
                                         }}
                                         item
-                                        xs={6}
+                                        xs
                                     >
                                         <FormGroup
                                             style={{
@@ -1009,8 +1099,9 @@ const AddParameters = (props) => {
                     >
                         {" "}
                         <Button
-                            style={{ width: "20%", alignSelf: "center" }}
+                            style={{ alignSelf: "center" }}
                             bsStyle="primary"
+                            id="btn-primary"
                             onClick={() => window.location.reload(false)}
                         >
                             Volver
@@ -1028,8 +1119,9 @@ const AddParameters = (props) => {
                         >
                             {" "}
                             <Button
-                                style={{ width: "20%", alignSelf: "center" }}
+                                style={{ alignSelf: "center" }}
                                 bsStyle="primary"
+                                id="btn-primary"
                             >
                                 Editar
                             </Button>
@@ -1046,7 +1138,15 @@ const AddParameters = (props) => {
                             }}
                         >
                             {" "}
-                            <p style={{ color: "red", alignSelf: "center" , fontSize : '18px' }}>Revise los campos requeridos </p>
+                            <p
+                                style={{
+                                    color: "red",
+                                    alignSelf: "center",
+                                    fontSize: "18px",
+                                }}
+                            >
+                                Revise los campos requeridos{" "}
+                            </p>
                         </Grid>
                     )}
                     <Grid
@@ -1059,8 +1159,9 @@ const AddParameters = (props) => {
                         }}
                     >
                         <Button
-                            style={{ width: "20%", alignSelf: "center" }}
+                            style={{ alignSelf: "center" }}
                             type="submit"
+                            id="btn-primary"
                             bsStyle="primary"
                             disabled={deshabilitado}
                             onClick={guardar}
