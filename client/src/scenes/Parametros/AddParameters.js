@@ -171,7 +171,7 @@ const AddParameters = (props) => {
     const guardar = () => {
         formik.setFieldValue("hash", hashprops);
         formik.setFieldValue("estrategia", JSON.parse(id()));
-        formik.handleSubmit();
+       // formik.handleSubmit();
         
         if (
             formik.values.imagenBackground == "" ||
