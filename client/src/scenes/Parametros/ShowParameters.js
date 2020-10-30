@@ -132,7 +132,7 @@ const ShowParameters = (props) => {
                                                     textTransform: "none",
                                                 }}
                                             >
-                                                fecha Lanzamiento
+                                                Hash
                                             </Grid>
                                             <Grid
                                                 item
