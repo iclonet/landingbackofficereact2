@@ -1102,7 +1102,7 @@ const AddParameters = (props) => {
                             style={{ alignSelf: "center" }}
                             bsStyle="primary"
                             id="btn-primary"
-                            onClick={() => window.location.reload(false)}
+                            onClick={() => history.back()}
                         >
                             Volver
                         </Button>
