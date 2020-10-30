@@ -66,3 +66,12 @@ export const getCampaignByHash = async (hash) => {
     return await api.get(url);
     
 };
+export const getParameters = async () => {
+    const url = `parametros/findAll`;
+    return await api.get(url);
+    
+};export const getParametersByHash = async (hash) => {
+    const url = `parametros/findByHash?hash=${hash}`;
+    return await api.get(url);
+    
+};

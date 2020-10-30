@@ -201,7 +201,7 @@ const AddParameters = (props) => {
         const res = await getCampaigns();
         setCampañas(res.data);
     }
-    const hashprops = props.hash;
+    const hashprops = props.hash || props.location.aboutProps;
     const label = (label) => {
         <p id="label">{label}</p>;
     };

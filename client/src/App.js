@@ -24,6 +24,7 @@ import Session from './utils/Session';
 import MainDash from './scenes/dashboard/MainDash';
 import Perfil from './scenes/me/Perfil';
 import AddParameters from './scenes/Parametros/AddParameters';
+import ShowParameters from './scenes/Parametros/ShowParameters';
 import BuscarCampaña from './scenes/campaña/BuscarCampaña';
 
 
@@ -127,11 +128,9 @@ class App extends Component {
 								return <BuscarCampaña />
 							else return <Home />;
 						}} />
-                        <Route exact path="/parameters" render={props => {
-							if (Session.isAuthenticated())
-								return <AddParameters />
-							else return <Home />;
-						}} />
+                        <Route path="/parameters/" component={AddParameters} />
+                        <Route path="/showparameters/" component={ShowParameters} />
+                       
                         <Route exact path="/me" render={props => {
 							if (Session.isAuthenticated())
 								return <Perfil />
